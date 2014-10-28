@@ -1,0 +1,160 @@
+<!-- 锁屏 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#e4d5cc" android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include layout="@layout/cx_fa_activity_title" android:layout_weight="0"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:id="@+id/cx_fa_lock_title"/>
+    
+    
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="vertical" android:layout_weight="1"  
+        android:gravity="center"
+        >
+        <ImageView android:layout_width="150dip" android:layout_height="81dip"
+        android:layout_marginTop="18dp" 
+        android:layout_gravity="center_horizontal" 
+        android:id="@+id/unlockImage"
+        android:layout_weight="0" 
+        android:layout_marginBottom="30dip"
+        android:src="@drawable/cx_fa_app_other_logo"/><!-- android:background="@drawable/cx_fa_role_wait_logo_boy" -->
+    
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center" android:text="@string/cx_fa_input_lockscreen_password"
+        android:layout_marginTop="12dip" android:id="@+id/cx_fa_lock_input_tip"
+        android:layout_weight="0"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center" android:layout_marginTop="10dip"
+        android:layout_weight="0">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:background="@drawable/set_passwordbox" android:gravity="center"
+            android:id="@+id/first_password_wrapper" android:layout_marginLeft="5dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_margin="3dip" android:src="@drawable/set_heart"
+                android:id="@+id/first_password"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:background="@drawable/set_passwordbox" android:gravity="center"
+            android:id="@+id/third_password_wrapper" 
+            android:layout_toRightOf="@+id/second_password_wrapper"
+            android:layout_marginLeft="5dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_margin="3dip" android:src="@drawable/set_heart"
+                android:id="@+id/third_password"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:background="@drawable/set_passwordbox" android:gravity="center"
+            android:id="@+id/forth_password_wrapper" 
+            android:layout_toRightOf="@+id/third_password_wrapper"
+            android:layout_marginLeft="5dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_margin="3dip" android:src="@drawable/set_heart"
+                android:id="@+id/forth_password"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_marginLeft="5dip"
+            android:id="@+id/second_password_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/first_password_wrapper"
+            android:background="@drawable/set_passwordbox"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/second_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dip"
+                android:src="@drawable/set_heart" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    </LinearLayout>
+    
+    <!-- 键盘 -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:gravity="bottom"
+        android:layout_weight="0"  android:background="#e4e4ea"
+        >
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:gravity="bottom" android:background="@android:color/black"
+            android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+	            android:orientation="horizontal" android:layout_weight="0">
+	            <Button android:layout_width="match_parent" android:layout_height="50dp"
+	                android:background="@drawable/cx_fa_softkey_btn" 
+	                android:text="1" android:layout_weight="1"
+	                android:textColor="#ffffff"
+	                android:id="@+id/one_btn" android:textSize="16sp" android:gravity="center"/>
+	            <Button android:layout_width="match_parent" android:layout_height="50dp"
+	                android:background="@drawable/cx_fa_softkey_btn" 
+	                android:text="2" android:layout_weight="1"
+	                android:textColor="#ffffff"
+	                android:id="@+id/two_btn" android:textSize="16sp" android:gravity="center"/>
+	            <Button android:layout_width="match_parent" android:layout_height="50dp"
+	                android:background="@drawable/cx_fa_softkey_btn" 
+	                android:text="3" android:layout_weight="1"
+	                android:textColor="#ffffff"
+	                android:id="@+id/three_btn" android:textSize="16sp" android:gravity="center"/>
+	        </LinearLayout>
+	        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+	            android:orientation="horizontal" android:layout_weight="0">
+	            <Button android:layout_width="match_parent" android:layout_height="50dp"
+	                android:background="@drawable/cx_fa_softkey_btn" 
+	                android:text="4" android:layout_weight="1"
+	                android:textColor="#ffffff"
+	                android:id="@+id/four_btn" android:textSize="16sp" android:gravity="center"/>
+	            <Button android:layout_width="match_parent" android:layout_height="50dp"
+	                android:background="@drawable/cx_fa_softkey_btn" 
+	                android:text="5" android:layout_weight="1"
+	                android:textColor="#ffffff"
+	                android:id="@+id/five_btn" android:textSize="16sp" android:gravity="center"/>
+	            <Button android:layout_width="match_parent" android:layout_height="50dp"
+	                android:background="@drawable/cx_fa_softkey_btn" 
+	                android:textColor="#ffffff"
+	                android:text="6" android:layout_weight="1"
+	                android:id="@+id/six_btn" android:textSize="16sp" android:gravity="center"/>
+	        </LinearLayout>
+	        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+	            android:orientation="horizontal" android:layout_weight="0">
+	            <Button android:layout_width="match_parent" android:layout_height="50dp"
+	                android:background="@drawable/cx_fa_softkey_btn" 
+	                android:text="7" android:layout_weight="1"
+	                android:textColor="#ffffff"
+	                android:id="@+id/seven_btn" android:textSize="16sp" android:gravity="center"/>
+	            <Button android:layout_width="match_parent" android:layout_height="50dp"
+	                android:background="@drawable/cx_fa_softkey_btn" 
+	                android:text="8" android:layout_weight="1"
+	                android:textColor="#ffffff"
+	                android:id="@+id/eight_btn" android:textSize="16sp" android:gravity="center"/>
+	            <Button android:layout_width="match_parent" android:layout_height="50dp"
+	                android:background="@drawable/cx_fa_softkey_btn" 
+	                android:text="9" android:layout_weight="1"
+	                android:textColor="#ffffff"
+	                android:id="@+id/nine_btn" android:textSize="16sp" android:gravity="center"/>
+	        </LinearLayout>
+	        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+	            android:orientation="horizontal" android:layout_weight="0">
+	            <Button android:layout_width="match_parent" android:layout_height="50dp"
+	                android:background="@drawable/cx_fa_softkey_btn" android:clickable="false"
+	                android:layout_weight="1" 
+	                android:textColor="#ffffff"
+	                android:id="@+id/none_btn" android:textSize="16sp" android:gravity="center"/>
+	            <Button android:layout_width="match_parent" android:layout_height="50dp"
+	                android:background="@drawable/cx_fa_softkey_btn" 
+	                android:text="0" android:layout_weight="1"
+	                android:textColor="#ffffff"
+	                android:id="@+id/zero_btn" android:textSize="16sp" android:gravity="center"/>
+	            <ImageButton android:layout_width="match_parent" android:layout_height="50dp"
+	                android:background="@drawable/cx_fa_softkey_btn" android:src="@drawable/cx_fa_softkey_delete"
+	                android:layout_weight="1"
+	                android:id="@+id/delete_btn"/>
+	        </LinearLayout>
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+</LinearLayout>

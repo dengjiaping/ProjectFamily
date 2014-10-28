@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/cx_fa_co_transparent"
+    android:orientation="vertical" >
+    
+    <LinearLayout android:id="@+id/cx_fa_view_chat_whip_layer1"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:background="@color/cx_fa_co_white"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_vertical|center">
+        <ImageView 
+            android:id="@+id/rk_ba_view_chat_whip_guide_pic"
+            android:src="@drawable/whip_guide_whip"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView 
+            android:id="@+id/rk_ba_view_chat_whip_guide_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="狠甩手机，抽他一鞭子"
+            android:textSize="15sp"
+            /> <!-- text属性会在程序中重新赋值 -->
+        
+        <Button android:id="@+id/cx_fa_view_chat_whip_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/more_btn_bg"
+            android:text="取消"	
+            />	<!-- text属性会在程序中重新赋值 -->
+        
+    </LinearLayout>
+    <LinearLayout android:id="@+id/cx_fa_view_chat_whip_layer2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@color/cx_fa_co_white"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_vertical|center"
+        android:visibility="gone">
+        <com.ant.liao.chuxin.EnhancedGifView
+            android:id="@+id/cx_fa_view_chat_whip_gif"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            />
+   </LinearLayout>
+
+</LinearLayout>

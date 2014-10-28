@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="libmp3voicerecorder">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/family/libs/libmp3voicerecorder.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,22 @@
+<!-- 邀请列表界面-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/cx_fa_bg_white_corner_rect_with_grey_border"
+    >
+    <LinearLayout android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ListView android:layout_width="match_parent" android:id="@+id/invite_members"
+	        android:layout_height="match_parent" android:cacheColorHint="#00000000"
+	        android:background="#ffffffff" android:dividerHeight="0dip" android:divider="#ffffffff"/>
+    </LinearLayout>
+    
+    <Button android:text="@string/cx_fa_cancel_text" android:id="@+id/ignore_invitation"
+       android:layout_width="match_parent" android:layout_height="wrap_content"
+       android:background="@drawable/cx_fa_dr_corner_rect_bottom_part" android:layout_weight="0"
+       android:gravity="center" android:textSize="20sp" android:paddingTop="3dip"
+       android:paddingBottom="3dip"/>
+</LinearLayout>

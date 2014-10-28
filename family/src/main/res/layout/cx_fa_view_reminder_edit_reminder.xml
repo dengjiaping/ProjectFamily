@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e4e4ea"
+    android:orientation="vertical" >
+
+        <include layout="@layout/cx_fa_activity_title" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_gravity="center"/>    
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+  	     android:layout_marginTop="12dp"
+  	     android:layout_marginLeft="12dp"
+  	     android:layout_marginRight="12dp"
+         android:orientation="vertical" >
+
+         <RelativeLayout
+             android:id="@+id/cx_fa_view_reminder_edit_reminder__title_item"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:paddingTop="@dimen/cx_fa_dimen_reminder_cornerrectangle_paddingtop"
+             android:paddingBottom="@dimen/cx_fa_dimen_reminder_cornerrectangle_paddingbottom"
+             android:paddingLeft="@dimen/cx_fa_dimen_reminder_cornerrectangle_paddingleft"
+             android:paddingRight="@dimen/cx_fa_dimen_reminder_cornerrectangle_paddingright"
+  	    	 android:background="@drawable/cx_fa_dr_corner_rect_top_part" >
+
+             <TextView
+                 android:id="@+id/TextView03"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:textColor="@color/cx_fa_co_grey"
+                 android:text="@string/cx_fa_nls_reminder_content" />
+
+             <ImageView
+                 android:id="@+id/cx_fa_view_reminder_edit_reminder__arrow1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentRight="true"
+                 android:src="@drawable/table_front_accessory_arrow" />
+         
+             <TextView
+                 android:id="@+id/cx_fa_view_reminder_edit_reminder__title_content"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_toLeftOf="@id/cx_fa_view_reminder_edit_reminder__arrow1"
+                 android:textColor="@android:color/black"
+                 android:layout_marginRight="@dimen/cx_fa_dimen_reminder_createreminder_arrowmargin"
+                 android:text="" />
+
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/cx_fa_view_reminder_edit_reminder__target_item"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:paddingTop="@dimen/cx_fa_dimen_reminder_cornerrectangle_paddingtop"
+             android:paddingBottom="@dimen/cx_fa_dimen_reminder_cornerrectangle_paddingbottom"
+             android:paddingLeft="@dimen/cx_fa_dimen_reminder_cornerrectangle_paddingleft"
+             android:paddingRight="@dimen/cx_fa_dimen_reminder_cornerrectangle_paddingright"
+             android:background="@drawable/cx_fa_dr_corner_rect_bottom_part" >
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:textColor="@color/cx_fa_co_grey"
+                 android:text="@string/cx_fa_nls_reminder_target" />
+
+
+             <ImageView
+                 android:id="@+id/cx_fa_view_reminder_edit_reminder__arrow2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentRight="true"
+                 android:src="@drawable/table_front_accessory_arrow" />
+        
+             <TextView
+                 android:id="@+id/cx_fa_view_reminder_edit_reminder__target_content"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_toLeftOf="@id/cx_fa_view_reminder_edit_reminder__arrow2"
+                 android:textColor="@color/cx_fa_co_black"
+                 android:layout_marginRight="@dimen/cx_fa_dimen_reminder_createreminder_arrowmargin"
+                 android:text="" />
+         </RelativeLayout>
+     </LinearLayout>
+            
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+  	     android:layout_marginLeft="12dp"
+  	     android:layout_marginRight="12dp"
+  	     android:layout_marginTop="12dp"
+         android:orientation="vertical" >
+
+         <RelativeLayout
+             android:id="@+id/cx_fa_view_reminder_edit_reminder__period_item"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:paddingTop="@dimen/cx_fa_dimen_reminder_cornerrectangle_paddingtop"
+             android:paddingBottom="@dimen/cx_fa_dimen_reminder_cornerrectangle_paddingbottom"
+             android:paddingLeft="@dimen/cx_fa_dimen_reminder_cornerrectangle_paddingleft"
+             android:paddingRight="@dimen/cx_fa_dimen_reminder_cornerrectangle_paddingright"
+  	    	 android:background="@drawable/cx_fa_dr_corner_rect_top_part" >
+         
+	          <TextView
+	              android:text="@string/cx_fa_nls_reminder_period"
+	              android:layout_alignParentLeft="true"
+	              android:id="@+id/reminder_content" 
+                  android:textColor="@color/cx_fa_co_grey"
+	              android:layout_width="wrap_content"
+          		  android:layout_height="wrap_content" />
+	          
+             <ImageView
+                 android:id="@+id/cx_fa_view_reminder_edit_reminder__arrow3"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentRight="true"
+                 android:src="@drawable/table_front_accessory_arrow" />
+             
+             <TextView
+                 android:id="@+id/cx_fa_view_reminder_edit_reminder__period_content"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_toLeftOf="@id/cx_fa_view_reminder_edit_reminder__arrow3"
+                 android:textColor="@color/cx_fa_co_black"
+                 android:layout_marginRight="@dimen/cx_fa_dimen_reminder_createreminder_arrowmargin"
+                 android:text="" />
+             
+		 </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/cx_fa_view_reminder_edit_reminder__date_item"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:paddingTop="@dimen/cx_fa_dimen_reminder_cornerrectangle_paddingtop"
+             android:paddingBottom="@dimen/cx_fa_dimen_reminder_cornerrectangle_paddingbottom"
+             android:paddingLeft="@dimen/cx_fa_dimen_reminder_cornerrectangle_paddingleft"
+             android:paddingRight="@dimen/cx_fa_dimen_reminder_cornerrectangle_paddingright"
+  	    	 android:background="@drawable/cx_fa_dr_corner_rect_middle_part">
+
+             <TextView
+                 android:id="@+id/TextView01"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:textColor="@color/cx_fa_co_grey"
+                 android:text="@string/cx_fa_nls_reminder_date" />
+
+             <ImageView
+                 android:id="@+id/cx_fa_view_reminder_edit_reminder__arrow4"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentRight="true"
+                 android:src="@drawable/table_front_accessory_arrow" />
+            
+             <TextView
+                 android:id="@+id/cx_fa_view_reminder_edit_reminder__date_content"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_toLeftOf="@id/cx_fa_view_reminder_edit_reminder__arrow4"
+                 android:textColor="@color/cx_fa_co_black"
+                 android:layout_marginRight="@dimen/cx_fa_dimen_reminder_createreminder_arrowmargin"
+                 android:text="" />
+		</RelativeLayout>
+		
+
+        <RelativeLayout
+             android:id="@+id/cx_fa_view_reminder_edit_reminder__time_item"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:paddingTop="@dimen/cx_fa_dimen_reminder_cornerrectangle_paddingtop"
+             android:paddingBottom="@dimen/cx_fa_dimen_reminder_cornerrectangle_paddingbottom"
+             android:paddingLeft="@dimen/cx_fa_dimen_reminder_cornerrectangle_paddingleft"
+             android:paddingRight="@dimen/cx_fa_dimen_reminder_cornerrectangle_paddingright"
+  	    	 android:background="@drawable/cx_fa_dr_corner_rect_middle_part" >
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:textColor="@color/cx_fa_co_grey"
+                 android:text="@string/cx_fa_nls_reminder_time" />
+
+             <ImageView
+                 android:id="@+id/cx_fa_view_reminder_edit_reminder__arrow5"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentRight="true"
+                 android:src="@drawable/table_front_accessory_arrow" />
+
+             <TextView
+                 android:id="@+id/cx_fa_view_reminder_edit_reminder__time_content"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_toLeftOf="@id/cx_fa_view_reminder_edit_reminder__arrow5"
+                 android:textColor="@color/cx_fa_co_black"
+                 android:layout_marginRight="@dimen/cx_fa_dimen_reminder_createreminder_arrowmargin"
+                 android:text="" />
+	 	 </RelativeLayout>
+
+         <RelativeLayout
+             android:id="@+id/cx_fa_view_reminder_edit_reminder__advance_item"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:paddingTop="@dimen/cx_fa_dimen_reminder_cornerrectangle_paddingtop"
+             android:paddingBottom="@dimen/cx_fa_dimen_reminder_cornerrectangle_paddingbottom"
+             android:paddingLeft="@dimen/cx_fa_dimen_reminder_cornerrectangle_paddingleft"
+             android:paddingRight="@dimen/cx_fa_dimen_reminder_cornerrectangle_paddingright"
+  	    	 android:background="@drawable/cx_fa_dr_corner_rect_bottom_part" >
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:textColor="@color/cx_fa_co_grey"
+                 android:text="@string/cx_fa_nls_reminder_advance" />
+
+             <ImageView
+                 android:id="@+id/cx_fa_view_reminder_edit_reminder__arrow6"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_alignParentRight="true"
+                 android:src="@drawable/table_front_accessory_arrow" />
+
+             <TextView
+                 android:id="@+id/cx_fa_view_reminder_edit_reminder__advance_content"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_toLeftOf="@id/cx_fa_view_reminder_edit_reminder__arrow6"
+                 android:text=""
+                 android:layout_marginRight="@dimen/cx_fa_dimen_reminder_createreminder_arrowmargin"
+                 android:textColor="@color/cx_fa_co_black" />
+
+		</RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

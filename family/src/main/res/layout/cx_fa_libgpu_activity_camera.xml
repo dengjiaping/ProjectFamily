@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/carmeraBar" >
+
+        <RelativeLayout
+            android:id="@+id/carmeraView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000" >
+
+            <android.opengl.GLSurfaceView
+                android:id="@+id/surfaceViewCamera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+
+            <ImageView
+                android:id="@+id/img_switch_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_switch_camera" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <com.chuxin.family.libs.gpuimage.utils.HorizontalListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="108dp"
+        android:layout_above="@+id/carmeraBar"
+        android:background="@android:color/transparent"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/carmeraBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/navi_bg"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/cameraBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/space_buttonback"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/cx_fa_libgpu_button_capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/buttoncamera" />
+
+        <ImageButton
+            android:id="@+id/button_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/buttonsure"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/button_taken_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+             android:layout_centerInParent="true"
+            android:background="@drawable/buttoncameraagain"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

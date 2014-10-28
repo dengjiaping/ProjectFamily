@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cx_fa_co_background_grey"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/cx_fa_activity_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    <WebView
+        android:background="@color/cx_fa_co_background_grey"
+        android:id="@+id/cx_fa_kids_info_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         >
+    </WebView>
+        
+    </LinearLayout>
+
+</LinearLayout>

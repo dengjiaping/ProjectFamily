@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/cx_fa_view_chat_chatting_location_row__datestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chatview_date_bg"
+        android:focusable="false"
+        android:gravity="center"
+        android:text="2013年5月14日"
+        android:textColor="@color/cx_fa_co_white"
+        android:textIsSelectable="false"
+        android:textSize="12sp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/cx_fa_co_transparent"
+        android:descendantFocusability="blocksDescendants"
+        android:padding="8dp" >
+
+        <com.chuxin.family.widgets.CxImageView
+            android:id="@+id/cx_fa_view_chat_chatting_location_row__icon"
+            android:layout_width="@dimen/cx_fa_dimen_chat_headimage_icon_w"
+            android:layout_height="@dimen/cx_fa_dimen_chat_headimage_icon_h"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            android:background="@color/cx_fa_co_transparent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/cx_fa_view_chat_chatting_location_row__icon"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                 android:layout_marginBottom="10dp"
+                android:orientation="vertical" >
+
+                <ImageButton
+                    android:id="@+id/cx_fa_view_chat_chatting_location_row__exclamation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/chat_exclamation"
+                    android:visibility="invisible" />
+
+                <ProgressBar
+                    android:id="@+id/cx_fa_view_chat_chatting_location_row_circleProgressBar"
+                    style="?@android:style/Widget.ProgressBar.Small"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/cx_fa_view_chat_chatting_location_row__content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/cx_fa_dimen_chat_bubble_margin_right"
+                    android:background="@drawable/chatview_bubble_mine"
+                    android:minHeight="@dimen/cx_fa_dimen_chat_bubble_minheight"
+                    android:minWidth="@dimen/cx_fa_dimen_chat_bubble_minwidth"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/cx_fa_dimen_chat_bubble_padding_bottom"
+                    android:paddingLeft="@dimen/cx_fa_dimen_chat_bubble_padding_left"
+                    android:paddingRight="@dimen/cx_fa_dimen_chat_bubble_padding_right"
+                    android:paddingTop="@dimen/cx_fa_dimen_chat_bubble_padding_top" >
+
+                    <ImageView
+                        android:layout_width="@dimen/cx_fa_dimen_chat_location_image_w"
+                        android:layout_height="@dimen/cx_fa_dimen_chat_location_image_h"
+                        android:layout_gravity="center"
+                        android:src="@drawable/chat_location" />
+
+                    <TextView
+                        android:id="@+id/cx_fa_view_chat_chatting_location_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|right"
+                        android:focusable="false"
+                        android:maxWidth="300dp"
+                        android:text="12499"
+                        android:textColor="@color/cx_fa_co_black"
+                        android:textIsSelectable="false"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/cx_fa_view_chat_chatting_location_row__timestamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:gravity="bottom"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:text="12:50"
+                    android:textColor="@color/cx_fa_co_grey"
+                    android:textIsSelectable="false"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

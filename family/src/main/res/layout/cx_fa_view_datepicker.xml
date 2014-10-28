@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" android:gravity="center_horizontal"
+    >
+	<LinearLayout android:orientation="vertical"
+	    android:layout_width="70dp" android:layout_marginRight="10dp"
+	    android:layout_height="wrap_content" android:gravity="center">
+	    <Button android:text="+" android:textSize="20sp" android:id="@+id/cx_fa_add_year"
+	        android:layout_width="match_parent" android:layout_height="wrap_content"
+	        android:background="@drawable/cx_fa_bg_datepicker_plus_button_background"
+	        />
+	    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+	        android:text="2013" android:textSize="20sp" android:gravity="center"
+	        android:id="@+id/cx_fa_year_info"
+	        android:background="@drawable/cx_fa_bg_datepicker_edit_background"
+	        />
+	    <Button android:text="-" android:textSize="20sp" android:id="@+id/cx_fa_reduce_year"
+	        android:layout_width="match_parent" android:layout_height="wrap_content"
+	        android:background="@drawable/cx_fa_bg_datepicker_plus_button_background"
+	        />
+	</LinearLayout><!-- year -->
+	
+	<LinearLayout android:orientation="vertical"
+	    android:layout_width="70dp" android:layout_marginRight="10dp"
+	    android:layout_height="wrap_content" android:gravity="center">
+	    <Button android:text="+" android:textSize="20sp" android:id="@+id/cx_fa_add_month"
+	        android:layout_width="match_parent" android:layout_height="wrap_content"
+	        android:background="@drawable/cx_fa_bg_datepicker_plus_button_background"
+	        />
+	    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+	        android:text="10" android:textSize="20sp" android:gravity="center"
+	        android:id="@+id/cx_fa_month_info"
+	        android:background="@drawable/cx_fa_bg_datepicker_edit_background"
+	        />
+	    <Button android:text="-" android:textSize="20sp" android:id="@+id/cx_fa_reduce_month"
+	        android:layout_width="match_parent" android:layout_height="wrap_content"
+	        android:background="@drawable/cx_fa_bg_datepicker_plus_button_background"
+	        />
+	</LinearLayout><!-- month -->
+	
+	<LinearLayout android:orientation="vertical"
+	    android:layout_width="70dp" android:layout_marginRight="10dp"
+	    android:layout_height="wrap_content" android:gravity="center">
+	    <Button android:text="+" android:textSize="20sp" android:id="@+id/cx_fa_add_day"
+	        android:layout_width="match_parent" android:layout_height="wrap_content"
+	        android:background="@drawable/cx_fa_bg_datepicker_plus_button_background"
+	        />
+	    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+	        android:text="13" android:textSize="20sp" android:gravity="center"
+	        android:id="@+id/cx_fa_day_info" 
+	        android:background="@drawable/cx_fa_bg_datepicker_edit_background"
+	        />
+	    <Button android:text="-" android:textSize="20sp" android:id="@+id/cx_fa_reducce_day"
+	        android:layout_width="match_parent" android:layout_height="wrap_content"
+	        android:background="@drawable/cx_fa_bg_datepicker_plus_button_background"
+	        />
+	</LinearLayout><!-- day -->
+    
+</LinearLayout>

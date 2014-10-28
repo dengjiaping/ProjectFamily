@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cx_fa_co_background_grey"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/cx_fa_mate_edit_navi_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/navi_topbar"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/cx_fa_mate_family_info_title_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/cx_fa_menu_btn"
+            android:paddingLeft="11dp"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="28dip"
+            android:layout_centerHorizontal="true"
+            android:gravity="bottom" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cx_fa_mate_family_info_title_text"
+                android:textColor="#f3ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/cx_fa_mate_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/cx_fa_title_right_btn_bg"
+            android:gravity="center"
+            android:text="@string/cx_fa_nls_mateprofile_edit_title"
+            android:textAlignment="center"
+            android:textColor="@color/cx_fa_co_navi_button_text"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+    <!-- 编辑界面的标题 -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/cx_fa_mate_family_info_icon_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0"
+                android:background="@drawable/cx_fa_mate_family_info_icon_bg"
+                android:padding="1dip" >
+
+                <com.chuxin.family.image.RoundAngleImageView
+                    android:id="@+id/cx_fa_mate_family_info_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/memo_defaultimage"
+                    app:roundHeight="8dp"
+                    app:roundWidth="8dp" />
+            </LinearLayout>
+            <!-- family icon -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="10dip"
+                android:background="#e4e4ea" >
+
+                <LinearLayout
+                    android:id="@+id/cx_fa_mate_family_info_oppo_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="1dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/cx_fa_accounting_homepage_detail_bg_white"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/cx_fa_mate_family_info_oppo_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:gravity="center"
+                        android:text="@string/cx_fa_role_pair"
+                        android:textColor="#eba179"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cx_fa_mate_family_info_me_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:layout_marginLeft="1dip"
+                    android:layout_marginRight="1dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/cx_fa_accounting_homepage_detail_bg_gray"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/cx_fa_mate_family_info_me_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:gravity="center"
+                        android:text="@string/cx_fa_mate_family_info_tab_me"
+                        android:textColor="#90000000"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cx_fa_mate_family_info_kid_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:layout_marginLeft="1dip"
+                    android:layout_marginRight="1dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/cx_fa_accounting_homepage_detail_bg_gray"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/cx_fa_mate_family_info_kid_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:gravity="center"
+                        android:text="@string/cx_fa_mate_family_info_tab_kid"
+                        android:textColor="#90000000"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dip" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/cx_fa_mate_family_info_home_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:layout_marginLeft="1dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/cx_fa_accounting_homepage_detail_bg_gray"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/cx_fa_mate_family_info_home_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:gravity="center"
+                        android:text="@string/cx_fa_mate_family_info_tab_home"
+                        android:textColor="#90000000"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- tab 按钮 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="-10dip"
+                android:background="@drawable/cx_fa_accounting_homepage_bg_white_no_stroke"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/cx_fa_mate_family_info_user_icon_oppo_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dip"
+                    android:paddingLeft="8dip"
+                    android:paddingRight="8dip"
+                    android:paddingTop="12dip" >
+
+                    <TextView
+                        android:id="@+id/cx_fa_mate_family_info_user_icon_oppo_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dip"
+                        android:layout_marginLeft="5dip"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:text="@string/cx_fa_mate_family_info_user_icon"
+                        android:textColor="#a0000000"
+                        android:textSize="16sp" />
+
+                    <com.chuxin.family.widgets.CxImageView
+                        android:id="@+id/cx_fa_mate_family_info_user_icon_oppo_riv"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_marginRight="8dip"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cx_fa_wf_icon"
+                        />
+
+                    <ImageView
+                        android:layout_width="18dip"
+                        android:layout_height="18dip"
+                        android:layout_marginRight="12dip"
+                        android:padding="1dip"
+                        android:src="@drawable/table_front_accessory_arrow" />
+                </LinearLayout>
+                <!-- 头像 -->
+                
+                <LinearLayout
+                    android:id="@+id/cx_fa_mate_family_info_user_icon_me_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="12dip"
+                    android:paddingLeft="8dip"
+                    android:paddingRight="8dip"
+                    android:paddingTop="12dip"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/cx_fa_mate_family_info_user_icon_me_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dip"
+                        android:layout_marginLeft="5dip"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:text="@string/cx_fa_mate_family_info_user_icon"
+                        android:textColor="#a0000000"
+                        android:textSize="16sp" />
+
+                    <com.chuxin.family.widgets.CxImageView
+                        android:id="@+id/cx_fa_mate_family_info_user_icon_me_riv"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_marginRight="8dip"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cx_fa_wf_icon"
+                        />
+
+                    <ImageView
+                        android:layout_width="18dip"
+                        android:layout_height="18dip"
+                        android:layout_marginRight="12dip"
+                        android:padding="1dip"
+                        android:src="@drawable/table_front_accessory_arrow" />
+                </LinearLayout>
+                <!-- 头像 -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e4e4ea" />
+
+                <LinearLayout
+                    android:id="@+id/cx_fa_mate_family_info_user_name_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dip"
+                        android:layout_marginLeft="5dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/cx_fa_mate_family_info_user_name"
+                        android:textColor="#a0000000"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/cx_fa_mate_family_info_user_name_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:hint="@string/cx_fa_mate_family_info_user_default_text"
+                            android:singleLine="true"
+                            android:textColor="#a0000000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="38dip"
+                        android:layout_height="42dip"
+                        android:layout_gravity="right"
+                        android:gravity="left|center_vertical"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="18dip"
+                            android:layout_height="18dip"
+                            android:padding="1dip"
+                            android:src="@drawable/table_front_accessory_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 昵称 -->
+
+                <View
+                    android:id="@+id/cx_fa_mate_family_info_user_name_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e4e4ea" />
+
+                <LinearLayout
+                    android:id="@+id/cx_fa_mate_family_info_user_birthday_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dip"
+                        android:layout_marginLeft="5dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/cx_fa_mate_family_info_user_birthday"
+                        android:textColor="#a0000000"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/cx_fa_mate_family_info_user_birthday_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:hint="@string/cx_fa_mate_family_info_user_default_text"
+                            android:singleLine="true"
+                            android:textColor="#a0000000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="38dip"
+                        android:layout_height="42dip"
+                        android:layout_gravity="right"
+                        android:gravity="left|center_vertical"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="18dip"
+                            android:layout_height="18dip"
+                            android:padding="1dip"
+                            android:src="@drawable/table_front_accessory_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 生日 -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e4e4ea" />
+
+                <LinearLayout
+                    android:id="@+id/cx_fa_mate_family_info_user_cons_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dip"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dip"
+                        android:layout_marginLeft="5dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/cx_fa_mate_family_info_user_cons"
+                        android:textColor="#a0000000"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:orientation="vertical"
+                         >
+
+                        <TextView
+                            android:id="@+id/cx_fa_mate_family_info_user_cons_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:hint="@string/cx_fa_mate_family_info_user_default_text"
+                            android:text="水瓶座"
+                            android:textColor="#a0000000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="38dip"
+                        android:layout_height="42dip"
+                        android:layout_gravity="right"
+                        android:gravity="left|center_vertical"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/cx_fa_mate_family_info_user_cons_iv"
+                            android:layout_width="18dip"
+                            android:layout_height="18dip"
+                            android:padding="3dip"
+                            android:src="@drawable/memo_astro_5" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 星座 -->
+
+                <View
+                    android:id="@+id/cx_fa_mate_family_info_user_cons_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e4e4ea"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/cx_fa_mate_family_info_user_phone_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dip"
+                        android:layout_marginLeft="5dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/cx_fa_mate_family_info_user_phone"
+                        android:textColor="#a0000000"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/cx_fa_mate_family_info_user_phone_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:hint="@string/cx_fa_mate_family_info_user_default_text"
+                            android:singleLine="true"
+                            android:textColor="#a0000000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="38dip"
+                        android:layout_height="42dip"
+                        android:layout_gravity="right"
+                        android:gravity="left|center_vertical"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="18dip"
+                            android:layout_height="18dip"
+                            android:padding="1dip"
+                            android:src="@drawable/table_front_accessory_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 手机 -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e4e4ea" />
+
+                <LinearLayout
+                    android:id="@+id/cx_fa_mate_family_info_user_other_oppo_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+                
+                <LinearLayout
+                    android:id="@+id/cx_fa_mate_family_info_user_other_me_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/cx_fa_mate_family_info_user_remark_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dip"
+                        android:layout_marginLeft="5dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/cx_fa_mate_family_info_user_remark"
+                        android:textColor="#a0000000"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"					
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_margin="8dip"
+                            android:id="@+id/cx_fa_mate_family_info_user_remark_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:hint="@string/cx_fa_mate_family_info_user_default_text"
+                            android:textColor="#a0000000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="38dip"
+                        android:layout_height="42dip"
+                        android:layout_gravity="right"
+                        android:gravity="left|center_vertical"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="18dip"
+                            android:layout_height="18dip"
+                            android:padding="1dip"
+                            android:src="@drawable/table_front_accessory_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 备注 -->
+
+                <View
+                    android:id="@+id/cx_fa_mate_family_info_user_remark_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e4e4ea" />
+
+                <LinearLayout
+                    android:id="@+id/cx_fa_mate_family_info_user_more_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dip" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="42dip"
+                        android:layout_marginLeft="5dip"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/cx_fa_mate_family_info_user_more"
+                        android:textColor="#a0000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/cx_fa_mate_family_info_user_more_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="8dip"
+                        android:gravity="right"
+                        android:text="@string/cx_fa_accounting_category_out_education_short"
+                        android:textColor="#a0000000"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="38dip"
+                        android:layout_height="42dip"
+                        android:layout_gravity="right"
+                        android:gravity="left|center_vertical"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="18dip"
+                            android:layout_height="18dip"
+                            android:padding="1dip"
+                            android:src="@drawable/table_front_accessory_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 更多 -->
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dip" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

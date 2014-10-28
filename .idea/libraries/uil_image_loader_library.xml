@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="uil_image_loader_library">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/family/libs/uil_image_loader_library.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

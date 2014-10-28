@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_height="match_parent"
+    android:layout_width="match_parent" android:background="#e4e4ea">
+	<LinearLayout
+	        android:id="@+id/tabloid_top_bg_imageView_layout"
+		android:layout_width="match_parent" android:layout_gravity="center_horizontal|top"
+		android:layout_height="match_parent"   
+		android:orientation="vertical" android:gravity="center_horizontal|top"
+		android:layout_marginTop="-85dp">
+		
+	        <com.chuxin.family.widgets.CxImageView 
+	               	android:id="@+id/tabloid_top_bg_imageView" 
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+	                android:src="@drawable/daily_image"
+	                android:layout_weight="1"
+	                android:layout_gravity="center"
+	                android:scaleType="centerCrop" />
+		            	    
+	</LinearLayout>
+</LinearLayout>

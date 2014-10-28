@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@android:id/background"
+        android:drawable="@drawable/chatbg_download">
+        
+      <shape>
+         <corners android:radius="5dip"/> 
+         <!-- 	<gradient
+                    android:startColor="@android:color/transparent"
+                    android:centerColor="#606060"
+                    android:centerY="0.8"
+                    android:endColor="#606060"
+                    android:angle="270"
+            /> -->
+        </shape>
+    </item>
+     
+<!--     <item android:id="@android:id/secondaryProgress">
+        <clip android:clipOrientation="vertical" android:gravity="bottom">
+            <shape>
+                <corners android:radius="8dip" />
+                <gradient
+                        android:startColor="#80ffd300"
+                        android:centerColor="#80ffb600"
+                        android:centerY="0.75"
+                        android:endColor="#a0ffcb00"
+                        android:angle="180"
+                />
+            </shape>
+        </clip>
+    </item> -->
+     
+    <item android:id="@android:id/progress"
+        android:drawable="@drawable/chatbg_loading">
+        
+  
+        <!--     <shape>
+                <corners android:bottomLeftRadius="5dip" 
+                android:bottomRightRadius="5dip"/>
+                gradient
+                        android:startColor="#66000000"
+                        android:centerColor="#66000000"
+                        android:centerY="0.75"
+                        android:endColor="#66000000"
+                        android:angle="180"
+                />
+            </shape> -->
+
+    </item>
+
+</layer-list>

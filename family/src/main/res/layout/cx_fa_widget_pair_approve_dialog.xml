@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/neighbor_backwhite"
+            android:orientation="vertical"
+            android:padding="15dip" >
+
+            <com.chuxin.family.widgets.CxImageView
+                android:id="@+id/cx_fa_pair_approve_icon_img"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dip"
+                android:src="@drawable/cx_fa_hb_icon" />
+
+            <TextView
+                android:id="@+id/cx_fa_pair_approve_text_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="15dip"
+                android:singleLine="true"
+                android:text="确定和对方结对吗"
+                android:textColor="#99000000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="5dip" >
+
+                <Button
+                    android:id="@+id/cx_fa_pair_approve_sure_btn"
+                    style="@style/cx_fa_style_orange_button_text"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/neighbour_btnorange"
+                    android:text="确认"
+                    android:textColor="@color/cx_fa_co_btn_brown_text"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="36dip"
+            android:layout_height="36dip"
+            android:layout_gravity="top|right"
+            android:layout_margin="5dip"
+            android:gravity="center" >
+
+            <ImageButton
+                android:id="@+id/cx_fa_pair_approve_cancel_btn"
+                android:layout_width="26dip"
+                android:layout_height="26dip"
+                android:background="@drawable/remind_input_x" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

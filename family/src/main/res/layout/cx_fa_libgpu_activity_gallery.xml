@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/galleryFrameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bar"
+        android:layout_weight="1" >
+
+       <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" >
+
+            <android.opengl.GLSurfaceView
+                android:id="@+id/surfaceView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </FrameLayout>
+            <com.chuxin.family.libs.gpuimage.utils.HorizontalListView
+                android:id="@+id/listview"
+                android:layout_above="@+id/bar"
+                android:layout_width="fill_parent"
+                android:layout_height="108dp"
+                android:layout_weight="0"
+                android:background="@android:color/transparent" />
+    <RelativeLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/navi_bg"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/galleryBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/space_buttonback"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/galleryConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cx_fa_libgpu_space_button_ok"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</RelativeLayout>

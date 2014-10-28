@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/cx_fa_neighbour_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="6dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.chuxin.family.widgets.CxImageView
+            android:id="@+id/cx_fa_neighbour_manage_item_wife_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cx_fa_wf_icon_small" />
+
+        <com.chuxin.family.widgets.CxImageView
+            android:id="@+id/cx_fa_neighbour_manage_item_husband_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cx_fa_hb_icon_small" />
+
+        <TextView
+            android:id="@+id/cx_fa_neighbour_manage_item_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="1"
+            android:text="我们一家"
+            android:textColor="@color/cx_fa_co_black"
+            android:textSize="16sp" />
+
+        <!--
+        <ImageView 
+            android:id="@+id/cx_fa_neighbour_chat_btn"
+            android:visibility="gone"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="10dip"
+            android:layout_gravity="center_vertical"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:background="@drawable/cx_fa_nb_list_chat_btn"/>
+
+        <ImageButton
+            android:id="@+id/cx_fa_neighbour_arrow_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/table_front_accessory_arrow"
+            android:visibility="gone" />
+        -->
+         <Button
+            android:id="@+id/cx_fa_neighbour_manage_item_remove_btn"
+            android:layout_width="80dip"
+            android:layout_height="30dip"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/cx_fa_neighbour_manage_item_remove_bg"
+            android:text="解除关系"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+        
+        
+        
+
+        <LinearLayout
+            android:id="@+id/cx_fa_neighbour_manage_item_remove_layout"
+            android:layout_width="80dip"
+            android:layout_height="25dip"
+            android:layout_gravity="right|center_vertical"
+            android:background="@drawable/cx_fa_neighbour_manage_item_remove_bg"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="解除关系"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e4e4ea" />
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/cx_fa_co_deep_gray"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/adb_tv_user_family_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white" />
+
+    <EditText
+    android:id="@+id/adb_et_device_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/bind_device_id"/>
+
+    <EditText
+        android:id="@+id/adb_et_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/bind_nickname"/>
+
+    <Button
+        android:id="@+id/adb_btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cx_fa_comfirm_send_text"/>
+
+    <ListView
+        android:id="@+id/adb_lv_device"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

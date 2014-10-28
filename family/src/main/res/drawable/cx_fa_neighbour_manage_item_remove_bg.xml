@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <corners android:radius="5dip"/>
+    <solid android:color="#ccff0000"/>
+
+</shape> -->
+
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_focused="true"	    
+		android:drawable="@drawable/cx_fa_neighbour_manage_remove_h" /> 
+	<item android:state_pressed="true"
+		android:drawable="@drawable/cx_fa_neighbour_manage_remove_h" /> 
+	<item 
+	    android:drawable="@drawable/cx_fa_neighbour_manage_remove" />
+
+</selector>

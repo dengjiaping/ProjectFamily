@@ -1,0 +1,13 @@
+<!-- 设置界面 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#e4e4ea"
+    >
+    <TextView android:text="聊天还没有集成" android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:layout_height="match_parent" android:textColor="#83936343"/>
+
+
+</FrameLayout>

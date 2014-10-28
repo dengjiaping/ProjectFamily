@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cx_fa_widget_input_panel"
+    android:orientation="vertical" >
+
+   <!--  android:background="@drawable/cx_fa_bg_chat_input_backplane" -->
+    
+    <LinearLayout
+        android:id="@+id/cx_fa_widget_input_panel__linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cx_fa_bg_chat_input_backplane"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:gravity="center_vertical"
+        android:paddingTop="5dp" >
+
+        <ImageButton
+            android:id="@+id/cx_fa_widget_input_panel__layout1_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0"
+            android:background="@android:color/transparent"
+            android:src="@drawable/chat_buttonplus" />
+
+        <ImageButton
+            android:id="@+id/cx_fa_widget_input_panel__layout1_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_marginLeft="5dp" 
+            android:layout_weight="0"
+            android:background="@android:color/transparent"
+            android:src="@drawable/chatview_btnface" />
+
+        <EditText
+            android:id="@+id/cx_fa_widget_input_panel__layout1_textedit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="7dp"
+            android:layout_weight="2"
+     		android:padding="7dip"
+            android:gravity="center_vertical"
+            android:textColor="#bb000000"
+            android:background="@drawable/edittext_bg_normal"
+            android:ems="8"
+            android:textSize="16sp"
+            android:maxHeight="100dp"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/cx_fa_widget_input_panel__layout1_button3"
+            android:layout_width="wrap_content"
+            android:layout_height="38dip"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0"
+            android:background="@android:color/transparent"
+            android:src="@drawable/chat_buttonsend" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cx_fa_widget_input_panel__layout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/cx_fa_bg_chat_input_backplane"
+        android:clickable="false"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp" >
+
+        <ImageButton
+            android:id="@+id/cx_fa_widget_input_panel__layout2_button3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0"
+            android:background="@android:color/transparent"
+            android:src="@drawable/cx_fa_inputpanel_soundeffect_btn" />
+
+<!--         <ImageButton
+            android:id="@+id/cx_fa_widget_input_panel__layout2_button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0"
+            android:background="@android:color/transparent"
+            android:src="@drawable/chatview_btnface" /> -->
+
+        <LinearLayout
+            android:id="@+id/cx_fa_widget_input_panel_layout2_record_btn_linearlayout"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dip" >
+
+           <!--   <Button
+                android:id="@+id/cx_fa_widget_input_panel__layout2_button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:focusable="true"
+                android:background="@drawable/chatview_voice"
+                android:textColor="@color/cx_fa_co_reminder_tip_deep_gray"
+                android:text="按住说话"
+                android:textSize="15sp"
+                /> --> 
+                
+                <Button 
+                    android:clickable="false"
+                	android:focusable="true"
+		    	    android:id="@+id/cx_fa_widget_input_panel__layout2_button2"
+		    	    android:text="按住说话"
+		    	    style="@style/cx_fa_style_white_button_text"
+		    	    android:textColor="@color/cx_fa_co_reminder_tip_deep_gray"
+		    	    android:textSize="15sp"
+		            android:layout_width="match_parent"
+		            android:background="@drawable/chatview_voice"
+		    		android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/cx_fa_widget_input_panel__layout2_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="38dip"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/chatview_text_btn" />
+    </LinearLayout>
+
+    <include layout="@layout/cx_fa_widget_input_panel_layout5" />
+
+    <LinearLayout
+        android:id="@+id/cx_fa_widget_input_panel__layout3"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:alpha="1"
+        android:background="@color/cx_fa_co_widget_background"
+        android:orientation="vertical" >
+
+        <include layout="@layout/cx_fa_widget_input_panel_phrase" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cx_fa_widget_input_panel__layout4"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:alpha="1"
+        android:background="@color/cx_fa_co_widget_background"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/cx_fa_widget_input_panel_face_layout"
+            layout="@layout/cx_fa_widget_input_panel_face" />
+    </LinearLayout><!-- 表情 -->
+    
+    <LinearLayout
+        android:id="@+id/cx_fa_widget_input_panel__layout6"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:alpha="1"
+        android:background="@color/cx_fa_co_widget_background"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/cx_fa_widget_input_panel_guess_layout"
+            layout="@layout/cx_fa_widget_input_panel_guess" />
+    </LinearLayout>	<!-- 猜拳 -->
+    
+    <LinearLayout
+        android:id="@+id/cx_fa_widget_input_panel__layout7"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:alpha="1"
+        android:background="@color/cx_fa_co_widget_background"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/cx_fa_widget_input_panel_sound_layout"
+            layout="@layout/cx_fa_widget_input_panel_voice" />
+    </LinearLayout> <!-- 语音变声-->
+
+</LinearLayout>

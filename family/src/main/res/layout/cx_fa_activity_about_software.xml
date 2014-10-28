@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?> <!-- 关于界面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#e4d5cc"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        layout="@layout/cx_fa_activity_title" />
+
+    <ImageView
+        android:id="@+id/cx_fa_setting_about_img"
+        android:layout_width="150dip"
+        android:layout_height="81dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dip"
+        android:src="@drawable/cx_fa_app_other_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dip"
+        android:layout_marginTop="15dip"
+        android:layout_weight="0"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/toHelp"
+                style="@style/cx_fa_style_about_software_button"
+                android:layout_marginTop="30dip"
+                android:layout_width="180dip"
+                android:layout_height="50dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:textSize="13sp"
+                android:text="@string/cx_fa_to_help" />
+
+            <Button
+                android:id="@+id/toUserProtocal"
+                style="@style/cx_fa_style_about_software_button"
+                android:layout_marginTop="5dip"
+                android:layout_width="180dip"
+                android:layout_height="50dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:textSize="13sp"
+                android:text="@string/cx_fa_user_protocol_text" />
+
+            <Button
+                android:id="@+id/toUpdateSoftware"
+                style="@style/cx_fa_style_about_software_button"
+                android:layout_marginTop="5dip"
+                android:layout_width="180dip"
+                android:layout_height="50dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:textSize="13sp"
+                android:text="@string/cx_fa_current_version_number" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="7dip"
+            android:layout_weight="0"
+            android:text="@string/cx_fa_no_need_update_version"
+            android:textColor="#7e7e7e"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dip"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cx_fa_community"
+            android:textColor="#80000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:text="@string/cx_fa_copyright"
+            android:textColor="#80000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

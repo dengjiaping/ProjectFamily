@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 孩子空间 by wentong.men -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/cx_fa_activity_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#eaf1d7"
+            android:gravity="center_horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <com.chuxin.family.widgets.ScrollableListView
+                    android:id="@+id/cx_fa_kids_fragment_slv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@null" />
+
+                <LinearLayout
+                    android:id="@+id/cx_fa_kids_home_no_feed_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/cx_fa_kids_home_no_feed_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:text="@string/cx_fa_kids_home_no_feed_text"
+                        android:textColor="#80000000"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/cx_fa_kids_home_no_feed_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dip"
+                        android:layout_marginTop="15dip"
+                        android:background="@drawable/cx_fa_setting_version_bg"
+                        android:gravity="center"
+                        android:shadowColor="#50000000"
+                        android:shadowDx="0"
+                        android:shadowDy="2"
+                        android:shadowRadius="2"
+                        android:text="现在开始"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cx_fa_neighbour_homepage_send_reply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical" >
+
+                <com.chuxin.family.widgets.CxInputPanel
+                    android:id="@+id/cx_fa_widget_input_layer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+                <!-- 为标签预留 -->
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/cx_fa_kids_fragment_record_relativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <include
+                    android:id="@+id/cx_fa_kids_fragment_record_include"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    layout="@layout/cx_fa_dialog_chat_record"
+                    android:background="@color/cx_fa_co_background_grey"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+</LinearLayout>

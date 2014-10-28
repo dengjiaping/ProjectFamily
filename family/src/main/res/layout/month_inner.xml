@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dip"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dip"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                 android:id="@+id/btn_pre_month_ll"
+                android:layout_width="30dip"
+                android:layout_height="match_parent"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/btn_pre_month"
+                    android:layout_width="11dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/table_front_accessory_arrow_left" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:gravity="center_vertical"
+                android:text="2014.01"
+                android:textColor="#696969"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:id="@+id/btn_next_month_ll"
+                android:layout_width="30dip"
+                android:layout_height="match_parent"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/btn_next_month"
+                    android:layout_width="11dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/table_front_accessory_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_today"
+            android:layout_width="30dip"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+             >
+
+            <TextView      
+                android:id="@+id/btn_today_tv"        
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="right"
+                android:text="今"
+                android:textColor="#eba179"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="13dip"
+                android:layout_height="1dip"
+                android:layout_below="@id/btn_today_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="1dip"
+                android:background="#eba179" />
+        </RelativeLayout>
+
+        <LinearLayout 
+            android:id="@+id/btn_detail"
+            android:layout_width="30dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dip"
+            android:gravity="center">
+        
+        
+        <TextView            
+            android:id="@+id/btn_detail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"           
+            android:text="详"
+            android:textColor="#696969"
+            android:textSize="16sp" />
+        
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#eba179" />
+
+    <!--
+         <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dip"
+        android:gravity="center_vertical"
+        android:background="#f8f8f8" >
+        
+        
+         <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="一"
+                android:textColor="#696969"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="二"
+                android:textColor="#696969"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="三"
+                android:textColor="#696969"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="四"
+                android:textColor="#696969"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="五"
+                android:textColor="#696969"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="六"
+                android:textColor="#eba179"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="日"
+                android:textColor="#eba179"
+                android:textSize="12sp" />
+        
+        
+    </LinearLayout>
+    -->
+
+    <com.squareup.timessquare.CalendarGridView
+        android:id="@+id/calendar_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f8f8f8" >
+
+        <com.squareup.timessquare.CalendarRowView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="7dip"
+                android:text="一"
+                android:textColor="#696969"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="7dip"
+                android:text="二"
+                android:textColor="#696969"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="7dip"
+                android:text="三"
+                android:textColor="#696969"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="7dip"
+                android:text="四"
+                android:textColor="#696969"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="7dip"
+                android:text="五"
+                android:textColor="#696969"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="7dip"
+                android:text="六"
+                android:textColor="#eba179"
+                android:textSize="12sp" />
+
+            <TextView
+                style="@style/CalendarCell.DayHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="7dip"
+                android:text="日"
+                android:textColor="#eba179"
+                android:textSize="12sp" />
+        </com.squareup.timessquare.CalendarRowView>
+
+        <!-- <com.squareup.timessquare.CalendarRowView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="#696969" />
+        </com.squareup.timessquare.CalendarRowView> -->
+
+        <include layout="@layout/week" />
+
+        <include layout="@layout/week" />
+
+        <include layout="@layout/week" />
+
+        <include layout="@layout/week" />
+
+        <include layout="@layout/week" />
+
+        <include layout="@layout/week" />
+    </com.squareup.timessquare.CalendarGridView>
+
+</LinearLayout>

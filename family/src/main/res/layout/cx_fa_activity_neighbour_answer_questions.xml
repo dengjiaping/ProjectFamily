@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 谁家最聪明答题界面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/cx_fa_answer_question_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="400dip"
+        android:layout_margin="20dip"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/talent_answerpage"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/talent_answerpage"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:background="@drawable/cx_fa_neighbour_answer_question_title_bg"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:id="@+id/cx_fa_answer_question_title_time_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dip" >
+
+                        <TextView
+                            android:id="@+id/cx_fa_answer_question_title_time_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="10dip"
+                            android:text="15"
+                            android:textColor="#f5d210"
+                            android:textSize="30sp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="秒"
+                            android:textColor="#f5d210"
+                            android:textSize="30sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/cx_fa_answer_question_title_next_question_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="下一道题..."
+                        android:textColor="#f5d210"
+                        android:textSize="30sp"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginBottom="5dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="还剩"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/cx_fa_answer_question_title_number_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="道题"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/cx_fa_answer_question_title_close_iv"
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:src="@drawable/cx_fa_neighbour_answer_question_finish" />
+            </LinearLayout>
+            <!-- 倒计时等 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dip"
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="30dip"
+                android:layout_marginTop="10dip"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="145dip"
+                    android:background="@drawable/talent_questionbox"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="15dip" >
+					<ScrollView 
+					    android:scrollbars="none"
+					    android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/cx_fa_answer_question_topic_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cx_fa_answer_question_topic_default"
+                        android:textColor="#37322f"
+                        android:textSize="15sp" />
+                    </ScrollView>
+                </LinearLayout>
+                <!-- 问题 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dip"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/cx_fa_answer_question_result_a_layout_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/cx_fa_answer_question_result_a_layout_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dip"
+                            android:background="@drawable/talent_btn_answer"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="18dip"
+                                android:layout_height="18dip"
+                                android:layout_marginLeft="15dip"
+                                android:src="@drawable/talent_answer_a" />
+
+                            <TextView
+                                android:id="@+id/cx_fa_answer_question_result_a_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dip"
+                                android:layout_weight="1"
+                                android:textColor="#37322f"
+                                android:textSize="15sp" />
+
+                            <ImageView
+                                android:id="@+id/cx_fa_answer_question_result_a_iv"
+                                android:layout_width="18dip"
+                                android:layout_height="18dip"
+                                android:layout_marginLeft="10dip"
+                                android:layout_marginRight="15dip"
+                                android:src="@drawable/talent_answer_right"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- A -->
+
+                    <LinearLayout
+                        android:id="@+id/cx_fa_answer_question_result_b_layout_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/cx_fa_answer_question_result_b_layout_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dip"
+                            android:background="@drawable/talent_btn_answer"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="18dip"
+                                android:layout_height="18dip"
+                                android:layout_marginLeft="15dip"
+                                android:src="@drawable/talent_answer_b" />
+
+                            <TextView
+                                android:id="@+id/cx_fa_answer_question_result_b_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dip"
+                                android:layout_weight="1"
+                                android:textColor="#37322f"
+                                android:textSize="15sp" />
+
+                            <ImageView
+                                android:id="@+id/cx_fa_answer_question_result_b_iv"
+                                android:layout_width="18dip"
+                                android:layout_height="18dip"
+                                android:layout_marginLeft="10dip"
+                                android:layout_marginRight="15dip"
+                                android:src="@drawable/talent_answer_right"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- B -->
+
+                    <LinearLayout
+                        android:id="@+id/cx_fa_answer_question_result_c_layout_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/cx_fa_answer_question_result_c_layout_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dip"
+                            android:background="@drawable/talent_btn_answer"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="18dip"
+                                android:layout_height="18dip"
+                                android:layout_marginLeft="15dip"
+                                android:src="@drawable/talent_answer_c" />
+
+                            <TextView
+                                android:id="@+id/cx_fa_answer_question_result_c_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dip"
+                                android:layout_weight="1"
+                                android:textColor="#37322f"
+                                android:textSize="15sp" />
+
+                            <ImageView
+                                android:id="@+id/cx_fa_answer_question_result_c_iv"
+                                android:layout_width="18dip"
+                                android:layout_height="18dip"
+                                android:layout_marginLeft="10dip"
+                                android:layout_marginRight="15dip"
+                                android:src="@drawable/talent_answer_right"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- C -->
+
+                    <LinearLayout
+                        android:id="@+id/cx_fa_answer_question_result_d_layout_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dip"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/cx_fa_answer_question_result_d_layout_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dip"
+                            android:background="@drawable/talent_btn_answer"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="18dip"
+                                android:layout_height="18dip"
+                                android:layout_marginLeft="15dip"
+                                android:src="@drawable/talent_answer_d" />
+
+                            <TextView
+                                android:id="@+id/cx_fa_answer_question_result_d_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dip"
+                                android:layout_weight="1"
+                                android:textColor="#37322f"
+                                android:textSize="15sp" />
+
+                            <ImageView
+                                android:id="@+id/cx_fa_answer_question_result_d_iv"
+                                android:layout_width="18dip"
+                                android:layout_height="18dip"
+                                android:layout_marginLeft="10dip"
+                                android:layout_marginRight="15dip"
+                                android:src="@drawable/talent_answer_wrong"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- D -->
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/cx_fa_answer_question_result_right_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"
+             >
+
+            <ImageView
+                android:id="@+id/cx_fa_answer_question_shine_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/talent_shine" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="30dip" 
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:src="@drawable/talent_word_ten" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+			   		android:src="@drawable/talent_word_right" />
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+</LinearLayout>

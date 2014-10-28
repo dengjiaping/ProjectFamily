@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/cx_fa_widget_face_cell__image"
+        android:layout_width="@dimen/cx_fa_dimen_chat_faceimage_w"
+        android:layout_height="@dimen/cx_fa_dimen_chat_faceimage_h"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/cx_fa_widget_face_cell__text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</LinearLayout>

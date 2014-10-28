@@ -1,0 +1,333 @@
+<!-- 备忘资料 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_height="match_parent"
+    android:layout_width="match_parent" android:background="#e4e4ea">
+    <RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/navi_topbar"
+	    android:gravity="center_vertical"
+	    android:layout_weight="0"
+	    android:id="@+id/cx_fa_mate_edit_navi_layout"
+	    >
+	
+	    <ImageButton android:layout_alignParentLeft="true"
+	        android:id="@+id/cx_fa_mate_menu"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dip"
+	        android:background="@drawable/cx_fa_menu_btn"
+	        android:textSize="16sp"
+	        android:paddingLeft="11dp"
+	        android:visibility="visible" />
+	
+	    <TextView 
+	        android:id="@+id/cx_fa_mate_title_info"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@android:color/white"
+	        android:textSize="22sp" android:text="@string/cx_fa_role_mateprofile_title"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="3dp"
+	        />
+	
+	        <Button
+                android:id="@+id/cx_fa_mate_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dip"
+                android:background="@drawable/cx_fa_title_right_btn_bg"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/cx_fa_co_navi_button_text"
+                android:textSize="16sp"
+                android:text="@string/cx_fa_nls_mateprofile_edit_title"
+                />
+	
+	</RelativeLayout><!-- 编辑界面的标题 -->
+    
+
+	
+	    <LinearLayout
+		    android:layout_width="match_parent" 
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:layout_weight="1">    
+		    
+	        <include layout="@layout/cx_fa_activity_title" android:layout_width="match_parent"
+	        	android:layout_height="wrap_content" android:layout_weight="0" 
+	        	android:visibility="gone" /><!-- 个人资料界面标题 -->
+	    
+	    
+	        <ScrollView
+	    	android:layout_width="match_parent"
+	    	android:layout_height="match_parent">
+	    	
+	          <LinearLayout
+	              	android:layout_width="match_parent"
+	    			android:layout_height="match_parent"
+	    			android:orientation="vertical">
+	        <LinearLayout
+	             	android:id="@+id/mateprofile_imageView_layout"
+				    android:layout_width="match_parent" android:layout_gravity="center_horizontal|top"
+				    android:layout_height="match_parent"   
+				    android:layout_marginLeft="15dip" android:layout_marginRight="15dip"
+				    android:layout_marginTop="15dp"
+				    android:background="@drawable/cx_fa_mate_headimg_bg_border"
+				    android:orientation="vertical" android:gravity="center_horizontal|top">
+		
+				    <com.chuxin.family.image.RoundAngleImageView
+				        android:id="@+id/mateprofile_imageView"
+				        android:layout_width="match_parent"
+				        android:layout_height="match_parent"
+				        android:scaleType="centerCrop"
+				        android:src="@drawable/cx_fa_role_memo_imagedefault"
+				        android:background="@drawable/cx_fa_dr_corner_rect_bottom_part" 
+				        android:visibility="gone"
+				        app:roundWidth="8dp"
+				        app:roundHeight="8dp"
+				        app:leftDown="false"
+				        app:rightDown="false"
+				        
+				        />
+		    </LinearLayout>
+		    	
+	        
+		  
+		    <LinearLayout
+			    android:layout_width="match_parent" android:layout_gravity="center_horizontal|top"
+			    android:layout_height="match_parent" android:gravity="center_horizontal|top"
+			    android:background="@drawable/cx_fa_dr_corner_rect_bottom_part"
+			    android:layout_marginLeft="15dip" android:layout_marginRight="15dip"
+			    android:layout_marginBottom="10dp"
+			    android:orientation="vertical">
+			
+		        <LinearLayout android:layout_weight="1"
+			        android:layout_width="match_parent" 
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal"
+			        android:layout_alignParentLeft="true">
+		
+			        <TextView android:clickable="false"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="10dp"
+			            android:layout_marginTop="10dp"
+			            android:layout_marginBottom="10dp"
+			            android:text="@string/cx_fa_nls_mateprofile_item_name"
+			            android:textColor="@color/cx_fa_co_grey"
+			            android:layout_gravity="top"
+			            android:textSize="16sp" />
+		            
+		            	<EditText android:clickable="false"
+		                    android:id="@+id/mateprofile_nickname_value"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+		                    android:layout_marginLeft="10dp"
+			            android:layout_marginTop="10dp"
+			            android:layout_marginBottom="10dp"	     
+			            android:layout_marginRight="5dp"
+			            android:textColor="@color/cx_fa_co_near_black"
+			            android:textSize="16sp"
+			            android:gravity="top"
+			            android:background="@null"/>
+			</LinearLayout>	<!-- 昵称 -->
+			<View android:layout_width="match_parent" android:layout_height="1dip" android:background="#e4e4ea" />
+			
+			<LinearLayout android:layout_weight="1"
+			        android:layout_width="match_parent" 
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal"
+			        android:layout_alignParentLeft="true">
+		
+			       	<TextView android:clickable="false"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="10dp"
+			            android:layout_marginTop="10dp"
+			            android:layout_marginBottom="10dp"
+			            android:text="@string/cx_fa_nls_mateprofile_item_birth"
+			            android:textColor="@color/cx_fa_co_grey"
+			            android:layout_gravity="top"
+			            android:textSize="16sp" />
+		            
+		            	<EditText android:clickable="false"
+		                    android:id="@+id/mateprofile_birthday_value"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+		                    android:layout_marginLeft="10dp"
+			            android:layout_marginTop="10dp"
+			            android:layout_marginBottom="10dp"	     
+			            android:layout_marginRight="5dp"
+			            android:textColor="@color/cx_fa_co_near_black"
+			            android:textSize="16sp"
+			            android:gravity="top"
+			            android:background="@null"/>
+		            	
+		            	<TextView android:clickable="false"
+		            	    android:id="@+id/mateprofile_date_value"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="10dp"
+			            android:layout_marginTop="10dp"
+			            android:layout_marginBottom="5dp"	            
+			            android:layout_marginRight="5dp"
+			            android:textColor="@color/cx_fa_co_grey"
+			            android:textSize="16sp" 
+			            android:visibility="gone"
+			            android:background="@null"/>
+		            
+				<ImageView
+				        android:id="@+id/mateprofile_birthday_value__icon"
+				        android:layout_marginTop="10dp"
+				        android:layout_marginRight="5dp"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="5dp"
+				        android:visibility="gone"/>               
+			</LinearLayout>		<!-- 生日 -->
+			<View android:layout_width="match_parent" android:layout_height="1dip" android:background="#e4e4ea" />
+			
+			<LinearLayout android:layout_weight="1"
+			    	android:id="@+id/mateprofile_item_sign_layout"
+			        android:layout_width="match_parent" 
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal"
+			        android:layout_alignParentLeft="true">
+		
+			       	<TextView android:clickable="false"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="10dp"
+			            android:layout_marginTop="10dp"
+			            android:layout_marginBottom="10dp"
+			            android:text="@string/cx_fa_nls_mateprofile_item_sign"
+			            android:textColor="@color/cx_fa_co_grey"
+			            android:layout_gravity="top"
+			            
+			            android:textSize="16sp" />
+		            
+		            	<EditText android:clickable="false"
+		                    android:id="@+id/mateprofile_sign_value"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+		                    android:layout_marginLeft="10dp"
+			            android:layout_marginTop="10dp"
+			            android:layout_marginBottom="10dp"	     
+			            android:layout_marginRight="5dp"
+			            android:textColor="@color/cx_fa_co_near_black"
+			            android:textSize="16sp"
+			            android:gravity="top"
+			            android:background="@null"/>
+		            
+				<ImageView
+				        android:id="@+id/mateprofile_sign_value__icon"
+				        android:layout_marginTop="10dp"
+				        android:layout_marginRight="5dp"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_marginLeft="5dp"
+				        android:visibility="gone"/>               
+			</LinearLayout>		<!-- 星座 -->
+			<View 	android:id="@+id/mateprofile_item_sign_bottomLine"
+			    	android:layout_width="fill_parent" android:layout_height="1dip" android:background="#e4e4ea" />
+			
+			<LinearLayout android:layout_weight="1"
+			        android:id="@+id/mateprofile_item_layout"
+			        android:layout_width="match_parent" 
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal"
+			        android:layout_alignParentLeft="true">
+		
+			       	<TextView android:clickable="false"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="10dp"
+			            android:layout_marginTop="10dp"
+			            android:layout_marginBottom="10dp"
+			            android:text="@string/cx_fa_nls_mateprofile_item_mobile"
+			            android:textColor="@color/cx_fa_co_grey"
+			            android:layout_gravity="top"
+			            android:textSize="16sp" />
+		            
+		            	<EditText android:clickable="false"
+		                    android:id="@+id/mateprofile_mobile_value"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+		                    android:layout_marginLeft="10dp"
+			            android:layout_marginTop="10dp"
+			            android:layout_marginBottom="10dp"	     
+			            android:layout_marginRight="5dp"
+			            android:textColor="@color/cx_fa_co_near_black"
+			            android:textSize="16sp"
+			            android:gravity="top"
+			            android:background="@null"/>
+		            
+			</LinearLayout>		<!-- 手机 -->
+			<View android:layout_width="match_parent" android:layout_height="1dip" android:background="#e4e4ea" />
+			
+		        <LinearLayout
+				    android:id="@+id/mateprofile_layout"
+				    android:layout_width="match_parent" android:layout_gravity="center_horizontal|top"
+				    android:layout_height="match_parent"   
+				    android:orientation="vertical" android:gravity="center_horizontal|top">
+			    
+		    	</LinearLayout>		<!-- 自定义属性 -->
+		    	
+		    	<LinearLayout android:layout_weight="1"
+			        android:layout_width="match_parent" 
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal"
+			        android:layout_alignParentLeft="true">
+		
+			       	<TextView android:clickable="false"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginLeft="10dp"
+			            android:layout_marginTop="10dp"
+			            android:layout_marginBottom="10dp"
+			            android:text="@string/cx_fa_nls_mateprofile_item_note"
+			            android:textColor="@color/cx_fa_co_grey"
+			            android:layout_gravity="top"
+			            android:textSize="16sp" />
+		            
+		            	<EditText android:clickable="false"
+		                    android:id="@+id/mateprofile_note_value"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+		                    android:layout_marginLeft="10dp"
+			            android:layout_marginTop="10dp"
+			            android:layout_marginBottom="10dp"	     
+			            android:layout_marginRight="5dp"
+			            android:textColor="@color/cx_fa_co_near_black"
+			            android:textSize="16sp"
+			            android:gravity="top"
+			            android:minLines="5"
+			            android:background="@null"/>
+		            
+			</LinearLayout>		<!-- 备注 -->
+		   </LinearLayout>
+			
+		    <!-- 底部 添加更多 按钮 -->
+		    <ImageButton
+		        android:layout_marginLeft="15dp"
+		         android:layout_marginRight="15dip"
+		            android:layout_marginTop="5dp"
+		            android:id="@+id/cx_fa_edit_mate_profile__add"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:background="@color/cx_fa_co_transparent"
+		            android:visibility="gone"
+		            android:scaleType="centerInside"
+		            android:src="@drawable/memo_btnadd" />
+		    
+		    </LinearLayout>  
+		   </ScrollView>
+		    
+		</LinearLayout>
+
+    
+</LinearLayout>
+

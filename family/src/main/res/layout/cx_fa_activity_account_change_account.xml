@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 记账记一笔及修改页面UI -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cx_fa_co_background_grey"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/cx_fa_activity_title" />
+
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="20dip"
+            android:background="#e4e4ea" >
+
+            <LinearLayout
+                android:id="@+id/cx_fa_accounting_account_out_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="1dip"
+                android:layout_weight="1"
+                android:background="@drawable/cx_fa_accounting_homepage_detail_bg_white"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/cx_fa_accounting_account_tv_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:gravity="center"
+                    android:text="@string/cx_fa_accounting_out"
+                    android:textColor="#eba179"
+                    android:textSize="18sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cx_fa_accounting_account_in_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginLeft="1dip"
+                android:layout_weight="1"
+                android:background="@drawable/cx_fa_accounting_homepage_detail_bg_gray"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/cx_fa_accounting_account_tv_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:gravity="center"
+                    android:text="@string/cx_fa_accounting_in"
+                    android:textColor="#37322f"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dip" />
+            </LinearLayout>
+        </LinearLayout><!-- 收入和支出的标签 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="-10dip"
+            android:background="@drawable/cx_fa_accounting_homepage_bg_white_no_stroke"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/cx_fa_accounting_account_money_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cx_fa_neighbour_reply_background"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="5dip" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_weight="1"
+                    android:text="@string/cx_fa_accounting_account_money"
+                    android:textColor="#37322f"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:clickable="false"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal" > 
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="#ff0000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/cx_fa_accounting_account_money_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="0"
+                        android:gravity="center_vertical"              
+                        android:layout_gravity="center_vertical"
+                        android:clickable="false"
+                                       
+                        android:cursorVisible="false"                    
+                        android:inputType="phone"
+                        android:textColor="#ff0000"
+                        android:textColorHint="#ff0000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout> 
+
+                <ImageView
+                    android:layout_width="14dip"
+                    android:layout_height="14dip"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="8dip"
+                    android:src="@drawable/table_front_accessory_arrow" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4ea" />
+
+            <LinearLayout
+                android:id="@+id/cx_fa_accounting_account_category_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cx_fa_neighbour_reply_background"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_weight="1"
+                    android:text="@string/cx_fa_accounting_account_category"
+                    android:textColor="#37322f"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/cx_fa_accounting_account_category_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/cx_fa_accounting_category_in_wages_short"
+                    android:textColor="#37322f"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="14dip"
+                    android:layout_height="14dip"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="8dip"
+                    android:src="@drawable/table_front_accessory_arrow" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4ea" />
+
+            <LinearLayout
+                android:id="@+id/cx_fa_accounting_account_from_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cx_fa_neighbour_reply_background"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_weight="1"
+                    android:text="@string/cx_fa_accounting_account_from"
+                    android:textColor="#37322f"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/cx_fa_accounting_account_from_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="@string/cx_fa_accounting_account_me"
+                    android:textColor="#37322f"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="14dip"
+                    android:layout_height="14dip"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="8dip"
+                    android:src="@drawable/table_front_accessory_arrow" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4ea" />
+
+            <LinearLayout
+                android:id="@+id/cx_fa_accounting_account_date_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cx_fa_neighbour_reply_background"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_weight="1"
+                    android:text="@string/cx_fa_accounting_account_date"
+                    android:textColor="#37322f"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/cx_fa_accounting_account_date_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="2013-11-07"
+                    android:textColor="#37322f"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="14dip"
+                    android:layout_height="14dip"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="8dip"
+                    android:src="@drawable/table_front_accessory_arrow" />
+            </LinearLayout>
+        </LinearLayout><!-- 金额等四条 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="20dip"
+            android:background="@null" >
+
+            <EditText
+                android:id="@+id/cx_fa_accounting_account_remark_tv"
+                android:layout_width="match_parent"
+                android:layout_height="120dip"
+                android:background="@drawable/cx_fa_accounting_homepage_bg_white_no_stroke"
+                android:gravity="top|left"
+                android:height="150dip"
+                android:hint="@string/cx_fa_accounting_account_remark"
+                android:maxLines="10"
+                android:padding="8dip"
+                android:textColor="#b4b4b4"
+                android:textSize="14sp" />
+        </LinearLayout><!-- 备注 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="30dip" >
+
+            <Button
+                android:id="@+id/cx_fa_accounting_change_account_delete"
+                style="@style/cx_fa_style_orange_button_text"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/neighbour_btnorange"
+                android:text="@string/cx_fa_accounting_account_delete"
+                android:textColor="@color/cx_fa_co_btn_brown_text"
+                android:textSize="16sp" />
+        </LinearLayout><!-- 删除按钮 -->
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

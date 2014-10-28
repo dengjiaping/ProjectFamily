@@ -1,0 +1,39 @@
+<!-- 邀请列表界面-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    
+    >
+    <LinearLayout android:background="@drawable/cx_fa_bg_white_corner_rect_with_grey_border"
+    android:orientation="vertical" android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    >
+    <com.chuxin.family.widgets.CxImageView android:id="@+id/invited_person_head"
+        android:layout_width="64dip" android:layout_height="64dip" 
+        android:layout_weight="0" android:src="@drawable/cx_fa_hb_icon_small"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dip"/>
+    <TextView android:id="@+id/invited_person_name" android:gravity="center_horizontal"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:singleLine="true" android:layout_marginTop="10dip" 
+        android:layout_marginBottom="10dip" android:textSize="18sp"/>
+    
+    <Button android:text="@string/cx_fa_comfirm_pair" android:id="@+id/comfirm_pair"
+         android:layout_width="match_parent" android:layout_height="wrap_content"
+         android:background="@drawable/btn_orange" style="@style/cx_fa_style_orange_button_text"
+         android:layout_weight="1" android:gravity="center" 
+         android:textSize="20sp"
+         android:layout_marginLeft="14dip" android:layout_marginRight="14dip"
+         android:layout_marginBottom="5dip"
+         android:paddingTop="10dp" android:paddingBottom="10dp"/>
+    
+</LinearLayout>
+
+    <ImageButton android:id="@+id/cancel_pair"
+        android:background="@drawable/remind_input_x"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        />
+</FrameLayout>

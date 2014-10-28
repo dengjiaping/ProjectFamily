@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 记账首页 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cx_fa_co_background_grey"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/cx_fa_activity_title" />
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cx_fa_co_background_grey" >
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cx_fa_co_background_grey"
+            android:orientation="vertical" >
+
+            <!-- <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dip"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/accounting_homepage_image" />
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                
+                <LinearLayout
+                    android:layout_width="90dip"
+                    android:layout_height="90dip"
+                    android:layout_marginLeft="30dip"
+                    android:layout_marginTop="35dip"
+                    android:background="@drawable/accounting_databack"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/cx_fa_accounting_homepage_title_tv_year_and_month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dip"
+                        android:layout_marginTop="5dip"
+                        android:gravity="center"
+                        android:text="2013年11月"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="60dip"
+                        android:layout_height="50dip"
+                        android:layout_marginBottom="-7dip"
+                        android:layout_marginTop="-7dip"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/cx_fa_accounting_homepage_title_tv_day"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:text="28"
+                            android:textColor="#ffffff"
+                            android:textScaleX="1.3"
+                            android:textSize="32sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/cx_fa_accounting_homepage_title_tv_week"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dip"
+                        android:layout_marginBottom="5dip"
+                        android:gravity="center"
+                        android:text="星期三"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>背景图和今日日期显示 -->
+
+            <com.chuxin.family.widgets.CxCalendarView 
+                android:layout_width="match_parent"
+                android:layout_height="400dp"/>
+            
+
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

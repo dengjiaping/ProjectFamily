@@ -1,0 +1,140 @@
+<!-- 密邻 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+         android:id="@+id/nb_homepage_title"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/navi_topbar"
+         android:gravity="center"
+         android:orientation="horizontal"
+         >
+
+        <LinearLayout
+             android:layout_height="wrap_content" android:layout_width="0dip"
+             android:layout_weight="1"
+             >
+	         <ImageButton
+	             android:id="@+id/nb_homepage_title_menubtn"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:layout_marginLeft="3dip"
+	             android:background="@drawable/cx_fa_menu_btn"
+	             android:clickable="true"
+	             android:visibility="visible" />
+        </LinearLayout>
+            
+        <TextView
+         android:id="@+id/nb_homepage_title_text"
+         android:layout_width="0dip"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:ellipsize="end" android:text="@string/cx_fa_nls_neighbour_homepage"
+         android:layout_gravity="center"
+         android:gravity="center"
+         android:singleLine="true"
+         android:textColor="@color/cx_fa_co_white"
+         android:textSize="20sp" />
+
+         <LinearLayout android:orientation="horizontal" 
+             android:id="@+id/main_title_right_layout"
+             android:layout_height="wrap_content" android:layout_width="0dip"
+             android:layout_weight="1"
+             android:gravity="right|center_vertical"
+             >
+             
+             <ImageButton
+              android:id="@+id/nb_homepage_title_addinvitation"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginRight="2dip"
+              android:background="@drawable/cx_fa_zone_shareimage_btn"
+              />
+             
+             <ImageButton
+              android:id="@+id/nb_homepage_title_neighbours"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginRight="3dip"
+              android:background="@drawable/cx_fa_nb_neighbours_btn"
+              />
+
+          
+          
+         </LinearLayout>
+         
+     </LinearLayout>
+    
+    
+     <FrameLayout
+        android:id="@+id/cx_fa_view_chat_chating_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" >
+    
+    
+	    <FrameLayout android:layout_weight="1"
+		    android:gravity="center_horizontal"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" 
+
+		    android:background="#e4e4ea"
+		    >
+			<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+			    android:orientation="vertical">
+			    <com.chuxin.family.widgets.ScrollableListView android:layout_width="match_parent" 
+			        android:layout_height="wrap_content" android:id="@+id/nb_homepage_content_ListView"
+			        android:divider="@null" android:cacheColorHint="#00000000"
+			        android:layout_weight="0"
+			        />
+			  <!--   <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+			        android:gravity="top|left" android:paddingTop="30dp" 
+			        android:layout_weight="1" android:id="@+id/cx_fa_zone_no_feed"
+			        android:text="@string/cx_fa_zone_no_feed_tip" 
+			        android:textColor="@android:color/darker_gray"
+			        android:paddingLeft="15dp" android:paddingRight="15dp"/> -->
+			</LinearLayout>
+		    
+		    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+		        android:layout_height="wrap_content" android:layout_gravity="bottom" 
+		        android:id="@+id/cx_fa_neighbour_homepage_send_reply">
+		        <com.chuxin.family.widgets.CxInputPanel
+		            android:id="@+id/cx_fa_widget_input_layer"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:visibility="gone"
+		            />
+			    <!-- 为标签预留 -->
+		    </LinearLayout>
+		    
+		</FrameLayout>
+		
+	    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" >
+
+            <RelativeLayout
+                android:id="@+id/cx_fa_view_neighbour_record_relativelayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="invisible" >
+
+                <include
+                    android:id="@+id/cx_fa_view_neighbour_record_include"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    layout="@layout/cx_fa_dialog_chat_record"
+                    android:background="@color/cx_fa_co_background_grey"
+                    android:visibility="visible" />
+                </RelativeLayout>
+
+        </FrameLayout>
+    
+    
+    </FrameLayout>
+    
+</LinearLayout>

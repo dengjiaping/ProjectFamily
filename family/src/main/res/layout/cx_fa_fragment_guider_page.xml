@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?> <!-- 引导页界面 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cx_fa_main_guide_bg"
+    android:orientation="vertical" >
+
+    <!--
+         <ProgressBar style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+    -->
+
+    <com.chuxin.family.widgets.CxImageView
+        android:id="@+id/cx_fa_guider_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cx_fa_role_login_introduction1" />
+
+    <com.chuxin.family.widgets.CxImageView
+        android:id="@+id/cx_fa_guider_imageview2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cx_fa_main_login_launchscreen" />
+
+ <!--    <LinearLayout
+        android:id="@+id/rk_login_layer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:background="@null"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/rk_login_weibo2"
+            android:layout_width="match_parent"
+            android:layout_height="44dip"
+            android:background="@drawable/cx_fa_main_login_weibo_btn_bg"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="22dip"
+                android:layout_height="22dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/cx_fa_main_login_icon_weibo" />
+
+            <TextView
+                android:layout_width="135dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="用微博帐号登录"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rk_login_qq2"
+            android:layout_width="match_parent"
+            android:layout_height="44dip"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dip"
+            android:background="@drawable/cx_fa_main_login_qq_btn_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="22dip"
+                android:layout_height="22dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/cx_fa_main_login_icon_qq" />
+
+            <TextView
+                android:layout_width="135dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:text="用QQ帐号登录"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </LinearLayout> -->
+
+</FrameLayout>

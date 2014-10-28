@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="wizardImages">
+        <item>husbund_wizard1</item>        
+        <item>husbund_wizard2</item>        
+        <item>husbund_wizard3</item>        
+        <item>husbund_wizard4</item>
+    </string-array>
+    
+    <string-array name="cx_fa_strs_reminder_date_custom_displays">
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+        <item>周日</item>
+    </string-array>
+    
+    <string-array name="cx_fa_strs_reminder_date_custom_values">
+        <item>2</item>
+        <item>4</item>
+        <item>8</item>
+        <item>16</item>
+        <item>32</item>
+        <item>64</item>
+        <item>128</item>
+    </string-array>
+
+    <string-array name="cx_fa_strs_reminder_date_weekly_displays">
+        <item>周一</item>
+        <item>周二</item>
+        <item>周三</item>
+        <item>周四</item>
+        <item>周五</item>
+        <item>周六</item>
+        <item>周日</item>
+    </string-array>
+    
+    <string-array name="cx_fa_strs_reminder_date_weekly_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+  
+    <integer-array name="cx_fa_ints_reminder_date_weekly_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </integer-array>
+     
+    <integer-array name="cx_fa_ints_reminder_target_values">
+        <item >2</item>
+        <item >1</item>
+        <item >0</item>
+    </integer-array>
+
+    <string-array name="cx_fa_strs_reminder_target_values">
+        <item >2</item>
+        <item >1</item>
+        <item >0</item>
+    </string-array>
+    
+    <string-array name="cx_fa_strs_reminder_target_displays">
+        <item>给双方看</item>
+        <item>给对方看</item>
+        <item>只给自己看</item>
+    </string-array>
+
+    <integer-array name="cx_fa_ints_reminder_period_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </integer-array>
+
+    <string-array name="cx_fa_strs_reminder_period_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+   
+    <string-array name="cx_fa_strs_reminder_period_displays">
+        <item>提醒一次</item>
+        <item>每天一次</item>
+        <item>每周一次</item>
+        <item>每月一次</item>
+        <item>每年一次</item>
+    </string-array>
+    
+    <string-array name="cx_fa_strs_reminder_advance_displays">
+        <item>不提前</item>
+        <item>提前15分钟</item>
+        <item>提前1小时</item>
+        <item>提前1天</item>
+        <item>提前3天</item>
+        <item>提前5天</item>
+    </string-array>
+    
+    <integer-array name="cx_fa_ints_reminder_advance_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </integer-array>
+    
+    <string-array name="cx_fa_strs_reminder_advance_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    
+    <!-- 以下为记账部分类别名称和对应的传输数字-->
+    <integer-array name="cx_fa_ints_accounting_category_out">
+        <item>100</item>
+        <item>101</item>
+        <item>102</item>
+        <item>103</item>
+        <item>104</item>
+        <item>105</item>
+        <item>106</item>
+        <item>107</item>        
+    </integer-array>
+    
+    <integer-array name="cx_fa_ints_accounting_category_in">
+        <item>200</item>
+        <item>201</item>
+        <item>202</item>
+        <item>203</item>
+    </integer-array>
+    
+    <integer-array name="cx_fa_ints_accounting_category">
+        <item>100</item>
+        <item>101</item>
+        <item>102</item>
+        <item>103</item>
+        <item>104</item>
+        <item>105</item>
+        <item>106</item>
+        <item>107</item> 
+        <item>200</item>
+        <item>201</item>
+        <item>202</item>
+        <item>203</item>
+    </integer-array>
+    
+   
+    
+    <string-array name="cx_fa_strs_accounting_category_out">
+        <item>居家物业</item>
+        <item>交通通讯</item>
+        <item>餐饮零食</item>
+        <item>休闲娱乐</item>
+        <item>商品购物</item>
+        <item>医疗教育</item>
+        <item>金融保险</item>
+        <item>人情往来</item>
+    </string-array>
+    
+    <string-array name="cx_fa_strs_accounting_category_in">
+        <item>工资薪酬</item>
+        <item>奖金补贴</item>
+        <item>投资理财</item>
+        <item>其它收入</item>
+    </string-array>
+    
+    <string-array name="cx_fa_strs_accounting_category">
+        <item>居家物业</item>
+        <item>交通通讯</item>
+        <item>餐饮零食</item>
+        <item>休闲娱乐</item>
+        <item>商品购物</item>
+        <item>医疗教育</item>
+        <item>金融保险</item>
+        <item>人情往来</item>
+        <item>工资薪酬</item>
+        <item>奖金补贴</item>
+        <item>投资理财</item>
+        <item>其它收入</item>
+    </string-array>
+    
+    <integer-array name="cx_fa_ints_reminder_anniversary_category_values">
+        <item >1</item>
+        <item >0</item>
+    </integer-array>
+
+    <string-array name="cx_fa_strs_reminder_anniversary_category_values">
+        <item >1</item>
+        <item >0</item>
+    </string-array>
+    
+    <string-array name="cx_fa_strs_reminder_anniversary_category_displays">
+        <item>一般纪念日</item>
+        <item>生日</item>
+    </string-array>
+    
+    <integer-array name="cx_fa_ints_reminder_anniversary_target_values">
+        <item >1</item>
+        <item >0</item>
+    </integer-array>
+
+    <string-array name="cx_fa_strs_reminder_anniversary_target_values">
+        <item >1</item>
+        <item >0</item>
+    </string-array>
+    
+    <string-array name="cx_fa_strs_reminder_anniversary_target_displays">
+        <item>给双方看</item>
+        <item>只给自己看</item>
+    </string-array>
+</resources>

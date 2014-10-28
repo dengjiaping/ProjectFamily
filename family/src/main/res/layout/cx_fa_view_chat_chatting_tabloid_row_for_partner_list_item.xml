@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/cx_fa_co_transparent"
+    android:orientation="vertical" 
+    >
+    
+    <TextView
+        android:id="@+id/cx_fa_view_chat_tabloid_row_item_title"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="left"
+	android:textSize="17sp"
+	android:text="@string/cx_fa_tabloid_activity_title"
+	android:textColor="@color/cx_fa_co_black"	
+        />	<!-- 小报标题 -->
+    
+    <TextView
+        android:id="@+id/cx_fa_view_chat_tabloid_row_item_text"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="center"
+	android:text="内容内容"
+	android:textColor="@color/cx_fa_co_black"	
+        />	<!-- 小报内容 -->
+ 	
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chatview_daily_pointline"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        />	<!-- 一条虚线 -->
+    
+    <LinearLayout
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView 
+            android:id="@+id/cx_fa_view_chat_tabloid_row_item_forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cx_fa_role_taboloid_forward"
+            android:textSize="17sp"
+            android:textColor="@color/cx_fa_co_black"
+            android:drawableRight="@drawable/chatview_daily_forward"
+            />		<!-- 转发给老婆 或 老公 -->
+    </LinearLayout>
+
+    <ImageView 
+        android:id="@+id/cx_fa_view_chat_tabloid_row_item_grayline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chatview_daily_grayline"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"
+        />	<!-- 一条实线 -->
+    
+</LinearLayout>

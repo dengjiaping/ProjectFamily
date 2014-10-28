@@ -1,0 +1,2 @@
+int drawable cx_fa_push_icon_big 0x7f020000
+int drawable cx_fa_push_icon_small 0x7f020001

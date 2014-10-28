@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        Release {
+            keyAlias 'xiaojia'
+            keyPassword 'zedcn.com'
+            storeFile file('D:/Keys/Hmammon')
+            storePassword 'zedcn.com'
+        }
+    }
+    compileSdkVersion 21
+    buildToolsVersion '21.0.1'
+    defaultConfig {
+        applicationId 'com.chuxin.family'
+        minSdkVersion 10
+        targetSdkVersion 21
+        signingConfig signingConfigs.Release
+        versionCode 17
+        versionName '2.5.2'
+    }
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+            runProguard false
+            proguardFile 'D:/StudioWorkspace/ProjectFamily/proguard-project.txt'
+            signingConfig signingConfigs.Release
+            debuggable false
+        }
+        debug {
+            runProguard false
+            proguardFile 'D:/StudioWorkspace/ProjectFamily/proguard-project.txt'
+            signingConfig signingConfigs.Release
+            debuggable true
+        }
+    }
+    productFlavors {
+        x86 {
+            ndk {
+                abiFilter "x86"
+            }
+        }
+        arm {
+            ndk {
+                abiFilters "armeabi-v7a", "armeabi"
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+}
+
+dependencies {
+    compile project(':pushSdk')
+    compile project(':photoInterface')
+    compile files('libs/achartengine.jar')
+    compile files('libs/fmodex.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/libgpuimage.jar')
+    compile files('libs/libmp3voicerecorder.jar')
+    compile files('libs/msgpack-0.0.1.jar')
+    compile files('libs/open_sdk.jar')
+    compile files('libs/rksoundeffects.jar')
+    compile files('libs/uil_image_loader_library.jar')
+    compile files('libs/weibo.sdk.android.sso.jar')
+    compile files('libs/ShareSDK-Core-2.3.12.jar')
+    compile files('libs/mframework.jar')
+    compile files('libs/ShareSDK-QZone-2.3.12.jar')
+    compile files('libs/ShareSDK-Wechat-2.3.12.jar')
+    compile files('libs/mta-sdk-2.0.0.jar')
+    compile files('libs/mid-sdk-2.10.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.3.12.jar')
+    compile files('libs/ShareSDK-Wechat-Favorite-2.3.12.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.3.12.jar')
+    compile files('libs/baidumapapi_v2_1_2.jar')
+    compile files('libs/locSDK_3.1.jar')
+}

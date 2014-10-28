@@ -1,0 +1,125 @@
+<!-- 密邻的空间背景、头像部分-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/nb_HeadBackground" android:background="#e4e4ea"
+    ><!-- chatbg_kissdolls.png wezone_defaultimage-->
+    
+    <FrameLayout 
+    	android:layout_width="match_parent"     
+    	android:layout_height="wrap_content"
+    	>
+
+	    <com.chuxin.family.widgets.CxImageView android:layout_width="match_parent" 
+	        android:layout_height="wrap_content"
+	        android:src="@drawable/neighbor_image_ourhome" 
+	        android:scaleType="centerCrop"
+	        android:id="@+id/cx_fa_neighbour_bg"/>
+	    
+	    <LinearLayout  android:orientation="horizontal" android:layout_gravity="right"
+	        android:layout_width="wrap_content" android:layout_height="wrap_content"
+	        android:gravity="bottom" android:layout_marginRight="15dip"
+	        android:background="@null" android:layout_marginTop="20dip"
+	        android:id="@+id/cx_fa_neighbour_family_small_icon">
+	        
+	        <LinearLayout 
+                 	android:layout_width="wrap_content" 
+	            	android:layout_height="wrap_content"
+	            	android:padding="1dip"
+	            	android:background="@drawable/cx_fa_neighbour_icon_bg">
+	        <com.chuxin.family.widgets.CxImageView android:layout_width="62dip" android:layout_height="52dip" 
+	            android:id="@+id/nb_girlHeadView" android:src="@drawable/neighbor_icon_wife"
+	            android:layout_weight="0" android:scaleType="centerCrop"
+	            app:roundWidth="6dp" app:roundHeight="6dp"
+	            />
+	        </LinearLayout>
+	        
+	          <LinearLayout 
+                 	android:layout_width="wrap_content" 
+	            	android:layout_height="wrap_content"
+	            	android:padding="1dip"
+	            	android:layout_marginLeft="6dip"
+	            	android:background="@drawable/cx_fa_neighbour_icon_bg">
+	        <com.chuxin.family.widgets.CxImageView android:layout_width="62dip" android:layout_height="52dip" 
+	            android:id="@+id/nb_boyHeadView" android:src="@drawable/neighbor_icon_husband"
+	            android:layout_weight="0"  android:scaleType="centerCrop"
+	            app:roundWidth="6dp" app:roundHeight="6dp"
+	            />
+	        </LinearLayout>
+	        <!-- <TextView android:id="@+id/pairSpan" android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" android:text="在一起100天"
+	            android:layout_weight="0" /> -->
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:id="@+id/cx_fa_neighbour_family_text"
+	        android:orientation="horizontal" 
+	        android:layout_width="wrap_content" android:layout_height="wrap_content"
+	        android:layout_marginLeft="18dip"
+	        android:gravity="center"	     
+	        android:background="@drawable/neighbour_header_familyname_bg"
+	        android:layout_marginBottom="12dip"
+	        android:layout_marginRight="10dip"
+	        android:layout_gravity="bottom">
+	        
+	        <TextView android:id="@+id/nb_familyText" android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" android:text="@string/cx_fa_neighbour_family_name"
+	            android:singleLine="true"
+	            android:ellipsize="middle"
+	            android:layout_weight="1"	                       
+	            android:textColor="@color/cx_fa_co_white"
+	            android:textSize="17sp"
+	            />
+	        <ImageView 
+	            android:id="@+id/nb_head_changenickname_or_addpost"
+	            android:layout_width="17dp" 
+	            android:layout_height="17dp" 
+	            android:src="@drawable/neighbor_btn_editname"
+	            android:layout_weight="0" android:layout_marginLeft="6dip"
+	            />
+	    </LinearLayout>
+    
+    </FrameLayout>
+  <!--   <RelativeLayout 
+        android:id="@+id/nb_head_addinvitation"
+        android:layout_width="match_parent" 
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:visibility="gone">
+        
+        <ImageButton
+            android:id="@+id/nb_head_addinvitation_image"
+            android:maxHeight="40dp"
+            android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:src="@drawable/memo_astro_6"/>
+        
+        <TextView 
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content" 
+    		android:layout_height="wrap_content"
+    		android:text="今天"
+    		android:textSize="25sp"
+    		android:textColor="#000000"/>
+        
+    </RelativeLayout> -->
+        
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

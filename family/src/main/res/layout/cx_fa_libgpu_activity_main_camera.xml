@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+  <!--   <LinearLayout
+        android:id="@+id/cx_fa_libgpu_pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/cx_fa_libgpu_take_photo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/cx_fa_libgpu_take_photo"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cx_fa_libgpu_gallery"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/cx_fa_libgpu_pick_photo"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cx_fa_gpu_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/cx_fa_libgpu_cancel"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+    </LinearLayout> -->
+
+</LinearLayout>

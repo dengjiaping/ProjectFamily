@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@null"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/cx_fa_widget_calendar_cell_dot_landspace_iv"
+        android:layout_width="4dip"
+        android:layout_height="4dip"
+        android:layout_margin="2dip"
+        android:background="@drawable/cx_fa_widget_calendar_cell_dot_item" />
+
+    <TextView
+         android:id="@+id/cx_fa_widget_calendar_cell_content_landspace_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="老婆生日"
+        android:textColor="#696969"
+        android:textSize="9sp" />
+
+</LinearLayout>

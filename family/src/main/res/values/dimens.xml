@@ -1,0 +1,93 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="cx_fa_dimen_base_slidingmenu_shadowwidth">15dp</dimen>
+    <dimen name="cx_fa_dimen_base_slidingmenu_behindoffset">60dp</dimen>
+    <dimen name="cx_fa_dimen_reminder_cornerrectangle_paddingleft">12dp</dimen>
+    <dimen name="cx_fa_dimen_reminder_cornerrectangle_paddingright">12dp</dimen>
+    <dimen name="cx_fa_dimen_reminder_cornerrectangle_paddingtop">12dp</dimen>
+    <dimen name="cx_fa_dimen_reminder_cornerrectangle_paddingbottom">12dp</dimen>
+    <dimen name="cx_fa_dimen_reminder_createreminder_arrowmargin">5dp</dimen>
+    <!-- 聊天icon头像尺寸 -->
+    <dimen name="cx_fa_dimen_chat_headimage_icon_w">35dp</dimen>
+    <dimen name="cx_fa_dimen_chat_headimage_icon_h">35dp</dimen>
+    <dimen name="cx_fa_dimen_chat_faceimage_w">32dp</dimen>
+    <dimen name="cx_fa_dimen_chat_faceimage_h">38dp</dimen>
+    <dimen name="cx_fa_dimen_chat_phraseimage_w">55dp</dimen>
+    <dimen name="cx_fa_dimen_chat_phraseimage_h">45dp</dimen>
+    <dimen name="cx_fa_dimen_chat_emotion_image_w">50dp</dimen>
+    <dimen name="cx_fa_dimen_chat_emotion_image_h">60dp</dimen>
+
+    <!-- 聊天气泡尺寸 -->
+    <dimen name="cx_fa_dimen_chat_bubble_padding_left">14dp</dimen>
+    <dimen name="cx_fa_dimen_chat_bubble_padding_right">14dp</dimen>
+    <dimen name="cx_fa_dimen_chat_bubble_padding_top">12dp</dimen>
+    <dimen name="cx_fa_dimen_chat_bubble_padding_bottom">12dp</dimen>
+    <dimen name="cx_fa_dimen_chat_bubble_margin_right">5dp</dimen>
+    <dimen name="cx_fa_dimen_chat_bubble_margin_left">5dp</dimen>
+    <dimen name="cx_fa_dimen_chat_bubble_minwidth">50dp</dimen>
+    <dimen name="cx_fa_dimen_chat_bubble_minheight">54dp</dimen>
+
+    <!-- 聊天位置图标尺寸 -->
+    <dimen name="cx_fa_dimen_chat_location_image_w">34dp</dimen>
+    <dimen name="cx_fa_dimen_chat_location_image_h">34dp</dimen>
+
+    <!-- 聊天汇报一下图标尺寸 -->
+    <dimen name="cx_fa_dimen_chat_phrase_image_w">45dp</dimen>
+    <dimen name="cx_fa_dimen_chat_phrase_image_h">34dp</dimen>
+
+    <!-- 设置小圆点的宽高  和间距 -->
+
+    <dimen name="cx_fa_dimen_chat_emotion_dot_w">5dp</dimen>
+    <dimen name="cx_fa_dimen_chat_emotion_dot_h">5dp</dimen>
+    <dimen name="cx_fa_dimen_chat_emotion_dot_left">10dp</dimen>
+    <dimen name="cx_fa_dimen_chat_emotion_dot_top">5dp</dimen>
+    <dimen name="cx_fa_dimen_chat_emotion_dot_right">0dp</dimen>
+    <dimen name="cx_fa_dimen_chat_emotion_dot_bottom">0dp</dimen>
+    <dimen name="cx_fa_dimen_chat_emotion_column_width">78dp</dimen>
+    <dimen name="cx_fa_dimen_accounting_account_pie_tv_size">12sp</dimen>
+    <dimen name="cx_fa_dimen_accounting_account_pie_legend_tv_size">16sp</dimen>
+
+    <!-- 出现小头像时的图片圆角 -->
+    <dimen name="cx_fa_my_small_img_conner">5dp</dimen>
+    <dimen name="cx_fa_mate_small_img_conner">7dp</dimen>
+    <dimen name="cx_fa_dimen_accounting_account_pie_legend_shape_width">10dp</dimen>
+    <dimen name="cx_fa_dimen_accounting_account_pie_legend_height">100dp</dimen>
+    <dimen name="cx_fa_dimen_neighbour_reply_emotion_size">18dp</dimen>
+    <dimen name="cx_fa_dimen_chat_emotion_size">28dp</dimen>
+
+    <!-- 自定义相册 -->
+    <dimen name="file_thumbnail_size">120dp</dimen>
+    <dimen name="contentview_size">140dp</dimen>
+    <dimen name="gallery_file_vertical_spacing">20dp</dimen>
+    <dimen name="image_thumbnail_vertical_spacing">5dp</dimen>
+    <dimen name="image_thumbnail_horizontal_spacing">40dp</dimen>
+    <dimen name="image_thumbnail_size">84dp</dimen>
+    <dimen name="image_thumbnail_selected_size">87dp</dimen>
+    <dimen name="cx_fa_grid_item_padding">4dp</dimen>
+    <dimen name="cx_fa_unpaire_func_item_size">40dp</dimen>
+
+    <!-- 菜单 -->
+    <dimen name="single_item_in_line_height">64dp</dimen>
+    <dimen name="two_item_in_line_height">56dp</dimen>
+    <dimen name="two_line_margin_top">0dp</dimen>
+    <dimen name="gap_between_item_in_line">1dp</dimen>
+    <dimen name="gap_between_chat_and_photo">6dp</dimen>
+
+    <!-- 日历控件 -->
+    <dimen name="calendar_day_headers_paddingbottom">4dp</dimen>
+    <dimen name="calendar_month_topmargin">16dp</dimen>
+    <dimen name="calendar_month_title_bottommargin">4dp</dimen>
+    <dimen name="calendar_text_medium">18sp</dimen>
+    <dimen name="calendar_text_small">14sp</dimen>
+    
+    <dimen name="calendar_homepage_items_space">109dip</dimen>
+    <dimen name="calendar_homepage_items_item_height">63dip</dimen>
+    <dimen name="calendar_homepage_items_item_height_2">126dip</dimen>
+    
+    <!-- 孩子空间 -->
+	<dimen name="kids_homepage_items_item_time_height">25dip</dimen>  
+
+</resources>

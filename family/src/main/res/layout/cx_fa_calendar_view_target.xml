@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E4EA"
+    android:orientation="vertical" >
+
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="12dp"
+         android:layout_marginLeft="12dp"
+         android:layout_marginRight="12dp"
+         android:orientation="vertical" >
+
+        <com.chuxin.family.widgets.CalendarNiceSelector 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:texts="@array/cx_fa_strs_reminder_target_displays"
+            custom:values="@array/cx_fa_strs_reminder_target_values"
+            android:id="@+id/cx_fa_view_calendar_edit_target__selector" />
+             
+    </LinearLayout>
+
+</LinearLayout>

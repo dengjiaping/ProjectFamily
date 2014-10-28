@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 孩子空间  header  by wentong.men -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nb_HeadBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e4e4ea"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#eaf1d7" >
+
+        <LinearLayout
+            android:id="@+id/cx_fa_kids_header_name_all_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/cx_fa_kids_header_name_1_layout"
+                android:layout_width="match_parent"
+                android:layout_height="36dip"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/cx_fa_kids_header_name_1_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="豆豆"
+                    android:textColor="#eab179"
+                    android:textSize="16dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cx_fa_kids_header_name_2_layout"
+                android:layout_width="match_parent"
+                android:layout_height="36dip"
+                android:layout_weight="1"
+                android:background="#f0f1f3"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#d4d4d4" />
+
+                <TextView
+                    android:id="@+id/cx_fa_kids_header_name_2_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="豆豆"
+                    android:textColor="#696969"
+                    android:textSize="14dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cx_fa_kids_header_name_3_layout"
+                android:layout_width="match_parent"
+                android:layout_height="36dip"
+                android:layout_weight="1"
+                android:background="#f0f1f3"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#d4d4d4" />
+
+                <TextView
+                    android:id="@+id/cx_fa_kids_header_name_3_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="豆豆"
+                    android:textColor="#696969"
+                    android:textSize="14dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cx_fa_kids_header_name_4_layout"
+                android:layout_width="match_parent"
+                android:layout_height="36dip"
+                android:layout_weight="1"
+                android:background="#f0f1f3"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#d4d4d4" />
+
+                <TextView
+                    android:id="@+id/cx_fa_kids_header_name_4_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="豆豆"
+                    android:textColor="#696969"
+                    android:textSize="14dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cx_fa_kids_header_name_5_layout"
+                android:layout_width="match_parent"
+                android:layout_height="36dip"
+                android:layout_weight="1"
+                android:background="#f0f1f3"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#d4d4d4" />
+
+                <TextView
+                    android:id="@+id/cx_fa_kids_header_name_5_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="豆豆"
+                    android:textColor="#696969"
+                    android:textSize="14dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#d4d4d4" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.chuxin.family.widgets.CxImageView
+                android:id="@+id/cx_fa_kids_header_icon_civ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cx_fa_kids_defaultimage_kid" />
+
+            <LinearLayout
+                android:id="@+id/cx_fa_kids_header_kidinfo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="46dip"
+                android:layout_gravity="bottom"
+                android:background="#40000000"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/cx_fa_kids_header_nickname_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="豆豆  孙沁初"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/cx_fa_kids_header_gendar_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:text="女儿"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/cx_fa_kids_header_age_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dip"
+                        android:text="1岁半"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/cx_fa_kids_header_bir_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="生日2013.01.23"
+                        android:textColor="#ffffff"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/cx_fa_kids_header_growup_layout"
+                android:layout_width="match_parent"
+                android:layout_height="36dip"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="成长点滴"
+                    android:textColor="#9dc475"
+                    android:textSize="16dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cx_fa_kids_header_healthy_layout"
+                android:layout_width="match_parent"
+                android:layout_height="36dip"
+                android:layout_weight="1"
+                android:background="#f0f1f3"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#d4d4d4" />
+
+                <TextView
+                    android:id="@+id/cx_fa_kids_header_healthy_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="健康(牛牛)"
+                    android:textColor="#696969"
+                    android:textSize="14dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cx_fa_kids_header_education_layout"
+                android:layout_width="match_parent"
+                android:layout_height="36dip"
+                android:layout_weight="1"
+                android:background="#f0f1f3"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#d4d4d4" />
+
+                <TextView
+                    android:id="@+id/cx_fa_kids_header_education_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="教育(牛牛)"
+                    android:textColor="#696969"
+                    android:textSize="14dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cx_fa_kids_home_no_feed_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:orientation="vertical"         
+             >
+
+            <TextView
+                android:id="@+id/cx_fa_kids_home_no_feed_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="@string/cx_fa_kids_home_no_feed_text"
+                android:textColor="#80000000"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/cx_fa_kids_home_no_feed_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/cx_fa_setting_version_bg"
+                android:gravity="center"
+                android:shadowColor="#50000000"
+                android:shadowDx="0"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:text="现在开始"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

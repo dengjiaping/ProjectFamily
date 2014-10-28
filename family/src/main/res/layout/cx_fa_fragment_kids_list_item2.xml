@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <LinearLayout 
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="vertical">
+    	
+        <TextView 
+            android:id="@+id/cx_fa_kids_home_item2_tv"
+            android:layout_marginTop="5dip"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:text="这是我家孩子的空间，可以和老公记录孩子的成长瞬间，交流成长心得，也可以同步给亲友们一起分享。"
+    		android:textSize="15sp"
+    		android:textColor="#80000000"/>
+        
+        <Button 
+            android:id="@+id/cx_fa_kids_home_item2_btn"
+           	android:layout_width="match_parent"
+               android:layout_height="45dip"
+               android:layout_marginTop="15dip"
+               android:background="@drawable/cx_fa_setting_version_bg"
+               android:gravity="center"
+               android:shadowColor="#50000000"
+               android:shadowDx="0"
+               android:shadowDy="2"
+               android:shadowRadius="2"
+               android:text="现在开始"
+               android:textColor="#ffffff"
+               android:textSize="18sp"/>
+        
+        
+    </LinearLayout>
+    
+    
+    
+    
+</LinearLayout>

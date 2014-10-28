@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="50dip"
+            android:layout_height="7dip"           
+            android:src="@drawable/calendar_type_triangle" />
+
+        <LinearLayout
+            android:layout_width="120dip"
+            android:layout_height="80dip"
+            android:background="@drawable/cx_fa_calendar_title_list_bg"
+            android:gravity="center"
+            android:layout_marginTop="-2dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/cx_fa_calendar_title_list_homepage_layout"
+                android:layout_width="110dip"
+                android:layout_height="30dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="5dip"
+                android:background="@drawable/cx_fa_calendar_title_list_selected_bg"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/cx_fa_calendar_title_list_homepage_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我家日历"
+                    android:textColor="#feb61f"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cx_fa_calendar_title_list_memorial_day_layout"
+                android:layout_width="110dip"
+                android:layout_height="30dip"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="5dip"
+                android:gravity="center" >
+
+                <TextView
+                    android:id="@+id/cx_fa_calendar_title_list_memorial_day_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="纪念日"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:layout_gravity="bottom"
+    android:gravity="bottom">
+
+    <RelativeLayout
+        android:id="@+id/cx_fa_widget_face_total_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:background="@drawable/biaoqing_bg" >
+
+        <LinearLayout
+            android:id="@+id/cx_fa_widget_face_linearLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            >
+
+            <android.support.v4.view.ViewPager
+                android:layout_marginTop="2dip"
+                android:layout_marginBottom="3dip"
+                android:id="@+id/cx_fa_widget_face_facePages"
+                android:layout_width="fill_parent"
+                android:layout_height="135dp" />
+            
+             <View
+                 android:id="@+id/cx_fa_widget_face_placeholder"
+                 android:layout_width="match_parent"
+                 android:layout_height="5dip"
+                 android:layout_marginBottom="10dip"
+                 android:visibility="gone"/>
+
+            <LinearLayout
+                android:id="@+id/cx_fa_widget_face_viewGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="20dip"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cx_fa_widget_face_linearLayout02"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <com.chuxin.family.widgets.CxImageView
+                android:id="@+id/cx_fa_widget_face_menu_imagebiaoqing"
+                android:layout_width="wrap_content"
+                android:layout_height="120dip" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp" >
+
+                <ImageView
+                    android:id="@+id/cx_fa_widget_face_menu_imagedown"
+                    android:layout_width="230dip"
+                    android:layout_height="37dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/biaoqing_btndown" />
+
+                <LinearLayout
+                    android:id="@+id/cx_fa_widget_face_linearLayout03"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:visibility="gone" >
+
+                    <ProgressBar
+                        android:id="@+id/cx_fa_widget_face_menu_imagepb"
+                        style="@style/download_progress_bar"
+                        android:layout_width="220dip"
+                        android:layout_height="10dip" />
+
+                    <ImageView
+                        android:id="@+id/cx_fa_widget_face_menu_imagecancel"
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:layout_marginLeft="10dip"
+                        android:src="@drawable/chatview_download_cancel" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/cx_fa_widget_face_hsv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/biaoqing_bar"
+        android:scrollbars="none"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:id="@+id/cx_fa_widget_face_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+           <!--  <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dip" > 
+
+             	<ImageView
+                    android:id="@+id/cx_fa_widget_face_menu_jingdian_arrow"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/biaoqing_btnarrow" />
+
+                <ImageView
+                    android:id="@+id/cx_fa_widget_face_menu_jingdian"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="3dip"
+                    android:src="@drawable/biaoqing_btnmood_h" />
+            </FrameLayout> -->
+
+            <LinearLayout
+                android:id="@+id/cx_fa_widget_chatview_emotion_bar_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+      <!--           <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dip" >
+
+                    <ImageView
+                        android:id="@+id/cx_fa_widget_face_menu_lvdou_arrow"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/biaoqing_btnarrow"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/cx_fa_widget_face_menu_lvdou"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="3dip"
+                        android:src="@drawable/cx_fa_role_biaoqing_btnlvdou" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dip" >
+
+                    <ImageView
+                        android:id="@+id/cx_fa_widget_face_menu_zanlia_arrow"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/biaoqing_btnarrow"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/cx_fa_widget_face_menu_zanlia"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="3dip"
+                        android:src="@drawable/cx_fa_role_biaoqing_btnzanlia" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cx_fa_widget_face_menu_wenzi_fl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dip" >
+
+                    <ImageView
+                        android:id="@+id/cx_fa_widget_face_menu_wenzi_arrow"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/biaoqing_btnarrow"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/cx_fa_widget_face_menu_wenzi"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="3dip"
+                        android:src="@drawable/cx_fa_role_biaoqing_btnwenzi" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dip" >
+
+                    <ImageView
+                        android:id="@+id/cx_fa_widget_face_menu_luobo_arrow"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/biaoqing_btnarrow"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/cx_fa_widget_face_menu_luobo"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="3dip"
+                        android:src="@drawable/cx_fa_role_biaoqing_btnluobo" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cx_fa_widget_face_menu_doubao_fl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dip"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/cx_fa_widget_face_menu_doubo_arrow"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/biaoqing_btnarrow"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/cx_fa_widget_face_menu_doubao"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="3dip"
+                        android:src="@drawable/biaoqing_btndoubao" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/cx_fa_widget_face_menu_fuhao_fl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="5dip" >
+
+                    <ImageView
+                        android:id="@+id/cx_fa_widget_face_menu_fuhao_arrow"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/biaoqing_btnarrow"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/cx_fa_widget_face_menu_fuhao"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="3dip"
+                        android:src="@drawable/biaoqing_btnfuhao" />
+                </FrameLayout> -->
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cx_fa_co_white"
+    android:orientation="vertical">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        layout="@layout/cx_fa_activity_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cx_fa_co_background_grey"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/neighbor_backline"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/cx_fa_add_nieghbour_text"
+                android:textColor="@color/cx_fa_co_white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dip"
+            android:layout_marginTop="22dip"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <!--
+                     <com.chuxin.family.widgets.NiceEditText
+	                android:id="@+id/cx_fa_neighbour_number"
+	                style="@style/cx_fa_style_invite_edittext"
+	                android:layout_gravity="center_vertical"
+	                android:layout_weight="1"
+	                
+	                android:inputType="phone"
+	                android:gravity="center_vertical"
+	                custom:tip="@string/cx_fa_neighbour_invite_number" />
+                -->
+
+                <EditText
+                    android:id="@+id/cx_fa_neighbour_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_bg_normal"
+                    android:gravity="center_vertical"
+                    android:hint="@string/cx_fa_neighbour_invite_number"
+                    android:padding="8dip"
+                    android:textColor="#bb000000"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/cx_fa_add_neighbour_btn"
+                    style="@style/cx_fa_style_orange_button_text"
+                    android:layout_width="46dp"
+                    android:layout_height="38dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/neighbor_btn_orange"
+                    android:gravity="center"
+                    android:text="@string/cx_fa_add_button_text"
+                    android:textColor="@color/cx_fa_co_btn_brown_text"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/cx_fa_neighbour_number_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dip"
+                android:layout_marginTop="3dp"
+                android:textColor="#90000000"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/neighbor_backline"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="@string/cx_fa_neighbour_list_text"
+                android:textColor="@color/cx_fa_co_white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cx_fa_co_white"
+        android:orientation="vertical" >
+
+        <com.chuxin.family.widgets.ScrollableListView
+            android:id="@+id/cx_fa_neighbour_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/cx_fa_co_transparent"
+            android:dividerHeight="0dp"
+            android:transcriptMode="alwaysScroll" />
+
+        <LinearLayout
+            android:id="@+id/cx_fa_neighbour_add_neighbour_manage_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="6dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="亲友管理"
+                    android:textColor="#90000000"
+                    android:textSize="20sp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@drawable/table_front_accessory_arrow" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e4e4ea" />
+        </LinearLayout>
+
+        <!--
+             <ListView
+            android:cacheColorHint="#00000000"
+            android:divider="@color/cx_fa_co_transparent"
+            android:dividerHeight="0dp"
+            android:id="@+id/cx_fa_neighbour_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        -->
+    </LinearLayout>
+
+</LinearLayout>

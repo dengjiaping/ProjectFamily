@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 菜单 -->
+ <!--    <dimen name="single_item_in_line_height">60dp</dimen>
+    <dimen name="two_item_in_line_height">52dp</dimen>
+    <dimen name="two_line_margin_top">0dp</dimen>
+    <dimen name="gap_between_item_in_line">1dp</dimen>
+    <dimen name="gap_between_chat_and_photo">6dp</dimen> -->
+    
+    
+    <!-- 日历控件 -->
+    <dimen name="calendar_homepage_items_space">40dip</dimen>
+    <dimen name="calendar_homepage_items_item_height">40dip</dimen>
+    <dimen name="calendar_homepage_items_item_height_2">80dip</dimen>
+</resources>

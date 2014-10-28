@@ -1,0 +1,18 @@
+<!-- 聊天的“位置” -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:background="@drawable/chat_infobox" 
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginLeft="10dip" android:layout_marginRight="10dip"
+    >
+    <TextView android:id="@+id/rk_loc_name" android:lines="2"
+        android:ellipsize="end" android:textColor="@android:color/white"
+        android:textSize="16sp" android:layout_weight="1"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_marginLeft="5dip" android:layout_marginRight="5dip"
+        android:drawableRight="@drawable/chat_arrowicon"
+        />
+    <!-- <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_weight="0" 
+        android:layout_marginRight="4dip" android:layout_marginLeft="4dip"
+        android:src="@drawable/chat_arrowicon"/> -->
+</LinearLayout>

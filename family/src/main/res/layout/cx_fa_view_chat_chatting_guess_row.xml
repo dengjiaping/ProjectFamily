@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <!-- <include layout="@layout/cx_fa_view_chat_datetime_line"/> -->
+
+    <TextView
+        android:id="@+id/cx_fa_view_chat_chatting_guess_row_datestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chatview_date_bg"
+        android:focusable="false"
+        android:gravity="center"
+        android:text="2013年5月14日"
+        android:textColor="@color/cx_fa_co_white"
+        android:textIsSelectable="false"
+        android:textSize="12sp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/cx_fa_co_transparent"
+        android:descendantFocusability="blocksDescendants"
+        android:padding="8dp" >
+
+        <com.chuxin.family.widgets.CxImageView
+            android:id="@+id/cx_fa_view_chat_chatting_guess_row_icon"
+            android:layout_width="@dimen/cx_fa_dimen_chat_headimage_icon_w"
+            android:layout_height="@dimen/cx_fa_dimen_chat_headimage_icon_h"
+            android:layout_alignParentRight="true"
+            android:background="@color/cx_fa_co_transparent"
+            android:scaleType="centerCrop" />		<!-- 头像 -->
+
+        <LinearLayout
+            android:id="@+id/cx_fa_view_chat_chatting_guess_row_for_partner__content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/cx_fa_view_chat_chatting_guess_row_icon"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+	       	<LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="10dp"
+	                android:gravity="center"
+	                android:orientation="vertical" >
+	
+	                <ImageButton
+	                    android:id="@+id/cx_fa_view_chat_chatting_guess_row__exclamation"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:background="@drawable/chat_exclamation"
+	                    android:visibility="visible" />		<!-- 发送是否成功 -->
+	                    
+	               <ProgressBar
+	                    android:id="@+id/cx_fa_view_chat_chatting_guess_row_circleProgressBar"
+	                    style="?@android:style/Widget.ProgressBar.Small"
+	                    android:layout_gravity="center"
+	                    android:layout_width="20dp"
+	                    android:layout_height="20dp"
+	                    android:visibility="gone" />		<!-- 发送中 -->
+
+            	</LinearLayout>
+
+	        <LinearLayout
+	               	android:id="@+id/cx_fa_view_chat_chatting_guess_row__content"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginRight="@dimen/cx_fa_dimen_chat_bubble_margin_right"
+	                android:background="@drawable/chatview_bubble_mine"
+	                android:minHeight="@dimen/cx_fa_dimen_chat_bubble_minheight"
+	                android:minWidth="210dp"
+	                android:orientation="vertical"
+	                android:paddingBottom="@dimen/cx_fa_dimen_chat_bubble_padding_bottom"
+	                android:paddingLeft="@dimen/cx_fa_dimen_chat_bubble_padding_left"
+	                android:paddingRight="@dimen/cx_fa_dimen_chat_bubble_padding_right"
+	                android:paddingTop="@dimen/cx_fa_dimen_chat_bubble_padding_top" >
+		
+			<TextView
+	                        android:id="@+id/cx_fa_view_chat_chatting_guess_row_title"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center|left"
+	                        android:focusable="false"
+	                        android:maxWidth="260dp"
+	                        android:text="@string/cx_fa_guess_start_title"
+	                        android:textColor="@color/cx_fa_co_black"
+	                        android:textSize="17sp" />
+			
+	                <!-- 发起猜拳 -->     
+	                <LinearLayout android:id="@+id/cx_fa_view_chat_chatting_guess_row__layer1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+	                        <ImageView android:id="@+id/cx_fa_view_chat_chatting_guess_row_pic"
+	                            android:layout_width="60dp"
+	                            android:layout_height="60dp"
+	                            android:src="@drawable/guess_gif"
+	                            />
+	                        <TextView android:id="@+id/cx_fa_view_chat_chatting_guess_row_text"
+	                            android:layout_width="fill_parent"
+	                            android:layout_height="wrap_content"
+	                            android:layout_gravity="center|left"
+	                            android:textColor="@color/cx_fa_co_black"
+	                            android:text="@string/cx_fa_guess_start_info_wife"
+	                            android:textSize="15sp"
+	                            />
+	                </LinearLayout>
+	                
+	                <!-- 猜拳结果 -->  
+	                <LinearLayout android:id="@+id/cx_fa_view_chat_chatting_guess_row__layer2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+	
+	                    <TextView
+	                        android:id="@+id/cx_fa_view_chat_chatting_guess_row_result"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center|left"
+	                        android:focusable="false"
+	                        android:maxWidth="260dp"
+	                        android:text="@string/cx_fa_guess_result_tie"
+	                        android:textColor="@color/cx_fa_co_black"
+	                        android:layout_marginLeft="30dp"
+	                        android:layout_marginTop="5dp"
+	                        android:textSize="15sp" />
+	                    <LinearLayout
+	                        android:id="@+id/cx_fa_view_chat_chatting_guess_result_pic_layout"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+	                        <ImageView android:id="@+id/cx_fa_view_chat_chatting_guess_pic_guess1"
+	                            android:layout_width="60dp"
+	                            android:layout_height="60dp"
+	                            android:layout_weight="1"
+	                            android:src="@drawable/chat_btnguess_paper"
+	                            />
+	                        <ImageView android:id="@+id/cx_fa_view_chat_chatting_guess_pic_vs"
+	                            android:layout_width="40dp"
+	                            android:layout_height="40dp"
+	                            android:layout_weight="1"
+	                            android:layout_gravity="center_vertical"
+	                            android:layout_marginLeft="15dp"
+	                            android:layout_marginRight="15dp"
+	                            android:src="@drawable/chat_guess_vs"
+	                            />
+	                        <ImageView android:id="@+id/cx_fa_view_chat_chatting_guess_pic_guess2"
+	                            android:layout_width="60dp"
+	                            android:layout_height="60dp"
+	                            android:layout_weight="1"
+	                            android:src="@drawable/chat_btnguess_rock"
+	                            />
+	                    </LinearLayout>
+	                </LinearLayout>
+	        </LinearLayout>
+                
+
+        </LinearLayout>
+         <TextView
+             android:id="@+id/cx_fa_view_chat_chatting_guess_row_timestamp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:focusable="false"
+             android:layout_alignLeft="@id/cx_fa_view_chat_chatting_guess_row_for_partner__content"
+     	     android:layout_below="@id/cx_fa_view_chat_chatting_guess_row_for_partner__content"
+             android:gravity="bottom"
+             android:paddingLeft="5dp"
+             android:paddingTop="5dp"
+             android:text="12:50"
+             android:textColor="@color/cx_fa_co_grey"
+             android:textIsSelectable="false"
+             android:layout_gravity="left"
+             android:textSize="12sp" />		<!-- 时间 -->
+    </RelativeLayout>
+
+</LinearLayout>

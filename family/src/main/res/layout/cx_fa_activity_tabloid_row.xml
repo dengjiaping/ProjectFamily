@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >    
+    
+  <RelativeLayout android:id="@+id/cx_fa_tabloid_cate_row_wrap"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:layout_marginLeft="10dp"  android:layout_marginRight="10dp"
+    android:layout_marginTop="1dp"
+    android:background="@drawable/remind_infobox"
+    android:descendantFocusability="afterDescendants"
+     >
+
+    <!-- ImageView外面套一个LinearLayout,主要是为了让图标居中         -->
+    <LinearLayout 
+        android:id="@+id/cx_fa_tabloid_list_row_icon_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+	   <com.chuxin.family.widgets.CxImageView
+	       android:id="@+id/cx_fa_tabloid_list_row_icon"
+	       android:layout_alignParentLeft="true"
+	       android:layout_alignParentTop="true"
+	       android:layout_width="50dp"
+	       android:layout_height="50dp"	       
+	       android:scaleType="centerCrop"
+	       android:src="@drawable/cx_fa_wf_icon_small" />	<!-- 分类图标 -->
+    </LinearLayout>
+	
+    <LinearLayout
+        android:id="@+id/cx_fa_tabloid_list_row_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/cx_fa_tabloid_subscribe_btn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/daily_btn_unsub"
+            />		<!-- 订阅和退订按钮 -->      	
+
+    </LinearLayout>
+   
+    <LinearLayout
+        android:layout_toRightOf="@id/cx_fa_tabloid_list_row_icon_layout"
+        android:layout_toLeftOf="@id/cx_fa_tabloid_list_row_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/cx_fa_style_reminder_black_text"
+            android:id="@+id/cx_fa_tabloid_list_row_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:text="" />		<!-- 分类名称 -->
+
+        <TextView
+            style="@style/cx_fa_style_reminder_small_text"
+            android:id="@+id/cx_fa_tabloid_list_row_push_time"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:textSize="13sp"
+            android:text="" />		<!-- 此分类的推送时间 -->            
+
+    </LinearLayout>
+        
+
+  </RelativeLayout>
+</LinearLayout>

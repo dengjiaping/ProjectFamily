@@ -1,0 +1,17 @@
+<!-- 主界面 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:id="@+id/content"
+    android:layout_height="match_parent" android:background="#e4e4ea"
+    >
+    
+	<FrameLayout android:id="@+id/rk_main_menu" android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    
+	</FrameLayout>
+	<FrameLayout android:id="@+id/rk_main_content" android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    
+	</FrameLayout>
+	
+</FrameLayout>

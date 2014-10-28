@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/cx_fa_widget_input_panel_sound_yuansheng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/sound_box"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/cx_fa_widget_input_panel_sound_image1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/sound_yuansheng" />
+
+        <TextView
+            android:id="@+id/cx_fa_widget_input_panel_sound_yuansheng_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/cx_fa_chatview_soundeffect_text_yuansheng"
+            android:textColor="@color/cx_fa_co_black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cx_fa_widget_input_panel_sound_zhuangyou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/cx_fa_widget_input_panel_sound_image2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/cx_fa_sound_zhuangyou" />
+
+        <TextView
+            android:id="@+id/cx_fa_widget_input_panel_sound_zhuangyou_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/cx_fa_role_inputpannel_soundeffect_text1"
+            android:textColor="@color/cx_fa_co_black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cx_fa_widget_input_panel_sound_zhuangsha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/cx_fa_widget_input_panel_sound_image3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/cx_fa_sound_zhuangsha" />
+
+        <TextView
+            android:id="@+id/cx_fa_widget_input_panel_sound_zhuangsha_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/cx_fa_role_inputpannel_soundeffect_text2"
+            android:textColor="@color/cx_fa_co_black" />
+    </LinearLayout>
+
+</LinearLayout>

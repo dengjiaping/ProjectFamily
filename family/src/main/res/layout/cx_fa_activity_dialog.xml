@@ -1,0 +1,19 @@
+<!-- 专用于对话框弹出-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/cx_fa_bg_white_corner_rect_with_grey_border"
+    >
+    <TextView android:id="@+id/rk_dialog_msg_view" android:gravity="center_horizontal"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:singleLine="true" android:layout_marginTop="20dip" 
+        android:layout_marginBottom="20dip"/>
+    
+    <Button android:text="@string/cx_fa_confirm_text" android:id="@+id/rk_dialog_button"
+       android:layout_width="match_parent" android:layout_height="wrap_content"
+       android:background="@drawable/btn_orange" style="@style/cx_fa_style_orange_button_text"
+       android:layout_weight="0" android:gravity="center" 
+       android:textSize="20sp" android:paddingTop="3dip"
+       android:paddingBottom="7dip"/>
+</LinearLayout>

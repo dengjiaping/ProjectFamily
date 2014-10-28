@@ -1,0 +1,29 @@
+<!-- 备忘资料 填加自定义资料 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custorm="http://schemas.android.com/apk/res-auto"
+	    android:layout_width="match_parent" 
+	    android:layout_height="match_parent"
+	    android:background="#e4e4ea"
+	    android:orientation="vertical">    
+
+        <!-- 导航栏  -->		
+    	<include layout="@layout/cx_fa_activity_title" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_weight="0"/>   
+
+         <com.chuxin.family.widgets.NiceEditText 
+             android:id="@+id/mateCustomerStr"
+			 custorm:tip="@string/cx_fa_mateprofile_addcustom_hint"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="5dp"
+             android:layout_marginRight="5dp"
+             android:layout_marginTop="5dp" />
+    	
+<!--  
+        <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:singleLine="true" android:layout_marginTop="10dip"
+            android:id="@+id/mateCustomerStr" android:hint="@string/cx_fa_mateprofile_addcustom_hint"
+            android:background="@drawable/remind_inputbox"
+            />
+-->
+</LinearLayout>

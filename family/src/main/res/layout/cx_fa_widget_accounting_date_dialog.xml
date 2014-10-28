@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/neighbor_backwhite"
+        android:orientation="vertical"
+        android:padding="15dip" >
+
+        <TextView
+            android:id="@+id/cx_fa_mate_family_info_user_birthday_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="10dip"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:text="@string/cx_fa_accounting_change_account_date_dialog_tv"
+            android:textColor="#99000000"
+            android:textSize="15sp" />
+
+        <!--
+             <EditText
+	        android:inputType="phone"
+	        android:layout_margin="5dip"
+	        android:id="@+id/cx_fa_accounting_change_account_money_dialog_et" 
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:textColor="#000000"
+	    	android:padding="7dip"
+	    	android:gravity="center_vertical"
+	    	android:background="@drawable/edittext_bg"
+	    	/>
+        -->
+
+        <DatePicker
+            android:id="@+id/cx_fa_accounting_change_account_date_dialog_dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:calendarViewShown="false"
+            android:spinnersShown="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip" >
+
+            <Button
+                android:id="@+id/cx_fa_accounting_change_account_date_dialog_cancel"
+                style="@style/cx_fa_style_white_button_text"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/neighbour_btnwhite"
+                android:text="取消"
+                android:textColor="@color/cx_fa_co_reminder_tip_deep_gray"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/cx_fa_accounting_change_account_date_dialog_ok"
+                style="@style/cx_fa_style_orange_button_text"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/neighbour_btnorange"
+                android:text="确认"
+                android:textColor="@color/cx_fa_co_btn_brown_text"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cx_fa_view_chat_system_animation_btn_wrap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cx_fa_co_transparent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/cx_fa_system_animation_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dot_line_repeat_bg"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+ <!-- 底部横线 -->
+
+    <LinearLayout
+        android:id="@+id/cx_fa_view_chat_system_two_btn_linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:visibility="visible"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cx_fa_view_chat_system_animation_reply_btn1"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="@drawable/cx_fa_textview_btn"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="agree"
+            android:textColor="@color/cx_fa_co_black"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/chatview_message_line_vertical" />
+ <!-- 底部中间竖线 -->
+
+        <TextView
+            android:id="@+id/cx_fa_view_chat_system_animation_reply_btn2"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:background="@drawable/cx_fa_textview_btn"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="agree"
+            android:textColor="@color/cx_fa_co_black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cx_fa_view_chat_system_single_btn_linearlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cx_fa_view_chat_system_animation_reply_btn3"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="2"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="agree"
+            android:textColor="@color/cx_fa_co_black"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

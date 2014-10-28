@@ -1,0 +1,159 @@
+<!-- 备忘资料填加 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/mateprofile_add_layout"
+    		  android:layout_width="match_parent" android:layout_gravity="center_vertical"
+    		  android:layout_height="match_parent"   
+    		  android:orientation="vertical" android:gravity="center_vertical">
+    		  
+	<TextView android:clickable="false"
+	          android:id="@+id/mateprofile_add_title"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:layout_marginLeft="10dp"
+	          android:text="@string/cx_fa_nls_mateprofile_edit_add_title"
+	          android:textColor="@color/cx_fa_co_near_black"
+	          android:textSize="18sp" />
+    
+    <LinearLayout android:id="@+id/mateprofile_item_layout1"
+	              android:layout_width="match_parent" 
+	        	  android:layout_height="wrap_content"
+	        	  android:orientation="horizontal" android:gravity="center_horizontal">
+	        	  
+         <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+             android:orientation="horizontal" android:background="@drawable/cx_fa_mate_add_unselect_bg"
+             android:padding="10dip" android:layout_marginLeft="5dp" android:layout_marginRight="5dp"  
+             android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:focusable="true" android:clickable="true"
+             android:gravity="center_vertical" android:id="@+id/mateprofile_add_button1">
+             <TextView style="@style/cx_fa_style_settings_item_text" 
+                 android:id="@+id/mateprofile_add_button1_text"
+                 android:text="@string/cx_fa_nls_mateprofile_edit_add_itme1"
+                 android:layout_marginLeft="5dp"/>
+         </LinearLayout>
+        
+         <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+             android:orientation="horizontal" android:background="@drawable/cx_fa_mate_add_unselect_bg"
+             android:padding="10dip" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+             android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:focusable="true" android:clickable="true"
+             android:gravity="center_vertical" android:id="@+id/mateprofile_add_button2">
+             <TextView style="@style/cx_fa_style_settings_item_text" 
+                 android:id="@+id/mateprofile_add_button2_text"
+                 android:text="@string/cx_fa_nls_mateprofile_edit_add_itme2"
+                 android:layout_marginLeft="5dp"/>
+         </LinearLayout>
+         
+         <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+             android:orientation="horizontal" android:background="@drawable/cx_fa_mate_add_unselect_bg"
+             android:padding="10dip" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+             android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:focusable="true" android:clickable="true"
+             android:gravity="center_vertical" android:id="@+id/mateprofile_add_button3">
+             <TextView style="@style/cx_fa_style_settings_item_text" 
+                 android:id="@+id/mateprofile_add_button3_text"
+                 android:text="@string/cx_fa_nls_mateprofile_edit_add_itme3"
+                 android:layout_marginLeft="5dp"/>
+         </LinearLayout>
+         
+         <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+             android:orientation="horizontal" android:background="@drawable/cx_fa_mate_add_unselect_bg"
+             android:padding="10dip" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+             android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:focusable="true" android:clickable="true"
+             android:gravity="center_vertical" android:id="@+id/mateprofile_add_button4">
+             <TextView style="@style/cx_fa_style_settings_item_text" 
+                 android:id="@+id/mateprofile_add_button4_text"
+                 android:text="@string/cx_fa_nls_mateprofile_edit_add_itme4"
+                 android:layout_marginLeft="5dp"/>
+         </LinearLayout>         
+	</LinearLayout>
+	    
+    <LinearLayout android:id="@+id/mateprofile_item_layout2"
+	              android:layout_width="match_parent" 
+	        	  android:layout_height="wrap_content"
+	        	  android:orientation="horizontal"
+	        	   android:gravity="center_horizontal">
+         <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+             android:orientation="horizontal" android:background="@drawable/cx_fa_mate_add_unselect_bg"
+             android:padding="10dip" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+             android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:focusable="true" android:clickable="true"
+             android:gravity="center_vertical" android:id="@+id/mateprofile_add_button5">
+             <TextView style="@style/cx_fa_style_settings_item_text" 
+                 android:id="@+id/mateprofile_add_button5_text"
+                 android:text="@string/cx_fa_nls_mateprofile_edit_add_itme5"
+                 android:layout_marginLeft="5dp"/>
+         </LinearLayout>  
+         
+         <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+             android:orientation="horizontal" android:background="@drawable/cx_fa_mate_add_unselect_bg"
+             android:padding="10dip" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+             android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:focusable="true" android:clickable="true"
+             android:gravity="center_vertical" android:id="@+id/mateprofile_add_button6">
+             <TextView style="@style/cx_fa_style_settings_item_text" 
+                 android:id="@+id/mateprofile_add_button6_text"
+                 android:text="@string/cx_fa_nls_mateprofile_edit_add_itme6"
+                 android:layout_marginLeft="5dp"/>
+         </LinearLayout>  
+         
+         <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+             android:orientation="horizontal" android:background="@drawable/cx_fa_mate_add_unselect_bg"
+             android:padding="10dip" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+             android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:focusable="true" android:clickable="true"
+             android:gravity="center_vertical" android:id="@+id/mateprofile_add_button7">
+             <TextView style="@style/cx_fa_style_settings_item_text" 
+                 android:id="@+id/mateprofile_add_button7_text"
+                 android:text="@string/cx_fa_nls_mateprofile_edit_add_itme7"
+                 android:layout_marginLeft="5dp"/>
+         </LinearLayout>  
+	</LinearLayout>
+    
+    <LinearLayout android:id="@+id/mateprofile_item_layout3"
+	              android:layout_width="match_parent" 
+	        	  android:layout_height="wrap_content"
+	        	  android:orientation="horizontal"
+	        	   android:gravity="center_horizontal">
+         <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+             android:orientation="horizontal" android:background="@drawable/cx_fa_mate_add_unselect_bg"
+             android:padding="10dip" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+             android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:focusable="true" android:clickable="true"
+             android:gravity="center_vertical" android:id="@+id/mateprofile_add_button8">
+             <TextView style="@style/cx_fa_style_settings_item_text" 
+                 android:id="@+id/mateprofile_add_button8_text"
+                 android:text="@string/cx_fa_nls_mateprofile_edit_add_itme8"
+                 android:layout_marginLeft="5dp"/>
+         </LinearLayout>
+           
+         <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+             android:orientation="horizontal" android:background="@drawable/cx_fa_mate_add_unselect_bg"
+             android:padding="10dip" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+             android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:focusable="true" android:clickable="true"
+             android:gravity="center_vertical" android:id="@+id/mateprofile_add_button9">
+             <TextView style="@style/cx_fa_style_settings_item_text" 
+                 android:id="@+id/mateprofile_add_button9_text"
+                 android:text="@string/cx_fa_nls_mateprofile_edit_add_itme9"
+                 android:layout_marginLeft="5dp"/>
+         </LinearLayout>  
+         
+         <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+             android:orientation="horizontal" android:background="@drawable/cx_fa_mate_add_unselect_bg"
+             android:padding="10dip" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" 
+             android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:focusable="true" android:clickable="true"
+             android:gravity="center_vertical" android:id="@+id/mateprofile_add_button10">
+             <TextView style="@style/cx_fa_style_settings_item_text" 
+                 android:id="@+id/mateprofile_add_button10_text"
+                 android:text="@string/cx_fa_nls_mateprofile_edit_add_itme10"
+                 android:layout_marginLeft="5dp"/>
+         </LinearLayout>        
+	</LinearLayout>    
+
+	<LinearLayout
+    		  android:layout_width="match_parent" android:layout_gravity="center_vertical"
+    		  android:layout_height="match_parent"   
+    		  android:orientation="horizontal" android:gravity="center_horizontal">    
+	    <ImageButton
+	        android:id="@+id/mateprofile_add_more_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:background="@android:color/transparent"
+	        android:layout_marginBottom="8dp"
+	        android:src="@drawable/memo_btncustom" />  
+    </LinearLayout>       
+</LinearLayout>	    		    
+	   

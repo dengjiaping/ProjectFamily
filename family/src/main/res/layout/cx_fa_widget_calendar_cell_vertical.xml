@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center" >
+
+    <FrameLayout
+        android:id="@+id/cx_fa_widget_calendar_cell_fl"
+        android:layout_width="44dip"
+        android:layout_height="44dip"
+        android:layout_marginTop="6dip"
+        android:layout_marginBottom="6dip"
+        android:layout_gravity="center"
+        android:background="@drawable/cx_fa_calendar_title_list_selected_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/cx_fa_widget_calendar_cell_date_tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="19dip"
+            android:text="1"
+            android:textColor="#37322f"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/cx_fa_widget_calendar_cell_date_tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="19dip"
+            android:text="29"
+            android:textColor="#37322f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/cx_fa_widget_calendar_cell_lunar_date_tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="10dip"
+            android:text="初三"
+            android:textColor="#99000000"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/cx_fa_widget_calendar_cell_lunar_date_tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="10dip"
+            android:text="腊八节"
+            android:textColor="#37322f"
+            android:textSize="8sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/cx_fa_widget_calendar_cell_dot_item_iv"
+            android:layout_width="5dip"
+            android:layout_height="5dip"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="4dip"
+            android:layout_marginLeft="16dip"
+            android:layout_weight="1"
+            android:src="@drawable/cx_fa_widget_calendar_cell_dot_item" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/cx_fa_widget_calendar_cell_dot_memorial_iv"
+            android:layout_width="5dip"
+            android:layout_height="5dip"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="4dip"
+            android:layout_marginRight="16dip"
+            android:layout_weight="1"
+            android:src="@drawable/cx_fa_widget_calendar_cell_dot_memorial" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/cx_fa_widget_calendar_cell_dot_item_or_memorial_iv"
+            android:layout_width="5dip"
+            android:layout_height="5dip"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="4dip"
+            android:layout_weight="1"
+            android:src="@drawable/cx_fa_widget_calendar_cell_dot_memorial" />
+
+        <ImageView
+            android:id="@+id/cx_fa_widget_calendar_cell_triangle_iv"
+            android:layout_width="11dip"
+            android:layout_height="11dip"
+            android:layout_gravity="top|right"
+            android:src="@drawable/calendar_triangle" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<!-- 二人空间的回复item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content" 
+    android:orientation="horizontal" android:background="@null" 
+    android:paddingTop="2dip" android:paddingBottom="2dip"
+    android:gravity="left|center_vertical"
+    >
+    
+    <ImageView 
+        android:id="@+id/zone_post_reply_unread"
+        android:layout_width="10dip" 
+        android:layout_height="10dip"
+        android:scaleType="centerCrop"
+        android:layout_gravity="left|center_vertical"
+        android:src="@drawable/chat_newvoice"
+        android:visibility="invisible"
+ 		/>
+    
+    <TextView 
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:id="@+id/reply_text_content" android:gravity="left|center_vertical"
+        android:textSize="14sp"
+        android:textColor="#75000000"/>
+    
+    <!-- <com.chuxin.family.widgets.CustomTextView 
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:id="@+id/reply_text_content" android:gravity="left|center_vertical"
+        android:textSize="14sp"
+        android:textColor="#75000000"/> -->
+    <com.ant.liao.chuxin.EnhancedGifView android:layout_width="20dp"
+        android:layout_height="20dp" android:id="@+id/reply_expression_content"
+        android:gravity="left|center_vertical"
+        android:visibility="gone"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:id="@+id/reply_time" android:gravity="left|center_vertical"
+        android:layout_marginLeft="7dp"
+        android:textColor="#70000000"
+        android:textSize="8sp"
+        />
+</LinearLayout>

@@ -1,0 +1,268 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+
+    <!--&lt;!&ndash; Application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="AppBaseTheme">-->
+        <!--&lt;!&ndash; All customizations that are NOT specific to a particular API-level can go here. &ndash;&gt;-->
+    <!--</style>-->
+
+    <!-- small text for reminder list -->
+    <style name="cx_fa_style_reminder_small_text">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#B4B4B4</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!-- small text for reminder list -->
+    <style name="cx_fa_style_reminder_black_text">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">15sp</item>
+        <!-- <item name="android:textStyle">bold</item> -->
+        <item name="android:textColor">#000000</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!-- animation style for quick action bar -->
+    <style name="cx_fa_style_quick_action_bar_animation_default">
+        <item name="@android:windowEnterAnimation">@anim/cx_fa_anim_quick_action_bar_appear</item>
+        <item name="@android:windowExitAnimation">@anim/cx_fa_anim_quick_action_bar_disappear</item>
+    </style>
+
+    <!-- animation style for quick action bar -->
+    <style name="cx_fa_style_orange_button_text">
+        <item name="android:textColor">#8e6046</item>
+        <item name="android:shadowColor">#fed9b6</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="cx_fa_style_white_button_text">
+        <item name="android:textColor">#8e6046</item>
+        <item name="android:shadowColor">#ffffff</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="Theme.ReminderPopDialog" parent="android:style/Theme.Dialog">
+
+        <!-- float_box为我们定义的窗口背景 -->
+        <item name="android:windowBackground">@drawable/cx_fa_dr_remind_box</item>
+    </style>
+
+    <style name="cx_fa_style_invite_text">
+        <item name="android:textColor">#7e7e7e</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_weight">0</item>
+    </style>
+
+    <style name="cx_fa_style_invite_edittext">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">19sp</item>
+        <!-- <item name="android:background">@drawable/remind_inputbox</item> -->
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginTop">6dip</item>
+        <item name="android:inputType">phone</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0</item>
+    </style>
+
+    <style name="cx_fa_style_about_software_button">
+        <item name="android:textSize">19sp</item>
+        <item name="android:layout_marginTop">6dip</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingLeft">50dip</item>
+        <item name="android:paddingRight">50dip</item>
+        <item name="android:textColor">#7e7e7e</item>
+    </style>
+
+    <style name="cx_fa_style_help_indicator_imageview">
+        <item name="android:layout_width">7dip</item>
+        <item name="android:layout_height">7dip</item>
+        <item name="android:src">@drawable/cx_fa_main_guide_dot_normal</item>
+        <item name="android:layout_margin">5dip</item>
+    </style>
+
+    <style name="cx_fa_style_help_indicator_imageview2">
+        <item name="android:layout_width">7dip</item>
+        <item name="android:layout_height">7dip</item>
+        <item name="android:src">@drawable/cx_fa_main_guide_dot_normal</item>
+        <item name="android:layout_margin">5dip</item>
+    </style>
+
+    <style name="cx_fa_style_settings_item_text">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">false</item>
+    </style>
+
+    <style name="AnimationActivity" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:activityOpenEnterAnimation">@anim/cx_fa_anim_activity_enter_left_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/cx_fa_anim_activity_enter_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/cx_fa_anim_activity_enter_right_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/cx_fa_anim_activity_enter_right_out</item>
+    </style>
+    <!-- familygpuimage style start -->
+    <style name="AppTheme" parent="android:Theme.Light" />
+
+    <style name="AppTheme.NoActionBar" parent="android:Theme.Light.NoTitleBar.Fullscreen" />
+
+    <style name="popupDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/dialog_animation</item>
+    </style>
+
+    <style name="dialog_animation">
+        <item name="android:windowEnterAnimation">@anim/cx_fa_libgpu_anim_push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/cx_fa_libgpu_anim_push_bottom_out</item>
+    </style>
+
+    <style name="cx_fa_style_datetimepicker_font">
+        <item name="android:paddingLeft">0px</item>
+        <item name="android:paddingBottom">0px</item>
+        <item name="android:paddingTop">0px</item>
+        <item name="android:paddingRight">0px</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">25sp</item>
+        <!-- <item name="android:fontFamily">Arial</item> -->
+        <item name="android:gravity">center|center_vertical</item>
+        <item name="android:inputType">number</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+    <!-- familygpuimage style end -->
+
+    <style name="Widget" />
+    <!-- Base theme for the menu drawer. -->
+    <style name="Widget.MenuDrawer">
+        <item name="mdMenuBackground">@color/md__defaultBackground</item>
+        <item name="mdContentBackground">?android:attr/windowBackground</item>
+        <item name="mdDrawerOpenUpContentDescription">@string/md__drawerOpenIndicatorDesc</item>
+        <item name="mdDrawerClosedUpContentDescription">@string/md__drawerClosedIndicatorDesc</item>
+    </style>
+
+    <style name="download_progress_bar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_layer_list</item>
+    </style>
+
+    <style name="chatbg_download_rpogress_bar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/chatbg_download_progress</item>
+    </style>
+
+    <style name="add_neighbour_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="simple_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- 背景56%透明度的activity -->
+
+    <style name="bg_transparent">
+        <item name="android:windowBackground">@color/cx_fa_co_neighbour_answer_question_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item> -->
+    </style>
+
+    <!-- 全局主题  避免闪黑屏 -->
+    <style name="Theme.AppStartLoad" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- 底透明的对话框 -->
+    <style name="bg_transparent_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <!-- 结对邀请用到的对话框样式 -->
+    <style name="inviteDialogCustom" parent="@android:style/Theme.Dialog">
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center|center_horizontal</item>
+    </style>
+
+    <style name="chat_content_date_style">
+        <item name="android:minHeight">50dp</item>
+        <item name="android:gravity">right|center</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:focusable">false</item>
+        <item name="android:background">#bfbfbf</item>
+    </style>
+
+    <style name="photo_grid_style">
+        <item name="android:drawSelectorOnTop">true</item>
+        <item name="android:listSelector">@drawable/photogrid_list_selector</item>
+    </style>
+
+    <!-- 日历控件 -->
+    <style name="CalendarTitle">
+        <item name="android:textSize">@dimen/calendar_text_medium</item>
+        <item name="android:textColor">@color/calendar_text_active</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CalendarCell">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <!-- <item name="android:textAlignment">center</item> -->
+    </style>
+
+    <style name="CalendarCell.DayHeader">
+        <item name="android:textColor">@color/calendar_text_active</item>
+        <item name="android:textSize">@dimen/calendar_text_small</item>
+    </style>
+
+    <style name="CalendarCell.CalendarDate">
+        <!-- <item name="android:textSize">@dimen/calendar_text_medium</item> -->
+        <!-- <item name="android:background">@drawable/calendar_bg_selector</item> -->
+        <!-- <item name="android:textColor">@color/calendar_text_selector</item> -->
+        <item name="android:clickable">true</item>
+<!--         <item name="android:textStyle">bold</item> -->
+    </style>
+
+</resources>

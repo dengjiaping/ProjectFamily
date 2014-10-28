@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- <integer-array name="cx_fa_chat_bg_thumb">
+		<item>@drawable/chatbg_thumbnail_zanliaold</item>
+		<item>@drawable/chatbg_thumbnail_winteart</item>
+		<item>@drawable/chatbg_thumbnail_slippers</item>
+		<item>@drawable/chatbg_thumbnail_skypink</item>
+		<item>@drawable/chatbg_thumbnail_rainyday</item>
+		<item>@drawable/chatbg_thumbnail_pinkpig</item>
+		<item>@drawable/chatbg_thumbnail_littleheart</item>
+		<item>@drawable/chatbg_thumbnail_kissdolls</item>
+		<item>@drawable/chatbg_thumbnail_kanxingxing</item>
+		<item>@drawable/chatbg_thumbnail_chocolate</item>
+		<item>@drawable/chatbg_thumbnail_bluecheck</item>
+	</integer-array>老公版
+
+	<integer-array name="cx_fa_chat_bg">
+		<item>@drawable/chatbg_zanliaold</item>
+		<item>@drawable/chatbg_winteart</item>
+		<item>@drawable/chatbg_slippers</item>
+		<item>@drawable/chatbg_skypink</item>
+		<item>@drawable/chatbg_rainyday</item>
+		<item>@drawable/chatbg_pinkpig</item>
+		<item>@drawable/chatbg_littleheart</item>
+		<item>@drawable/chatbg_kissdolls</item>
+		<item>@drawable/chatbg_kanxingxing</item>
+		<item>@drawable/chatbg_chocolate</item>
+		<item>@drawable/chatbg_bluecheck</item>
+	</integer-array> -->
+
+	<string-array name="cx_fa_chatbg_str">	
+		<item>chatbg_bluecheck</item>
+		<item>chatbg_blueheart</item>
+		<item>chatbg_chocolate</item>
+		<item>chatbg_greenheart</item>
+		<item>chatbg_kanxingxing</item>
+		<item>chatbg_kissdolls</item>
+		<item>chatbg_littleheart</item>
+		<item>chatbg_night</item>
+		<item>chatbg_pinkpig</item>
+		<item>chatbg_rainyday</item>
+		<item>chatbg_skyblue</item>
+		<item>chatbg_skypink</item>
+		<item>chatbg_thku</item>
+		<item>chatbg_winteart</item>
+		<item>chatbg_zanliaold</item>
+	</string-array>
+	
+	<string-array name="cx_fa_chatbg_str_upper">
+	    <item>chatBG_blueCheck</item>
+		<item>chatBG_blueheart</item>
+		<item>chatBG_chocolate</item>
+		<item>chatBG_greenHeart</item>
+		<item>chatBG_kanxingxing</item>
+		<item>chatBG_kissdolls</item>
+		<item>chatBG_littleHeart</item>
+		<item>chatBG_night</item>
+		<item>chatBG_pinkPig</item>
+		<item>chatBG_rainyday</item>
+		<item>chatBG_skyBlue</item>
+		<item>chatBG_skyPink</item>
+		<item>chatBG_thku</item>
+		<item>chatBG_winteArt</item>
+		<item>chatBG_zanliaOld</item>
+	</string-array>
+
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

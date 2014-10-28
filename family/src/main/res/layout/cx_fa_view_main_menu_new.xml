@@ -1,0 +1,923 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cx_fa_co_dark_brown"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/menu_bg"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/pair_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0" >
+
+                    <FrameLayout
+                        android:id="@+id/cx_fa_mate_layer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false" >
+
+                        <!--
+                             <com.chuxin.family.image.RoundAngleImageView
+                            android:id="@+id/menuPage_imageView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/cx_fa_role_memo_imagedefault"
+                            app:roundHeight="10dp"
+                            app:roundWidth="10dp" />
+                        -->
+
+                        <com.chuxin.family.widgets.CxImageView
+                            android:id="@+id/menuPage_imageView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:scaleType="centerCrop"
+                            />
+
+                        <LinearLayout
+                            android:id="@+id/invite_oppo_rl_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/two_item_in_line_height"
+                            android:background="@drawable/cx_fa_main_sliding_top_invite_bg"
+                            android:clickable="true"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/cx_fa_main_menu_invite_oppo_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dip"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:text="@string/cx_fa_role_main_menu_invite"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom|right"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="6dp"
+                            android:background="@drawable/menu_nameback"
+                            android:clickable="false"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/cx_fa_mate_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="6dp"
+                                android:layout_marginRight="6dp"
+                                android:layout_weight="0"
+                                android:background="@android:color/transparent"
+                                android:clickable="false"
+                                android:drawableLeft="@drawable/menu_nameheart"
+                                android:drawablePadding="10dp"
+                                android:drawableRight="@drawable/menu_nameheart"
+                                android:gravity="center_horizontal"
+                                android:singleLine="true"
+                                android:text="@string/cx_fa_our_family"
+                                android:textColor="@android:color/white"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <!-- 聊天 -->
+
+                <LinearLayout
+                    android:id="@+id/chat_rl_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/single_item_in_line_height"
+                    android:layout_weight="0"
+                    android:layout_marginBottom="-2dip"
+                    android:background="@color/menu_item_normal"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/menuPage_imageButton1"
+                        android:layout_width="32dip"
+                        android:layout_height="25dip"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/menu_icon_chat"
+                        android:focusable="false" />
+
+                    <TextView
+                        android:id="@+id/cx_fa_main_menu_chat_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dip"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:text="@string/cx_fa_role_main_menu_chat_with"
+                        android:textColor="@color/menu_item_text"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:background="@color/menu_item_fouced" />
+
+                <!-- 孩子空间 -->
+
+                <LinearLayout
+                    android:id="@+id/kids_rl_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/single_item_in_line_height"
+                    android:layout_marginTop="-2dip"
+                    android:layout_marginBottom="-2dip"
+                    android:background="@color/menu_item_normal"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/menuPage_imageButton2"
+                        android:layout_width="32dip"
+                        android:layout_height="30dip"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/menu_icon_kid"
+                        android:focusable="false"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="0"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:text="@string/cx_fa_role_main_menu_kids"
+                        android:textColor="@color/menu_item_text"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/menuPage_kid_unreadview"
+                        android:layout_width="21dip"
+                        android:layout_height="22dip"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/menu_newmessage"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:paddingBottom="1dip"
+                        android:paddingRight="1dip"
+                        android:text="99+"
+                        android:textColor="@color/cx_fa_co_white"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:text=""
+                        android:textColor="@color/cx_fa_co_white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <!-- 相册 -->
+
+                <LinearLayout
+                    android:id="@+id/zone_rl_layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/single_item_in_line_height"
+                    android:layout_marginTop="-2dip"
+                    android:layout_marginBottom="-2dip"
+                    android:background="@color/menu_item_normal"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/menuPage_imageButton4"
+                        android:layout_width="32dip"
+                        android:layout_height="30dip"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/menu_icon_album"
+                        android:focusable="false"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="0"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:text="@string/cx_fa_nls_zone_title"
+                        android:textColor="@color/menu_item_text"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/menuPage_space_unreadview2"
+                        android:layout_width="21dip"
+                        android:layout_height="22dip"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/menu_newmessage"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:paddingBottom="1dip"
+                        android:paddingRight="1dip"
+                        android:text="99+"
+                        android:textColor="@color/cx_fa_co_white"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:text=""
+                        android:textColor="@color/cx_fa_co_white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:background="@color/menu_item_fouced"
+                     />
+
+                <!-- 亲友们 -->
+
+                <LinearLayout
+                    android:id="@+id/neighbour_rl_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/single_item_in_line_height"
+                    android:layout_marginTop="-2dip"
+                    android:layout_marginBottom="-2dip"
+                    android:background="@color/menu_item_normal"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/menuPage_imageButton3"
+                        android:layout_width="32dip"
+                        android:layout_height="30dip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/menu_icon_neighbor"
+                        android:clickable="false"
+                        android:focusable="false" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="0"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:text="@string/cx_fa_role_main_menu_neighbours"
+                        android:textColor="@color/menu_item_text"
+                        android:textSize="18sp" />
+
+                    <Button
+                        android:id="@+id/menuPage_unreadview"
+                        android:layout_width="21dip"
+                        android:layout_height="22dip"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/menu_newmessage"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:paddingBottom="1dip"
+                        android:paddingRight="1dip"
+                        android:text="11"
+                        android:textColor="@color/cx_fa_co_white"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:text=""
+                        android:textColor="@color/cx_fa_co_white"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:background="@color/menu_item_fouced" />
+
+                <!-- 日历和相册 -->
+
+                <LinearLayout
+                    android:id="@+id/calendar_and_zone_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:clickable="false"
+                    android:layout_marginTop="-2dip"
+                    android:layout_marginBottom="-2dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <!-- 日历 -->
+
+                    <LinearLayout
+                        android:id="@+id/calendar_rl_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/two_item_in_line_height"
+                        android:layout_weight="1"     
+                    	android:background="@color/menu_item_normal"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="32dip"
+                            android:layout_height="30dip"
+                            android:layout_marginLeft="20dip"
+                            android:layout_weight="0"
+                            android:gravity="right|center_vertical" >
+
+                            <ImageView
+                                android:id="@+id/menuPage_imageButton_finance_recorder_2"
+                                android:layout_width="19dip"
+                                android:layout_height="17dip"
+                                android:background="@drawable/menu_icon_calendar_small"
+                                android:focusable="false" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:text="@string/cx_fa_calendar_text"
+                            android:textColor="@color/menu_item_text"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <!-- 相册 -->
+
+                    <LinearLayout
+                        android:id="@+id/zone_rl_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/two_item_in_line_height"
+                        android:layout_weight="1"
+                        android:background="@color/menu_item_normal"
+                        android:clickable="true"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="1dip"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:background="@color/menu_item_fouced" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:layout_width="32dip"
+                                android:layout_height="30dip"
+                                android:layout_marginLeft="18dp"
+                                android:layout_weight="0"
+                                android:gravity="right|center_vertical"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:layout_width="19dip"
+                                    android:layout_height="17dip"
+                                    android:background="@drawable/menu_icon_album_small"
+                                    android:focusable="false" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="0"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:text="@string/cx_fa_role_main_menu_album"
+                                android:textColor="@color/menu_item_text"
+                                android:textSize="14sp" />
+
+                            <Button
+                                android:id="@+id/menuPage_space_unreadview"
+                                android:layout_width="17dip"
+                                android:layout_height="18dip"
+                                android:layout_marginLeft="4dp"
+                                android:layout_weight="0"
+                                android:background="@drawable/menu_newmessage"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:paddingBottom="1dip"
+                                android:paddingRight="1dip"
+                                android:text="99+"
+                                android:textColor="@color/cx_fa_co_white"
+                                android:textSize="7sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:text=""
+                                android:textColor="@color/cx_fa_co_white"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 日历和记账 -->
+
+                <LinearLayout
+                    android:id="@+id/calendar_and_accounting_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:clickable="false"
+                    android:layout_marginTop="-2dip"
+                    android:layout_marginBottom="-2dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <!-- 日历 -->
+
+                    <LinearLayout
+                        android:id="@+id/calendar_rl_layout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/two_item_in_line_height"
+                        android:layout_weight="1"
+                        android:background="@color/menu_item_normal"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="32dip"
+                            android:layout_height="30dip"
+                            android:layout_marginLeft="20dip"
+                            android:gravity="right|center_vertical" >
+
+                            <ImageView
+                                android:layout_width="19dip"
+                                android:layout_height="17dip"
+                                android:background="@drawable/menu_icon_calendar_small"
+                                android:focusable="false" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:text="@string/cx_fa_calendar_text"
+                            android:textColor="@color/menu_item_text"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <!-- 记账 -->
+
+                    <LinearLayout
+                        android:id="@+id/finance_recorder_layout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/two_item_in_line_height"
+                        android:layout_weight="1"
+                        android:background="@color/menu_item_normal"
+                        android:clickable="true"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="1dip"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:background="@color/menu_item_fouced" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:layout_width="32dip"
+                                android:layout_height="30dip"
+                                android:layout_marginLeft="18dp"
+                                android:layout_weight="0"
+                                android:gravity="right|center_vertical"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:layout_width="19dip"
+                                    android:layout_height="17dip"
+                                    android:background="@drawable/menu_icon_accounting_small"
+                                    android:focusable="false" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_weight="0"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:text="@string/cx_fa_nls_finance_recorder"
+                                android:textColor="@color/menu_item_text"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:background="@color/menu_item_fouced"
+                     />
+
+                <!-- 记账和更多 -->
+
+                <LinearLayout
+                    android:id="@+id/accounting_and_more_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:layout_marginTop="-2dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <!-- 记账 -->
+
+                    <LinearLayout
+                        android:id="@+id/finance_recorder_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/two_item_in_line_height"
+                        android:layout_weight="1"
+                        android:background="@color/menu_item_normal"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="32dip"
+                            android:layout_height="30dip"
+                            android:layout_marginLeft="20dp"
+                            android:gravity="right|center_vertical" >
+
+                            <ImageView
+                                android:layout_width="19dip"
+                                android:layout_height="17dip"
+                                android:background="@drawable/menu_icon_accounting_small"
+                                android:focusable="false" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:text="@string/cx_fa_nls_finance_recorder"
+                            android:textColor="@color/menu_item_text"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|center_vertical" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="16dip"
+                                android:layout_marginLeft="2dip"
+                                android:layout_marginTop="1dip"
+                                android:src="@drawable/menu_new"
+                                android:visibility="gone" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- 更多 -->
+
+                    <LinearLayout
+                        android:id="@+id/more_rl_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/two_item_in_line_height"
+                        android:layout_weight="1"
+                        android:background="@color/menu_item_normal"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="1dip"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:background="@color/menu_item_fouced" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <LinearLayout
+                                android:layout_width="32dip"
+                                android:layout_height="30dip"
+                                android:layout_marginLeft="20dp"
+                                android:layout_weight="0"
+                                android:gravity="right|center_vertical" >
+
+                                <ImageView
+                                    android:layout_width="19dip"
+                                    android:layout_height="17dip"
+                                    android:background="@drawable/menu_icon_more_small"
+                                    android:focusable="false" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:clickable="false"
+                                android:focusable="false"
+                                android:text="@string/cx_fa_nls_more"
+                                android:textColor="@color/menu_item_text"
+                                android:textSize="14sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="left|center_vertical" >
+
+                                <ImageView
+                                    android:id="@+id/more_rl_new_iv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="16dip"
+                                    android:layout_marginLeft="2dip"
+                                    android:layout_marginTop="1dip"
+                                    android:src="@drawable/menu_new"
+                                    android:visibility="gone" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout> <!-- end -->
+
+
+                <!-- 游戏更多 -->
+
+                <LinearLayout
+                    android:id="@+id/more_and_null_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:layout_marginTop="-1dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <!-- 游戏更多 -->
+
+                    <LinearLayout
+                        android:id="@+id/more_rl_layout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/two_item_in_line_height"
+                        android:layout_weight="1"
+                        android:background="@color/menu_item_normal"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="32dip"
+                            android:layout_height="30dip"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="0"
+                            android:gravity="right|center_vertical" >
+
+                            <ImageView
+                                android:id="@+id/menuPage_imageButton_finance_recorder"
+                                android:layout_width="19dip"
+                                android:layout_height="17dip"
+                                android:background="@drawable/menu_icon_more_small"
+                                android:focusable="false" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:text="@string/cx_fa_nls_more"
+                            android:textColor="@color/menu_item_text"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <!-- 空白 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/two_item_in_line_height"
+                        android:layout_weight="1"
+                        android:background="@color/menu_item_normal"
+                        android:clickable="true"
+                        android:orientation="horizontal" >
+
+                        <View
+                            android:layout_width="1dip"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:background="@color/menu_item_fouced" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:gravity="center" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cx_fa_no_pair_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <!-- 未结对文本文字 -->
+
+                <TextView
+                    android:id="@+id/unpair_info_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/single_item_in_line_height"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/cx_fa_role_comingtext"
+                    android:textColor="@color/menu_item_text"
+                    android:textSize="20sp" />
+                <!-- 开通 -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:background="@color/menu_item_fouced" />
+
+                <LinearLayout
+                    android:layout_marginTop="-2dip"
+                    android:layout_marginBottom="-2dip"
+                    android:id="@+id/invite_rl_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/single_item_in_line_height"
+                    android:background="@color/menu_item_normal"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/menuPage_layout_invite"
+                        android:layout_width="32dip"
+                        android:layout_height="30dip"
+                        android:layout_marginLeft="20dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@drawable/menu_icon_invite" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:text="@string/cx_fa_invite_word"
+                        android:textColor="@color/menu_item_text"
+                        android:textSize="18sp" />
+                </LinearLayout>
+                <!-- 未结对的“更多” -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:background="@color/menu_item_fouced" />
+
+                <LinearLayout
+                    android:layout_marginTop="-2dip"
+                    android:layout_marginBottom="-2dip"
+                    android:id="@+id/unpair_more_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/single_item_in_line_height"
+                    android:background="@color/menu_item_normal"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/menuPage_layout_invite_2"
+                        android:layout_width="32dip"
+                        android:layout_height="30dip"
+                        android:layout_marginLeft="20dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:src="@drawable/menu_icon_more" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:text="@string/cx_fa_nls_more"
+                        android:textColor="@color/menu_item_text"
+                        android:textSize="18sp" />
+                </LinearLayout>
+                <!--
+        <TextView
+            android:id="@+id/unpair_funcs_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0"
+            android:gravity="center_vertical"
+            android:text="@string/cx_fa_unpair_funcs_tip"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+        
+        <GridView android:id="@+id/cx_fa_unpair_func_view"
+            android:gravity="center" android:layout_weight="1"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            android:numColumns="3" android:stretchMode="columnWidth"
+            android:horizontalSpacing="4dp" android:verticalSpacing="4dp"
+            />
+                -->
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

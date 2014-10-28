@@ -1,0 +1,23 @@
+<!-- 聊天的“位置” -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#e4e4ea"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+	    android:background="#e4e4ea" android:orientation="vertical" 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    >
+	    <include layout="@layout/cx_fa_activity_title" android:layout_weight="0"
+	        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+	    <com.baidu.mapapi.map.MapView
+	        android:id="@+id/cx_fa_map" android:layout_weight="1"
+	        android:layout_width="match_parent" android:layout_height="match_parent"
+	        android:clickable="true" />
+	</LinearLayout>
+	<ImageView android:background="@drawable/chat_mylocation"
+	    android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    android:layout_gravity="bottom|left" android:layout_marginBottom="10dp"
+	    android:layout_marginLeft="6dp" android:id="@+id/cx_fa_loc_me"/>
+</FrameLayout>

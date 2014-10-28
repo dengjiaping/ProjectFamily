@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?> <!-- 关于界面 -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/cx_fa_role_co_authen_new" >
+
+    <FrameLayout
+        android:id="@+id/cx_fa_used_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#ebdfd8" >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cx_fa_main_login_launchscreen" />
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="40dip"
+            android:visibility="visible">
+			<ImageView
+			    android:id="@+id/cx_fa_main_channel_logo_iv"
+	            android:layout_width="match_parent"
+	            android:layout_height="100dip"
+	            android:scaleType="centerCrop"
+	            android:adjustViewBounds="true"
+	            android:src="@drawable/cx_fa_main_channel_logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rk_login_layer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="30dip"
+            android:layout_marginRight="30dip"
+            android:background="@null"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/rk_login_weibo"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:layout_weight="1"
+                    android:layout_marginRight="3dip"
+                    android:background="@drawable/cx_fa_main_login_weibo_btn_bg"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="18dip"
+                        android:layout_height="18dip"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/cx_fa_main_login_icon_weibo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="微博帐号登录"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rk_login_qq"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="3dip"
+                    android:background="@drawable/cx_fa_main_login_qq_btn_bg"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="18dip"
+                        android:layout_height="18dip"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/cx_fa_main_login_icon_qq" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="QQ帐号登录"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rk_login_by_xiaojia"
+                android:layout_width="match_parent"
+                android:layout_height="46dip"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dip"
+                android:background="@drawable/cx_fa_setting_version_bg"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="小家帐号登录"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="15dip"
+            android:text="© 2014 初心科技"
+            android:textColor="#50000000"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/cx_fa_unused_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/guider_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@null"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/help_indicator_dots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="13dp"
+                android:background="@null"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/first_help_indicator"
+                    style="@style/cx_fa_style_help_indicator_imageview2"
+                    android:src="@drawable/cx_fa_main_guide_dot_focused" />
+
+                <ImageView
+                    android:id="@+id/second_help_indicator"
+                    style="@style/cx_fa_style_help_indicator_imageview2" />
+
+                <ImageView
+                    android:id="@+id/third_help_indicator"
+                    style="@style/cx_fa_style_help_indicator_imageview2" />
+
+                <ImageView
+                    android:id="@+id/forth_help_indicator"
+                    style="@style/cx_fa_style_help_indicator_imageview2" />
+                <ImageView
+                    android:id="@+id/fifth_help_indicator"
+                    style="@style/cx_fa_style_help_indicator_imageview2" />
+                <ImageView
+                    android:id="@+id/sixth_help_indicator"
+                    style="@style/cx_fa_style_help_indicator_imageview2" />
+
+                <!--
+                     <ImageView
+                    android:id="@+id/fifth_help_indicator"
+                    style="@style/cx_fa_style_help_indicator_imageview" />
+                -->
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</FrameLayout>

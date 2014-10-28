@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/neighbor_backwhite"
+        android:orientation="vertical"
+        android:padding="15dip" >
+
+        <LinearLayout
+            android:id="@+id/cx_fa_calendar_edit_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+             <TextView
+                android:id="@+id/cx_fa_calendar_edit_date_1"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:background="@drawable/cx_fa_neighbour_reply_background"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:text="星期一"
+                android:textColor="#99000000"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:background="#e4e4ea" />
+            
+             <TextView
+                android:id="@+id/cx_fa_calendar_edit_date_2"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:background="@drawable/cx_fa_neighbour_reply_background"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:text="星期二"
+                android:textColor="#99000000"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:background="#e4e4ea" />
+             <TextView
+                android:id="@+id/cx_fa_calendar_edit_date_3"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:background="@drawable/cx_fa_neighbour_reply_background"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:text="星期三"
+                android:textColor="#99000000"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:background="#e4e4ea" />
+             <TextView
+                android:id="@+id/cx_fa_calendar_edit_date_4"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:background="@drawable/cx_fa_neighbour_reply_background"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:text="星期四"
+                android:textColor="#99000000"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:background="#e4e4ea" />
+             <TextView
+                android:id="@+id/cx_fa_calendar_edit_date_5"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:background="@drawable/cx_fa_neighbour_reply_background"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:text="星期五"
+                android:textColor="#99000000"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:background="#e4e4ea" />
+             <TextView
+                android:id="@+id/cx_fa_calendar_edit_date_6"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:background="@drawable/cx_fa_neighbour_reply_background"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:text="星期六"
+                android:textColor="#99000000"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:background="#e4e4ea" />
+             <TextView
+                android:id="@+id/cx_fa_calendar_edit_date_7"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:background="@drawable/cx_fa_neighbour_reply_background"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:text="星期日"
+                android:textColor="#99000000"
+                android:textSize="15sp" />         
+            
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:id="@+id/cx_fa_calendar_edit_memorial_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            
+            <TextView
+                android:id="@+id/cx_fa_calendar_edit_memorial_type_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:background="@drawable/cx_fa_neighbour_reply_background"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:text="生日"
+                android:textColor="#99000000"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:background="#e4e4ea" />
+
+            <TextView
+                android:id="@+id/cx_fa_calendar_edit_memorial_type_normal"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:background="@drawable/cx_fa_neighbour_reply_background"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:text="一般纪念日"
+                android:textColor="#99000000"
+                android:textSize="15sp" />
+            
+            
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cx_fa_calendar_edit_target"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+ <!-- android:visibility="gone" -->
+
+            <TextView
+                android:id="@+id/cx_fa_calendar_edit_target_me"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:background="@drawable/cx_fa_neighbour_reply_background"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:text="只给自己看"
+                android:textColor="#99000000"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:background="#e4e4ea" />
+
+            <TextView
+                android:id="@+id/cx_fa_calendar_edit_target_oppo"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:background="@drawable/cx_fa_neighbour_reply_background"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:text="给对方看"
+                android:textColor="#99000000"
+                android:textSize="15sp" />
+
+            <View
+                android:id="@+id/cx_fa_calendar_edit_target_oppo_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:background="#e4e4ea" />
+
+            <TextView
+                android:id="@+id/cx_fa_calendar_edit_target_both"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:background="@drawable/cx_fa_neighbour_reply_background"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:text="给双方看"
+                android:textColor="#99000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cx_fa_calendar_edit_cycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+ <!-- android:visibility="gone" -->
+
+            <TextView
+                android:id="@+id/cx_fa_calendar_edit_cycle_once"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:background="@drawable/cx_fa_neighbour_reply_background"
+                android:gravity="center_vertical"
+                android:text="提醒一次"
+                android:textColor="#99000000"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:background="#e4e4ea" />
+
+            <TextView
+                android:id="@+id/cx_fa_calendar_edit_cycle_day"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:background="@drawable/cx_fa_neighbour_reply_background"
+                android:gravity="center_vertical"
+                android:text="每天一次"
+                android:textColor="#99000000"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:background="#e4e4ea" />
+
+            <TextView
+                android:id="@+id/cx_fa_calendar_edit_cycle_week"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:text="每周一次"
+                android:textColor="#99000000"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:background="#e4e4ea" />
+
+            <TextView
+                android:id="@+id/cx_fa_calendar_edit_cycle_month"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:text="每月一次"
+                android:textColor="#99000000"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:background="#e4e4ea" />
+
+            <TextView
+                android:id="@+id/cx_fa_calendar_edit_cycle_year"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:text="每年一次"
+                android:textColor="#99000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cx_fa_calendar_edit_advance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+ <!-- android:visibility="gone" -->
+
+            <TextView
+                android:id="@+id/cx_fa_calendar_edit_advance_none"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:background="@drawable/cx_fa_neighbour_reply_background"
+                android:gravity="center_vertical"
+                android:text="不提前提醒"
+                android:textColor="#99000000"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:background="#e4e4ea" />
+
+            <TextView
+                android:id="@+id/cx_fa_calendar_edit_advance_15m"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:background="@drawable/cx_fa_neighbour_reply_background"
+                android:gravity="center_vertical"
+                android:text="提前15分钟"
+                android:textColor="#99000000"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:background="#e4e4ea" />
+
+            <TextView
+                android:id="@+id/cx_fa_calendar_edit_advance_1h"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:background="@drawable/cx_fa_neighbour_reply_background"
+                android:gravity="center_vertical"
+                android:text="提前1小时"
+                android:textColor="#99000000"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:background="#e4e4ea" />
+
+            <TextView
+                android:id="@+id/cx_fa_calendar_edit_advance_1d"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:background="@drawable/cx_fa_neighbour_reply_background"
+                android:gravity="center_vertical"
+                android:text="提前1天"
+                android:textColor="#99000000"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:background="#e4e4ea" />
+
+            <TextView
+                android:id="@+id/cx_fa_calendar_edit_advance_3d"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:background="@drawable/cx_fa_neighbour_reply_background"
+                android:gravity="center_vertical"
+                android:text="提前3天"
+                android:textColor="#99000000"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="5dip"
+                android:layout_marginTop="5dip"
+                android:background="#e4e4ea" />
+
+            <TextView
+                android:id="@+id/cx_fa_calendar_edit_advance_5d"
+                android:layout_width="match_parent"
+                android:layout_height="30dip"
+                android:background="@drawable/cx_fa_neighbour_reply_background"
+                android:gravity="center_vertical"
+                android:text="提前5天"
+                android:textColor="#99000000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip" >
+
+            <Button
+                android:id="@+id/cx_fa_calendar_edit_common_dialog_cancel"
+                style="@style/cx_fa_style_white_button_text"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/neighbour_btnwhite"
+                android:text="取消"
+                android:textColor="@color/cx_fa_co_reminder_tip_deep_gray"
+                android:textSize="16sp" />
+            <!--
+                 <Button 
+	            android:id="@+id/nb_change_name_ok"
+	            android:layout_weight="1"
+	            android:layout_width="0dip"
+	    		android:layout_height="wrap_content"
+	    		style="@style/cx_fa_style_orange_button_text"
+	    		android:textSize="16sp"
+	    		android:textColor="@color/cx_fa_co_btn_brown_text"
+	    		android:background="@drawable/neighbour_btnorange"
+	    		android:text="确认"/>
+            -->
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?> <!-- 关于界面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/cx_fa_round_corner_gray_bg"
+        android:padding="3dp" >
+
+        <com.chuxin.family.widgets.CxImageView
+            android:id="@+id/folder_first_image"
+            android:layout_width="@dimen/file_thumbnail_size"
+            android:layout_height="@dimen/file_thumbnail_size"
+            android:scaleType="center"
+            android:src="@drawable/cx_fa_gallery_file_bg" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_weight="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/folder_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="test"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/folder_image_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:singleLine="true"
+            android:text="360"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

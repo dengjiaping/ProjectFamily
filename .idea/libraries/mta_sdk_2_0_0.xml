@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="mta-sdk-2.0.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/family/libs/mta-sdk-2.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

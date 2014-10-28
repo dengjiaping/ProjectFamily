@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 谁家最聪明首页item -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+     >
+   
+    <LinearLayout 
+        android:id="@+id/cx_fa_answer_home_item_layout"
+        android:background="#cee9ea"
+        android:layout_width="match_parent"
+    	android:layout_height="40dip"
+    	android:gravity="center_vertical"
+    	android:padding="5dip">
+    
+        
+        <FrameLayout
+            android:layout_marginLeft="15dip" 
+            android:layout_width="25dip"
+	        android:layout_height="25dip"
+	        >
+        <ImageView 
+	        android:id="@+id/cx_fa_answer_home_item_rank_first_iv"	        
+	        android:src="@drawable/talent_rank_first"
+	       	android:layout_width="25dip"
+	       	android:layout_gravity="center"
+	       	android:scaleType="centerInside"
+	    	android:layout_height="25dip" />
+	   
+	    <ImageView 
+	        android:id="@+id/cx_fa_answer_home_item_rank_second_or_third_iv"
+	        android:layout_gravity="center"
+	        android:scaleType="centerInside"
+	        android:visibility="gone"
+	        android:src="@drawable/talent_rank_second"
+	       	android:layout_width="20dip"
+	    	android:layout_height="20dip" />
+	    
+	
+	    <TextView  
+	        android:id="@+id/cx_fa_answer_home_item_rank_forth_tv"
+	         android:visibility="gone"
+	        android:text="4"
+	        android:textColor="#42a1bc"
+	        android:textSize="17sp" 
+	        android:textStyle="bold" 
+	        android:layout_gravity="center"
+	       	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content" />
+        </FrameLayout>
+        
+
+	    
+	
+	    <com.chuxin.family.widgets.CxImageView 
+	        android:id="@+id/cx_fa_answer_home_item_girl_icon_iv"
+	        android:layout_marginLeft="10dip"
+	        android:scaleType="centerCrop"
+	        android:src="@drawable/cx_fa_wf_icon"
+	       	android:layout_width="25dip"
+	    	android:layout_height="25dip" />
+	    <com.chuxin.family.widgets.CxImageView 
+	        android:id="@+id/cx_fa_answer_home_item_boy_icon_iv"
+	        android:layout_marginLeft="3dip"
+	        android:src="@drawable/cx_fa_hb_icon"
+	       	android:layout_width="25dip"
+	       	android:scaleType="centerCrop"
+	    	android:layout_height="25dip" />
+	    <TextView 
+	        android:id="@+id/cx_fa_answer_home_item_family_name_tv"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="7dip"
+	        android:text="@string/cx_fa_neighbour_family_name"
+	        android:textColor="#37322f"
+	        android:textSize="12sp"
+	        android:singleLine="true"	  
+	       android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content" />
+	    <TextView 
+	        android:id="@+id/cx_fa_answer_home_item_score_tv"
+	        android:text="0分"
+	        android:singleLine="true"	        
+	        android:layout_marginLeft="10dip"
+	        android:layout_marginRight="15dip"
+	        android:textColor="#37322f"
+	        android:textSize="12sp"
+	       	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content" />
+    
+    </LinearLayout>
+    
+    <View 
+        android:background="#8ed6e4"
+        android:layout_width="match_parent"
+	   	android:layout_height="1dip"/>
+    
+
+</LinearLayout>

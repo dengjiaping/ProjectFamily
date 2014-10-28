@@ -1,0 +1,51 @@
+<!-- 二人空间的空间背景、头像部分-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+    android:id="@+id/zoneHeadBackground" android:background="#e4e4ea"
+    ><!-- chatbg_kissdolls.png wezone_defaultimage-->
+    <com.chuxin.family.widgets.CxImageView android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:src="@drawable/cx_fa_role_wezone_defaultimage" 
+        android:scaleType="centerCrop"
+        android:id="@+id/cx_fa_zone_bg"/>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" 
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="bottom" android:layout_marginLeft="14dip"
+        android:background="@null" android:layout_marginBottom="6dip">
+        <com.chuxin.family.widgets.CxImageView android:layout_width="62dip" android:layout_height="52dip" 
+            android:id="@+id/mateHeadView" android:src="@drawable/cx_fa_hb_small_icon"
+            android:layout_weight="0" android:scaleType="centerCrop"
+            app:roundWidth="6dp" app:roundHeight="6dp" />
+        <com.chuxin.family.widgets.CxImageView android:layout_width="62dip" android:layout_height="52dip" 
+            android:id="@+id/myHeadView" android:src="@drawable/cx_fa_wf_small_icon"
+            android:layout_weight="0" android:layout_marginLeft="6dip" android:scaleType="centerCrop"
+            app:roundWidth="6dp" app:roundHeight="6dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+            android:layout_weight="1" android:gravity="bottom"
+            android:id="@+id/cx_fa_modify_together_days"
+            >
+            <TextView android:id="@+id/mateWithMe" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="@string/cx_fa_role_mate_with_me"
+            android:layout_weight="0" android:layout_marginLeft="6dip"
+            android:textColor="@color/cx_fa_co_white"
+            android:textSize="16sp" android:singleLine="true"
+            android:textStyle="bold" android:shadowDy="1"
+            android:shadowColor="@android:color/black" 
+            android:shadowRadius="1" android:alpha="30"
+            />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" 
+            android:background="@drawable/wezone_heart" android:layout_marginBottom="3dp"
+            android:layout_weight="0" android:layout_marginLeft="2dp"/>
+        <TextView android:id="@+id/pairSpan" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="@string/cx_fa_together_tip"
+            android:layout_weight="0" android:textColor="@color/cx_fa_co_white" 
+            android:textStyle="bold" android:shadowDy="1"
+            android:shadowColor="@android:color/black" 
+            android:shadowRadius="1" android:alpha="30"
+            android:singleLine="true" android:textSize="16sp"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+</FrameLayout>

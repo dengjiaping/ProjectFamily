@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <!-- 日历控件 -->
+    <dimen name="calendar_homepage_items_space">70dip</dimen>
+    <dimen name="calendar_homepage_items_item_height">50dip</dimen>
+    <dimen name="calendar_homepage_items_item_height_2">100dip</dimen>
+</resources>

@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion '21.0.1'
+    defaultPublishConfig "debug"
+    // 这里使用这个属性来设置Libray的Debug模式。如果不需要Debug那么则去掉 defaultPublishConfig "debug"
+    defaultConfig {
+        applicationId "com.hmammon.photointerface"
+        minSdkVersion 10
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+        }
+        debug {
+            debuggable true
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    productFlavors {
+    }
+
+}
+
+dependencies {
+    compile files('libs/apache-http-fat.jar')
+}

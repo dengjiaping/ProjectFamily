@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="more_bind_device">绑定设备</string>
+    <string name="more_chooese_device">发送照片</string>
+    <string name="bind_device_id">设备ID</string>
+    <string name="bind_nickname">设备名称</string>
+
+    <string name="ha_fa_no_camera_premission">可能没有获取到相机的权限，请打开允许我们打开相机</string>
+    <string name="cx_fa_role_app_name">小家</string>
+    <string name="cx_fa_role_app_name_s">小家</string>
+    <string name="cx_fa_nls_chat">聊天</string>
+    <string name="cx_fa_nls_clock">提醒</string>
+    <string name="cx_fa_nls_neighbour">亲友</string>
+    <string name="cx_fa_nls_space">相册</string>
+    <string name="cx_fa_nls_zone_title">我家相册</string>
+    <string name="cx_fa_nls_finance_recorder">记账</string>
+    <string name="cx_fa_nls_neighbour_homepage">亲友们</string>
+    <string name="cx_fa_nls_settings">设置</string>
+    <string name="cx_fa_nls_more">更多</string>
+    <string name="cx_fa_nls_account">记账</string>    
+    <string name="cx_fa_nls_add_reminder">新建提醒</string>
+    <string name="cx_fa_nls_edit_reminder">编辑提醒</string>
+    <string name="cx_fa_nls_today">今日</string>
+    <string name="cx_fa_nls_reminder_content">提醒内容</string>
+    <string name="cx_fa_nls_reminder_target">提醒对象</string>
+    <string name="cx_fa_nls_reminder_period">周期</string>
+    <string name="cx_fa_nls_reminder_date">日期</string>
+    <string name="cx_fa_nls_reminder_time">时间</string>
+    <string name="cx_fa_nls_reminder_advance">提前</string>
+    <string name="cx_fa_nls_reminder_period_0">提醒一次</string>
+    <string name="cx_fa_nls_reminder_period_1">每天一次</string>
+    <string name="cx_fa_nls_reminder_period_2">每周一次</string>
+    <string name="cx_fa_nls_reminder_period_3">每月一次</string>
+    <string name="cx_fa_nls_reminder_period_4">每年一次</string>
+    <string name="cx_fa_nls_reminder_period_5">自定义</string>
+    <string name="cx_fa_nls_tip_reminder_title">请输入提醒内容 </string>
+    <string name="cx_fa_nls_reminder_tip_today">今天</string>
+    <string name="cx_fa_nls_reminder_tip_tomorrow">明天</string>
+    <string name="cx_fa_nls_reminder_tip_after_tomorrow">后天</string>
+    <string name="cx_fa_nls_reminder_tip_future_second_format">%d秒后</string>
+    <string name="cx_fa_nls_reminder_tip_future_minute_format">%d分钟后</string>
+    <string name="cx_fa_nls_reminder_tip_future_hour_format">%d小时后</string>
+    <string name="cx_fa_nls_reminder_tip_future_format">%d天后</string>
+    <string name="cx_fa_nls_reminder_tip_future_this_year">1年后</string>
+    <string name="cx_fa_nls_reminder_tip_future_years">多年后</string>
+    <string name="cx_fa_nls_reminder_tip_format"  formatted="false">%s提醒%s</string>
+<!--     <string name="cx_fa_nls_wife">老婆</string>
+    <string name="cx_fa_nls_husband">老公</string> -->
+    <string name="cx_fa_role_reminder">老公</string>
+    <string name="cx_fa_role_reminder_s">老婆</string>
+    <string name="cx_fa_nls_capital_wife">老婆</string>
+    <string name="cx_fa_nls_capital_husband">老公</string>
+    <string name="cx_fa_nls_me">我</string>
+    <string name="cx_fa_nls_myself">我自己</string>
+    <string name="cx_fa_nls_us">双方</string>
+    <string name="cx_fa_nls_reminder_everyday">每天</string>
+    <string name="cx_fa_nls_reminder_everymon">一</string>
+    <string name="cx_fa_nls_reminder_everytue">二</string>
+    <string name="cx_fa_nls_reminder_everywed">三</string>
+    <string name="cx_fa_nls_reminder_everythu">四</string>
+    <string name="cx_fa_nls_reminder_everyfri">五</string>
+    <string name="cx_fa_nls_reminder_everysat">六</string>
+    <string name="cx_fa_nls_reminder_everysun">日</string>
+    <string name="cx_fa_nls_reminder_everyweek">每周</string>
+    <string name="cx_fa_nls_reminder_everymonth">每月</string>
+    <string name="cx_fa_nls_reminder_everymonth_format" formatted="false">每月%d日</string>
+    <string name="cx_fa_nls_reminder_everyyear_format" formatted="false">每年 %1$tm月%1$te日</string>
+    <string name="cx_fa_nls_reminder_everyyear">每年</string>
+    <string name="cx_fa_nls_reminder_workingdays">工作日</string>
+    <string name="cx_fa_nls_reminder_customize_perfix">周</string>
+    <string name="cx_fa_nls_reminder_customize_seperator">、</string>
+    <string name="cx_fa_nls_reminder_mon">周一</string>
+    <string name="cx_fa_nls_reminder_tue">周二</string>
+    <string name="cx_fa_nls_reminder_wed">周三</string>
+    <string name="cx_fa_nls_reminder_thu">周四</string>
+    <string name="cx_fa_nls_reminder_fri">周五</string>
+    <string name="cx_fa_nls_reminder_sat">周六</string>
+    <string name="cx_fa_nls_reminder_sun">周日</string>
+    <string name="cx_fa_nls_reminder_period_this_year_date_format" formatted="false">%1$tm月%1$te日</string>
+    <string name="cx_fa_nls_reminder_period_date_format" formatted="false">%1$tY年%1$tm月%1$te日</string>
+    <string name="cx_fa_nls_reminder_period_time_format" formatted="false">%1$tH:%1$tM</string>
+    <string name="cx_fa_nls_pm" formatted="false">下午</string>
+    <string name="cx_fa_nls_am" formatted="false">上午</string>
+    <string name="cx_fa_nls_reminder_target_myself">提醒自己</string>
+    <string name="cx_fa_nls_reminder_target_relatie">提醒对方</string>
+    <string name="cx_fa_nls_reminder_target_both">提醒双方</string>
+    <string name="cx_fa_nls_reminder_advance_none">无</string>
+    <string name="cx_fa_nls_reminder_advance_15minutes">提前15分钟</string>
+    <string name="cx_fa_nls_reminder_advance_1hour">提前1小时</string>
+    <string name="cx_fa_nls_reminder_advance_1day">提前1天</string>
+    <string name="cx_fa_nls_reminder_advance_3day">提前3天</string>
+    <string name="cx_fa_nls_reminder_advance_5day">提前5天</string>
+    <string name="cx_fa_nls_invalid_reminder_title">请输入内容</string>
+    <string name="cx_fa_nls_reminder_label_date_advance" formatted="false">%s(%s)</string>
+    <string name="cx_fa_nls_list_pull_down_to_refresh">下拉可以刷新&#8230;</string>
+    <string name="cx_fa_nls_list_pull_up_to_refresh">上拉可以刷新&#8230;</string>
+    <string name="cx_fa_nls_list_release_to_refresh">松开可以刷新&#8230;</string>
+    <string name="cx_fa_nls_list_refreshing">正在刷新&#8230;</string>    
+    <string name="cx_fa_nls_reminder_no_reminder_tip1">还没有任何提醒</string>
+    <string name="cx_fa_nls_reminder_no_reminder_tip2">试试看，跟%s告别忘事儿烦恼！</string>
+    <string name="cx_fa_nls_reminder_invalid_date_for_creation">请检查您设置的时间是否有误</string>
+    <string name="cx_fa_nls_button_text_add_reminder_now">马上添加提醒</string>
+    <string name="cx_fa_reminder_checktime_legal_msg">请检查您设置的时间是否有误</string>
+    <string name="cx_fa_reminder_is_save_data_msg">你已经修改了提醒数据，是否不保存就退出修改？</string>
+    <string name="cx_fa_reminder_check_not_edit_msg">不能修改对方设置的提醒</string>
+    <string name="cx_fa_role_reminder_birthday_tip">老公生日提醒</string>
+    <string name="cx_fa_role_reminder_birthday_tip_s">老婆生日提醒</string>
+    
+    
+    <string name="cx_fa_role_congratulation_s">我的验证码是%1$s</string>
+    <string name="cx_fa_role_congratulation">我的验证码是%1$s</string>
+    <string name="cx_fa_input_phone">请输入手机号，马上发出邀请</string>
+    <string name="cx_fa_role_phnoe_num">老婆的手机号</string><!-- 老公版"cx_fa_role_xx" -->
+    <string name="cx_fa_role_phnoe_num_s">老公的手机号</string><!-- 老婆版 "cx_fa_role_xx_s"-->
+    <string name="cx_fa_invite_number_text">我的邀请码</string>
+    <string name="cx_fa_getting_my_invitenumber">正在获取我的邀请码</string>
+    <string name="cx_fa_pair_directly">马上开通</string>
+    <string name="cx_fa_role_invite_text">邀请老公</string>
+    <string name="cx_fa_role_invite_text_s">邀请老婆</string>
+    <string name="cx_fa_role_invite_partner_text">赶快邀请老公安装</string>
+    <string name="cx_fa_role_invite_partner_text_s">赶快邀请老婆安装</string>
+    <string name="cx_fa_invite_to_own">开通</string>
+    <string name="cx_fa_version_invite_note_work">老公老婆是一个家庭微信，两人互装后才能互通。</string>
+    <string name="cx_fa_role_dimesionbar_show_text">让老公扫描二维码安装“小家”应用</string>
+    <string name="cx_fa_role_dimesionbar_show_text_s">让老婆扫描二维码安装“小家”应用</string>
+    <string name="cx_fa_invited_words">您已邀请</string>
+    <string name="cx_fa_role_pair">老公</string>
+    <string name="cx_fa_role_pair_s">老婆</string>
+    <string name="cx_fa_chat_title_speak">说</string>
+    <string name="cx_fa_setup_text">安装</string>
+    <string name="cx_fa_role_pairsetup_versionname">“老婆”</string>
+    <string name="cx_fa_role_pairsetup_versionname_s">“老公”</string>
+    <string name="cx_fa_invited_word1">"应用，等</string>
+    <string name="cx_fa_role_pair_gender">他</string>
+    <string name="cx_fa_role_pair_gender_s">她</string>
+    <string name="cx_fa_invited_word2">接受邀请后你俩就可以开始聊天啦。</string>
+    <string name="cx_fa_invited_word3">请耐心等待，</string>
+    <string name="cx_fa_invited_word4">正在安装</string>
+    <string name="cx_fa_invited_word5">你也可以直接打电话告诉</string>
+    <string name="cx_fa_invited_word6">去应用商店下载安装</string>
+    <string name="cx_fa_invited_word7">应用，记得不要安装错哦！</string>
+    <string name="cx_fa_net_not_active">没有可用的网络</string>
+    <string name="cx_fa_net_err">网络请求失败</string>
+    <string name="cx_fa_invited_text">已经邀请你</string>
+    <string name="cx_fa_cancel_text">关闭</string>
+    <string name="cx_fa_invite_word">开通</string>
+    <string name="cx_fa_role_comingtext">老公即将驾到&#8230;&#8230;&#8230;</string>
+    <string name="cx_fa_role_comingtext_s">老婆即将驾到&#8230;&#8230;&#8230;</string>
+    <string name="cx_fa_confirm_text">确定</string>
+    <string name="cx_fa_reminder_del_msg">确定删除吗？</string>
+    <string name="cx_fa_reminder_delay_title">(延迟)</string>
+    <string name="cx_fa_waiting_text">等待&#8230;&#8230;&#8230;</string>
+    <string name="cx_fa_invite_faild">邀请结对失败</string>
+    <string name="cx_fa_invite_nopairnumber">请填入邀请号码</string>
+    <string name="cx_fa_invitenumber_paired">你邀请的号码已经结对，请填入其他号码</string>
+    <string name="cx_fa_cancel_button_text">取消</string>
+    <string name="cx_fa_head_img_text">我的头像</string>
+    <string name="cx_fa_chat_bg_text">聊天背景</string>
+    <string name="cx_fa_lock_pswd_text">锁屏密码</string>
+    <string name="cx_fa_when_receive_chatmsg">收到聊天消息时</string>
+    <string name="cx_fa_soud_text">发出声音</string>
+    <string name="cx_fa_shock_text">发出震动</string>
+    <string name="cx_fa_earphone_text">强制使用听筒播放语音消息</string>
+    <string name="cx_fa_clear_imgcache">清除图片声音缓存</string>
+    <string name="cx_fa_clear_chatrecord">清空聊天记录</string>
+    <string name="cx_fa_setting_clear_chatrecord_message">将删除所有聊天记录，删除后不能恢复，确认删除么？</string>
+    <string name="cx_fa_setting_clear_chatrecord_message_sucess">清除聊天记录成功</string>
+    <string name="cx_fa_setting_clear_imgcache_message">清除缓存不会影响你的聊天记录，确认清除么？</string>
+    <string name="cx_fa_setting_clear_imgcache_message_sucess">清除缓存成功</string>
+    <string name="cx_fa_helpresponce_text">意见反馈</string>
+    <string name="cx_fa_help_feedback">意见反馈</string>
+    <string name="cx_fa_help_help">帮助</string>
+<!--     <string name="cx_fa_role_about_version">关于老公</string>
+    <string name="cx_fa_role_about_version_s">关于老婆</string> -->
+    <string name="cx_fa_about_version">关于小家</string>
+
+    <string name="cx_fa_unbind_relationship_text">解除绑定关系</string>
+
+    <string name="cx_fa_user_protocol_text">用户协议</string>
+    <!-- <string name="cx_fa_role_user_protocol_title">恭喜你安装了“小家”，请认真阅读用户协议。</string>
+    <string name="cx_fa_role_user_protocol_title_s">恭喜你安装了“老婆”，请认真阅读用户协议。</string> -->
+    <string name="cx_fa_user_protocol_title">恭喜你安装了“小家”，请认真阅读用户协议。</string>
+    <string name="cx_fa_current_version_number">当前版本</string>
+    <string name="cx_fa_no_need_update_version">当前版本已经是最新版</string>
+    <string name="cx_fa_need_update_version">请下载更新最新版</string>
+    <string name="cx_fa_community">QQ交流群：168645131</string>
+    <string name="cx_fa_suggestion_uid">您的UID：</string>
+    <string name="cx_fa_copyright">Copyright@2014 兴财富汇.All Rights Reserved.</string>
+    <string name="cx_fa_comfirm_send_text">确认发送</string>
+    <string name="cx_fa_user_contact_hint">请输入您的联系QQ（选填）</string>
+    <string name="cx_fa_input_suggestion">请填写您的意见或建议</string>
+    <string name="cx_fa_logout_current_account">退出当前账号</string>
+    <string name="cx_fa_sina_authorize_fail">新浪微博授权失败</string>
+    <string name="cx_fa_tencent_authorize_fail">QQ授权失败</string>
+    <string name="cx_fa_login_fail">登录失败</string>
+    <string name="cx_fa_unbind_tip">即将解除和对方账号的绑定。此解除不影响你的登录账号，你可以用此账号重新绑定对象</string>
+    <string name="cx_fa_unbind_success">你与对方解除了绑定关系</string>
+    <string name="cx_fa_input_invite_number">请输入你伴侣的验证码</string>
+    <string name="cx_fa_mate_invite_number">请输入你伴侣的验证码</string>
+    <string name="cx_fa_comfirm_pair">确认开通</string>
+    <string name="cx_fa_mate_unbind">对方与你解除了绑定关系</string>
+    <string name="cx_fa_pair_tip_prefixtext">是否确定与%1$s结对？</string>
+    <string name="cx_fa_role_mate_with_me">老公和我</string>
+    <string name="cx_fa_role_mate_with_me_s">老婆和我</string>
+    <string name="cx_fa_tip_text">提示</string>
+    <string name="cx_fa_delete_comfirm_text">确定要删除吗？</string>
+
+    <string name="cx_fa_reply_text">回复</string>
+    <string name="cx_fa_role_zone_mate">老公</string>
+    <string name="cx_fa_role_zone_mate_s">老婆</string>
+    <!--<string name="cx_fa_zone_no_content">请输入内容</string>-->
+    <string name="cx_fa_zone_sendtext">分享文字</string>
+    <string name="cx_fa_zone_sendimage">分享照片</string>
+    <!--<string name="cx_fa_zone_no_feed">你还没有分享的内容</string>-->
+    <string name="cx_fa_delete_text">删除</string>
+    <string name="cx_fa_save_text">保存</string>
+    <string name="cx_fa_save_fail_text">保存图片失败</string>
+    <string name="cx_fa_image_down_fail_text">图片还没下载成功，请稍后保存</string>
+    <string name="cx_fa_save_success_text">已保存到本地相册</string>
+    <string name="cx_fa_unuseable_extralstorage">SD卡不可用</string>
+    <string name="cx_fa_download_uncompleted">图片未下载完成</string>
+    <string name="cx_fa_input_lockscreen_password">请输入锁屏密码</string>
+
+    <string name="cx_fa_quit_comfirm_text">放弃本次编辑？</string>
+    <string name="cx_fa_save_fail">保存失败</string>
+
+     <!-- 猜拳 -->
+    <string name="cx_fa_guess_start_title">【发起猜拳】</string>
+    <string name="cx_fa_guess_start_info_husband">老公我出拳啦\n快点击这里回拳吧~</string>
+    <string name="cx_fa_guess_start_info_wife">老婆我出拳啦\n快点击这里回拳吧~</string>
+    <string name="cx_fa_guess_result_title">【猜拳结果】</string>
+    <string name="cx_fa_guess_result_win_wife">老婆赢了~</string>
+    <string name="cx_fa_guess_result_win_husband">老公赢了~</string>
+    <string name="cx_fa_guess_result_tie">平局~</string>
+    <string name="cx_fa_guess_waiting_result">正在判断猜拳结果&#8230;&#8230;&#8230;</string>
+    <string name="cx_fa_guess_reply_fail">回拳未发送成功</string>
+
+    <string name="cx_fa_guess_input_panel_reply">选择回拳</string>
+    <string name="cx_fa_guess_input_panel_start">选择出拳开始新的一局</string>
+
+    <!-- 抽鞭子和弹脑壳 -->
+    <string name="cx_fa_animation_0_name">【抽鞭子】</string>
+    <string name="cx_fa_animation_guide_text_0">狠甩手机，抽他一鞭子</string>
+    <string name="cx_fa_animation_0_hit">抽你一鞭子!</string>
+    <string name="cx_fa_animation_0_reply_btn_1">求饶</string>
+    <string name="cx_fa_animation_0_reply_btn_2">耍赖</string>
+    <string name="cx_fa_animation_0_reply_title">【抽鞭子回复】</string>
+    <string name="cx_fa_animation_0_reply_text_1">好痛,老婆饶命~</string>
+    <string name="cx_fa_animation_0_reply_text_2">嘿嘿，再来一下呗~</string>
+
+    <string name="cx_fa_animation_1_name">【弹脑壳】</string>
+    <string name="cx_fa_animation_guide_text_1">轻敲屏幕，弹她脑壳</string>
+    <string name="cx_fa_animation_1_hit">弹你脑壳</string>
+    <string name="cx_fa_animation_1_reply_btn_1">撒娇</string>
+    <string name="cx_fa_animation_1_reply_btn_2">反击</string>
+    <string name="cx_fa_animation_1_reply_title">【弹脑壳回复】</string>
+    <string name="cx_fa_animation_1_reply_text_1">你是个坏人~</string>
+    <string name="cx_fa_animation_1_reply_text_2">弹我?小心吃鞭子!</string>
+
+    <string name="cx_fa_animation_nonsupport">\n对方版本暂不支持此功能\n</string>
+
+    <!-- 我家小报 -->
+    <string name="cx_fa_tabloid_activity_title">我家小报</string>
+    <string name="cx_fa_role_taboloid_forward_s">转发给老婆</string>
+    <string name="cx_fa_role_taboloid_forward">转发给老公</string>
+    <string name="cx_fa_role_taboloid_forward_pre_s">老婆,转个有意思的给你:\n</string>
+    <string name="cx_fa_role_taboloid_forward_pre">老公,转个有意思的给你:\n</string>
+    <string name="cx_fa_tabloid_reminder_tip_content">叮铃铃~今天的我家小报送到了</string>
+    <string name="cx_fa_tabloid_unsub_confirm">确认退订</string>
+    <string name="cx_fa_tabloid_unsub_tip_info">确认退订此栏目吗?  退订后将不再收到此栏目内容推荐!</string>
+
+
+    <!-- 备忘资料 -->
+    <string name="cx_fa_role_mateprofile_name_hint">老公的昵称</string>
+    <string name="cx_fa_role_mateprofile_name_hint_s">老婆的昵称</string>
+    <string name="cx_fa_role_mateprofile_birth_hint">老公的生日</string>
+    <string name="cx_fa_role_mateprofile_birth_hint_s">老婆的生日</string>
+    <string name="cx_fa_role_mateprofile_mobile_hint">老公的手机号</string>
+    <string name="cx_fa_role_mateprofile_mobile_hint_s">老婆的手机号</string>
+    <string name="cx_fa_mateprofile_custom_hint">未填写</string>
+    <string name="cx_fa_mateprofile_note_hint">写点什么</string>
+    <string name="cx_fa_mateprofile_addcustom_hint">请输入一个自定义资料项，如“爱好”</string>
+
+    <string name="cx_fa_alert_dialog_tip">提示</string>
+    <string name="cx_fa_chat_del_msg">是否删除该聊天记录？</string>
+    <string name="cx_fa_chat_dump_msg">是否把此记录转存到我家相册？</string>
+     <string name="cx_fa_del_msg">删除</string>
+    <string name="cx_fa_chat_header_message">欢迎加入小家！这是你的家庭空间，帮你连接最珍爱的人，现在开始体验吧！</string>
+    <string name="cx_fa_chat_resend_msg">信息未发送成功， 是否重发？</string>
+    <string name="cx_fa_chat_button_resend_text">重发</string>
+    <string name="cx_fa_chat_not_call_msg">尚未设置对方的手机号码</string>
+    <string name="cx_fa_chat_call_msg">是否拨打电话%1$s</string>
+    <string name="cx_fa_chat_call_setphone_btn">马上设置</string>
+    <string name="cx_fa_chat_call_btn">拨打</string>
+    <string name="cx_fa_chat_popupmenu_photo_btn">照片</string>
+    <string name="cx_fa_chat_popupmenu_camera_btn">拍摄</string>
+    <string name="cx_fa_chat_popupmenu_location_btn">位置</string>
+    <string name="cx_fa_chat_popupmenu_reply_btn">汇报一下</string>
+    <string name="cx_fa_role_chat_popupmenu_whip_btn">抽鞭子</string>
+    <string name="cx_fa_role_chat_popupmenu_whip_btn_s">弹脑壳</string>
+    <string name="cx_fa_chat_popupmenu_guess_btn">猜拳</string>
+    <string name="cx_fa_chat_popupmenu_new_btn">敬请期待</string>
+    <string name="cx_fa_role_chat_welcome_first_msg">老公，我等你很久啦！</string>
+    <string name="cx_fa_role_chat_welcome_first_msg_s">老婆，我等你很久啦！</string>
+    <string name="cx_fa_role_chat_welcome_second_msg">哈哈，老婆我来啦！</string>
+    <string name="cx_fa_role_chat_welcome_second_msg_s">哈哈，老公我来啦！</string>
+    <string name="cx_fa_chat_dump_fail_text">转存失败！</string>
+    <string name="cx_fa_chat_dump_success_text">转存成功！</string>
+    <string name="cx_fa_chat_locate_fail">定位失败！</string>
+    <string name="cx_fa_chat_record_tip">（手指移动到这里取消）</string>
+    <string name="cx_fa_chat_record_cancle_tip">松开即取消</string>
+    <string name="cx_fa_chat_record_time_remianing">剩余%1$s</string>
+    <string name="cx_fa_chat_record_time_short_msg">录音时间太短，请重试</string>
+    <string name="cx_fa_set_lockscreen_pswd">设置密码</string>
+    <string name="cx_fa_cancel_lockscreen_pswd">取消锁屏密码</string>
+    <string name="cx_fa_exit_account_tip">确定要退出？</string>
+    <string name="cx_fa_exit_fail">退出失败</string>
+
+    <string name="cx_fa_role_mate_name">老公%1$s</string>
+    <string name="cx_fa_role_mate_name_s">老婆%1$s</string>
+    <string name="cx_fa_share_feed_text">发布</string>
+
+    <string name="cx_fa_nls_datepicker_monring">上午</string>
+    <string name="cx_fa_nls_datepicker_afternoon">下午</string>
+    <string name="cx_fa_role_invite_word">老公， 快安装一个叫“小家”的应用，咱俩可以亲密聊天，共同管理家庭照片和日程，共同理财和育儿，还可以拉亲友一家一起玩，很酷！我的验证码是"%1$s"，这是下载地址：http://m.family.rekoo.net/dl/invite</string>
+    <string name="cx_fa_role_invite_word_s">老婆， 快安装一个叫“小家”的应用，咱俩可以亲密聊天，共同管理家庭照片和日程，共同理财和育儿，还可以拉亲友一家一起玩，很酷！我的验证码是"%1$s"，这是下载地址：http://m.family.rekoo.net/dl/invite</string>
+     <string name="cx_fa_upgrade_text">升级</string>
+     <string name="cx_fa_must_upgrade_text">当前版本太低无法正常使用，请升级到最新版</string>
+    <string name="cx_fa_upgrade_tip_text">升级提示</string>
+    <string name="cx_fa_upgrade_version_text">发现新版本V%1$s，功能更完善，使用起来更畅快，赶快升级吧！</string>
+    <string name="cx_fa_role_send_img_hint">关于照片想跟老公说些什么呢？</string>
+    <string name="cx_fa_role_send_img_hint_s">关于照片想跟老婆说些什么呢？</string>
+    <string name="cx_fa_role_send_text_hint">想写些什么跟老公分享？</string>
+    <string name="cx_fa_role_send_text_hint_s">想写些什么跟老婆分享？</string>
+    <string name="cx_fa_partner_text">对方</string>
+    <string name="cx_fa_share_fail">分享失败</string>
+    <string name="cx_fa_processing">正在处理中&#8230;&#8230;&#8230;</string>
+    <string name="cx_fa_file_exists">文件不存在，无法查看</string>
+    <string name="cx_fa_receive_message_progress">收取中&#8230;&#8230;&#8230;</string>
+    <string name="cx_fa_communication_text">QQ交流群：168645131</string>
+    <string name="cx_fa_pair_success_text">结对成功</string>
+    <string name="cx_fa_different_password">两次输入的密码不一致</string>
+    <string name="cx_fa_wrong_unlock_password">错误的解锁密码</string>
+    <string name="cx_fa_wrong_lock_password">错误的锁屏密码</string>
+    <string name="cx_fa_success_setpswd">设置锁屏密码成功</string>
+    <string name="cx_fa_no_invite_number">邀请码获取失败</string>
+
+    <string name="cx_fa_copy_text"> | 复制  </string>
+    <string name="cx_fa_dump_text"> | 转存到我家相册</string>
+    <string name="cx_fa_zone_no_feed_tip">我家相册是记录和分享你俩私密生活时光的地方。 目前还没有任何图文，现在就发一条吧！</string>
+    <string name="cx_fa_input_panel_btn_text_press">按住说话</string>
+    <string name="cx_fa_input_panel_btn_text_focus">松开结束</string>
+    <string name="cx_fa_not_download_file_complete">网络不给力，请重试</string>
+
+    <string name="cx_fa_role_version_name">family_husband/</string>
+    <string name="cx_fa_role_version_name_s">family_wife/</string>
+    <string name="cx_fa_channel">chuxin</string>
+
+    <string name="cx_fa_role_mateprofile_title_s">老婆的资料</string>
+    <string name="cx_fa_role_mateprofile_title">老公的资料</string>
+
+
+    <string name="cx_fa_custom_loading_more_text">正在加载中, 请稍候</string>
+
+
+    <string name="cx_fa_emotion_config_name">EmotionConfigFile.txt</string>
+    <string name="cx_fa_chatbg_config_name">ChatbgConfigFile.txt</string>
+
+
+
+
+    <string name="cx_fa_same_invitenum_with_me">请输入你伴侣的验证码而不是自己的</string>
+    <string name="cx_fa_role_invite_by_qq">通过QQ邀请老公</string>
+    <string name="cx_fa_role_invite_by_qq_s">通过QQ邀请老婆</string>
+    <string name="cx_fa_role_invite_by_dx_s">通过短信邀请老婆</string>
+    <string name="cx_fa_role_invite_by_dx">通过短信邀请老公</string>
+    <string name="cx_fa_role_invite_by_wx_s">通过微信邀请老婆</string>
+    <string name="cx_fa_role_invite_by_wx">通过微信邀请老公</string>
+    <string name="cx_fa_role_invite_by_qr">让老公扫描二维码安装“小家”</string>
+    <string name="cx_fa_role_invite_by_qr_s">让老婆扫描二维码安装“小家”</string>
+
+    <string name="cx_fa_neighbour_send_img_hint">关于照片想跟亲友们说些什么呢？</string>
+    <string name="cx_fa_neighbour_send_text_hint">想写些什么跟亲友们分享？</string>
+
+    <!-- 密邻  -->
+    <string name="cx_fa_add_nieghbour_text">添加亲友</string>
+    <string name="cx_fa_neighbour_list_text">亲友列表</string>
+    <string name="cx_fa_neighbour_list_title">亲友们</string>
+    <string name="cx_fa_neighbour_invite_neighbour_btn">邀请亲友</string>
+    <string name="cx_fa_neighbour_family_name">我们一家</string>
+    <string name="cx_fa_neighbour_family_name_formatted" formatted="false">%s和%s一家</string>
+    <string name="cx_fa_neighbour_wait_agree">待同意</string>
+    <string name="cx_fa_neighbour_refuse">被拒绝</string>
+    <string name="cx_fa_neighbour_invite_number">输入对方一家的亲友号/手机号</string>
+    <string name="cx_fa_my_neighbour_number_tip_formatted" formatted="false">我们一家的亲友号：%s</string>
+    <string name="cx_fa_add_neighbour_already_send_tip">申请已发送</string>
+    <string name="cx_fa_add_neighbour_null_tip">请输入对方一家的亲友号/手机号</string>
+    <string name="cx_fa_add_neighbour_error_tip">请输入对方一家的亲友号/手机号而不是自己一家的</string>
+    <string name="cx_fa_invite_neighbour_install_title">邀请亲友</string>
+    <!-- <string name="cx_fa_invite_neighbour_word_hb">Hi，你们小两口装个“小家”应用吧，一家人亲密聊天，共同管理家庭照片和日程，共同理财和育儿，咱们两家还可以一起玩，很酷！我家的ID是IDD，这是下载地址：http://m.family.rekoo.net/dl/husband</string>
+    <string name="cx_fa_invite_neighbour_word_wf">Hi，你们小两口装个“小家”应用吧，一家人亲密聊天，共同管理家庭照片和日程，共同理财和育儿，咱们两家还可以一起玩，很酷！我家的ID是IDD，这是下载地址：http://m.family.rekoo.net/dl/wife</string> -->
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+    <string name="cx_fa_neighbour_neighbours_home_changename_success">备注名更改成功</string>
+    <string name="cx_fa_neighbour_neighbours_home_changename_fail">备注名更改失败</string>
+    <string name="cx_fa_neighbour_neighbours_home_un_changename">请输入备注名</string>
+
+    <string name="cx_fa_reminder_activity_title">提醒·纪念日</string>
+    <string name="cx_fa_has_no_wx">请先安装微信</string>
+
+    <string name="cx_fa_together_tip">牵手%1$s天</string>
+    <string name="cx_fa_what_date_together">哪一天在一起的？</string>
+
+    <string name="cx_fa_dimesionbar_text_husband">让她扫描二维码</string>
+    <string name="cx_fa_dimesionbar_text_wife">让他扫描二维码</string>
+
+    <string name="cx_fa_zone_share_sync_neighbour">同步此话题到亲友</string>
+    <string name="cx_fa_sync_opening">已开启</string>
+    <string name="cx_fa_sync_closing">已关闭</string>
+    <string name="cx_fa_more_game">谁家最聪明</string>
+    <string name="cx_fa_recommend_friend">推荐给亲友</string>
+    <string name="cx_fa_add_button_text">添加</string>
+    <string name="cx_fa_dx_invite_button_text">短信邀请</string>
+    <string name="cx_fa_qq_invite_button_text">QQ邀请</string>
+    <string name="cx_fa_wechat_invite_button_text">微信邀请</string>
+    <string name="cx_fa_invite_neighbour_install_husband_tip">如果亲友是女生，邀请她安装“老公”</string>
+    <string name="cx_fa_invite_neighbour_install_wife_tip">如果亲友是男生，邀请她安装“老婆”</string>
+    <string name="cx_fa_add_neighbour_dialog_is_add_tip">确认添加他们一家为亲友？</string>
+
+    <string name="cx_fa_notify_sound_text">通知提示音</string>
+    <string name="cx_fa_role_push_first_sound">调皮</string>
+    <string name="cx_fa_role_push_first_sound_s">三弦音</string>
+    <string name="cx_fa_role_push_second_sound">老婆</string>
+    <string name="cx_fa_role_push_second_sound_s">老公</string>
+    <string name="cx_fa_push_third_sound">系统通知</string>
+    <string name="cx_fa_save_and_back_text">保存返回</string>
+
+   <!--  <string name="cx_fa_invite_neighbour_word_hb_qq">Hi，你们两口子装个“老公”和“老婆”应用吧，比微信好玩又私密，我们两家互相加为亲友吧！点击这里下载</string>
+    <string name="cx_fa_invite_neighbour_word_wf_qq">Hi，你们两口子装个“老公”和“老婆”应用吧，比微信好玩又私密，我们两家互相加为亲友吧！点击这里下载</string> -->
+
+
+    <string name="cx_fa_neighbour_neighbours_title_name">亲友家</string>
+
+    <string name="cx_fa_more_click_text">新版即将开启</string>
+
+
+
+    <string name="cx_fa_neighbour_invite_code_dialog_text">让对方扫描二维码</string>
+    <string name="cx_fa_neighbour_invite_code_dialog_text2">马上安装“小家”应用</string>
+
+    <string name="cx_fa_role_pair_invite_code_dialog_text">让他扫描二维码</string>
+    <string name="cx_fa_role_pair_invite_code_dialog_text2">马上安装“小家”应用</string>
+    <string name="cx_fa_role_pair_invite_code_dialog_text_s">让她扫描二维码</string>
+    <string name="cx_fa_role_pair_invite_code_dialog_text2_s">马上安装“小家”应用</string>
+
+
+
+
+
+    <string name="cx_fa_role_neighbour_pair">老婆</string>
+    <string name="cx_fa_role_neighbour_pair_s">老公</string>
+    <string name="cx_fa_invited_usednumber">此号码已经结对</string>
+    <string name="cx_fa_to_help">功能介绍</string>
+    <string name="cx_fa_suggestion_send_success">建议已经发送成功，谢谢您的支持！</string>
+    <string name="cx_fa_reinput_lockscreen_password">请再次输入锁屏密码</string>
+
+    <string name="cx_fa_navi_suggest">意见反馈</string>
+    <string name="cx_fa_send_location_info">发送位置</string>
+    <string name="cx_fa_qq_authen_fail">QQ授权失败</string>
+    <string name="cx_fa_sina_authen_fail">新浪微博授权失败</string>
+    <string name="cx_fa_obtain_profile_fail">个人资料获取失败</string>
+
+    <string name="cx_fa_modify_headimg_fail">修改头像失败</string>
+    <string name="cx_fa_modify_headimg_success">修改头像成功</string>
+
+    <string name="cx_fa_modify_chatbg_fail">修改聊天背景失败</string>
+    <string name="cx_fa_modify_chatbg_success">更新聊天背景成功</string>
+    <string name="cx_fa_dispose_feed">放弃本次编辑？</string>
+
+
+    <string name="cx_fa_modify_bg_of_zone">修改空间背景失败</string>
+    <string name="cx_fa_modify_bg_of_neighbour_ourhome">背景图更换失败</string>
+    <string name="cx_fa_modify_bg_of_neighbour_ourhome_success">背景图更换成功</string>
+    <string name="cx_fa_modify_bg_of_neighbour_homepage_fail">设置失败</string>
+    <string name="cx_fa_modify_bg_of_neighbour_homepage_success">设置成功</string>
+    <string name="md__drawerOpenIndicatorDesc">Close drawer</string>
+    <string name="md__drawerClosedIndicatorDesc">Open drawer</string>
+
+
+
+    <string name="cx_fa_message_send_text_hint">想跟他们一家说些什么？</string>
+
+
+
+
+
+
+ <!--    <string name="cx_fa_neighbour_home_change_name_success">修改备注名成功</string>
+    <string name="cx_fa_neighbour_home_change_name_fail">修改备注名失败</string> -->
+
+    <string name="cx_fa_neighbour_fragment_add_neighbour">马上添加亲友</string>
+    <string name="cx_fa_neighbour_home_change_griltext">修改女生的备注名称</string>
+    <string name="cx_fa_neighbour_home_change_boytext">修改男生的备注名称</string>
+
+
+
+
+
+
+    <string name="cx_fa_destroy_audio_file">录音文件已经被破坏</string>
+    <string name="cx_fa_account_chart_date_formatted" formatted="false">%s年%s月</string>
+
+
+    <!-- 记账 -->
+
+    <string name="cx_fa_accounting_change_account_money_dialog_tv">请输入金额</string>
+    <string name="cx_fa_accounting_change_account_date_dialog_tv">请选择日期</string>
+
+<!--     <string name="cx_fa_accounting_category_out_athome">居家物业\n(房租房贷、物业/水电、日常零碎等)</string>
+    <string name="cx_fa_accounting_category_out_athome_short">居家物业</string>
+    <string name="cx_fa_accounting_category_out_traffic">交通通讯\n(车票/打车费、手机费、加油费等)</string>
+    <string name="cx_fa_accounting_category_out_traffic_short">交通通讯</string>
+    <string name="cx_fa_accounting_category_out_catering">餐饮零食\n(早中晚餐、零食、水果、油盐酱醋等)</string>
+    <string name="cx_fa_accounting_category_out_catering_short">餐饮零食</string>
+    <string name="cx_fa_accounting_category_out_entertainment">休闲娱乐\n(电影、K歌、游戏、健身/美容、旅游等)</string>
+    <string name="cx_fa_accounting_category_out_entertainment_short">休闲娱乐</string>
+    <string name="cx_fa_accounting_category_out_shopping">商品购物\n(服装、数码、化妆品、家居用品等)</string>
+    <string name="cx_fa_accounting_category_out_shopping_short">商品购物</string>
+    <string name="cx_fa_accounting_category_out_education">医疗教育\n（求医、买药、读书、培训等）</string>
+    <string name="cx_fa_accounting_category_out_education_short">医疗教育</string>
+    <string name="cx_fa_accounting_category_out_financial">金融保险\n(证券、基金、保险、投资、创业等)</string>
+    <string name="cx_fa_accounting_category_out_financial_short">金融保险</string>
+    <string name="cx_fa_accounting_category_out_gratitude">人情往来\n(请客、红白礼金、慈善捐款等)</string>
+    <string name="cx_fa_accounting_category_out_gratitude_short">人情往来</string> -->
+
+    <string name="cx_fa_accounting_category_out_athome">居家物业\n(房租房贷、物业/水电等)</string>
+    <string name="cx_fa_accounting_category_out_athome_short">居家物业</string>
+    <string name="cx_fa_accounting_category_out_traffic">交通通讯\n(打车、手机费、加油费等)</string>
+    <string name="cx_fa_accounting_category_out_traffic_short">交通通讯</string>
+    <string name="cx_fa_accounting_category_out_catering">餐饮零食\n(餐费、零食水果、油盐酱醋等)</string>
+    <string name="cx_fa_accounting_category_out_catering_short">餐饮零食</string>
+    <string name="cx_fa_accounting_category_out_entertainment">休闲娱乐\n(电影、K歌、旅游等)</string>
+    <string name="cx_fa_accounting_category_out_entertainment_short">休闲娱乐</string>
+    <string name="cx_fa_accounting_category_out_shopping">商品购物\n(服装化妆品、数码、家居等)</string>
+    <string name="cx_fa_accounting_category_out_shopping_short">商品购物</string>
+    <string name="cx_fa_accounting_category_out_education">医疗教育\n（求医、买药、读书、培训等）</string>
+    <string name="cx_fa_accounting_category_out_education_short">医疗教育</string>
+    <string name="cx_fa_accounting_category_out_financial">金融保险\n(证券基金、保险投资等)</string>
+    <string name="cx_fa_accounting_category_out_financial_short">金融保险</string>
+    <string name="cx_fa_accounting_category_out_gratitude">人情往来\n(请客、红白礼金、慈善捐款等)</string>
+    <string name="cx_fa_accounting_category_out_gratitude_short">人情往来</string>
+
+
+    <string name="cx_fa_accounting_category_in_wages_short">工资薪酬</string>
+    <string name="cx_fa_accounting_category_in_award_short">奖金补贴</string>
+    <string name="cx_fa_accounting_category_in_investment_short">投资理财</string>
+    <string name="cx_fa_accounting_category_in_other_short">其它收入</string>
+
+
+    <string name="cx_fa_accounting_homepage_month_in">本月收入:</string>
+    <string name="cx_fa_accounting_homepage_month_out">本月支出:</string>
+    <string name="cx_fa_accounting_homepage_month_surplus">本月结余:</string>
+    <string name="cx_fa_accounting_homepage_year_surplus">本年总结余:</string>
+
+    <string name="cx_fa_accounting_homepage_add_account">记一笔</string>
+    <string name="cx_fa_accounting_homepage_detail">明细</string>
+    <string name="cx_fa_accounting_homepage_pie">饼图</string>
+    <string name="cx_fa_accounting_homepage_detail_more">查看全部明细>></string>
+
+    <string name="cx_fa_accounting_homepage_title">记账</string>
+    <string name="cx_fa_accounting_in">收入</string>
+    <string name="cx_fa_accounting_out">支出</string>
+    <string name="cx_fa_accounting_surplus">结余</string>
+    <string name="cx_fa_role_send_chart_to_partner">把图转发给老公</string>
+    <string name="cx_fa_role_send_chart_to_partner_s">把图转发给老婆</string>
+
+    <string name="cx_fa_accounting_account_money">金额</string>
+    <string name="cx_fa_accounting_account_category">类别</string>
+    <string name="cx_fa_accounting_account_from">来自</string>
+    <string name="cx_fa_accounting_account_date">日期</string>
+    <string name="cx_fa_accounting_account_remark">备注</string>
+    <string name="cx_fa_accounting_account_delete">删除</string>
+
+    <string name="cx_fa_accounting_account_me">自己</string>
+    <string name="cx_fa_accounting_account_both">双方</string>
+
+    <string name="cx_fa_accounting_account_sure_delete">你确定要删除吗？</string>
+    <string name="cx_fa_accounting_account_net_save_fail">网络未连接，请稍后保存</string>
+    <string name="cx_fa_accounting_account_net_delete_fail">删除失败！</string>
+    <string name="cx_fa_accounting_account_sure_leave">确定要退出吗？</string>
+
+    <string name="cx_fa_accounting_account_save_nomoney">你还没有输入金额！</string>
+    <string name="cx_fa_accounting_account_save_fuzhi">请不要输入负值。</string>
+    <string name="cx_fa_accounting_account_save_zhengfuhao">请不要在中间输入负号或正号。</string>
+    <string name="cx_fa_accounting_account_save_point">最小单位为元,请不要输入小数点。</string>
+    <string name="cx_fa_accounting_account_save_big">输入金额过大,最大单位为亿。</string>
+
+    <string name="cx_fa_accounting_account_title_edit_account">编辑记账</string>
+    <string name="cx_fa_role_accounting_account_title_opposite_account">老公的记账</string>
+    <string name="cx_fa_role_accounting_account_title_opposite_account_s">老婆的记账</string>
+    <string name="cx_fa_accounting_account_save_opposite_fail">不能编辑对方的记账</string>
+    <string name="cx_fa_role_accounting_account_tip" formatted="false" >老公, 这是咱们%s的%s结构</string>
+    <string name="cx_fa_role_accounting_account_tip_s" formatted="false">老婆, 这是咱们%s的%s结构</string>
+
+    <string name="cx_fa_accounting_detail_net_fail">网络未连接。。。</string>
+    <string name="cx_fa_accounting_detail_day_no_feed">你本月还没有记账哦！</string>
+    <string name="cx_fa_accounting_detail_year_in">年收入:</string>
+    <string name="cx_fa_accounting_detail_year_out">年支出:</string>
+    <string name="cx_fa_accounting_detail_year_surplus">年总结余:</string>
+
+    <string name="cx_fa_accounting_detail_title_type_btn_all">查看全家</string>
+    <string name="cx_fa_accounting_detail_title_type_btn_only">只看自己</string>
+
+
+    <!-- 私聊 -->
+    <string name="cx_fa_neighbour_message_title">发起私聊</string>
+    <string name="cx_fa_neighbour_message_no_feed">你还没有输入内容</string>
+    <string name="cx_fa_neighbour_message_share_fail">私聊发送失败</string>
+    <string name="cx_fa_neighbour_neighbours_title_message">私聊</string>
+
+
+    <!-- 语音变声 -->
+    <string name="cx_fa_role_inputpannel_soundeffect_text1">装幼</string>
+    <string name="cx_fa_role_inputpannel_soundeffect_text1_s">装憨</string>
+    <string name="cx_fa_role_inputpannel_soundeffect_text2">装傻</string>
+    <string name="cx_fa_role_inputpannel_soundeffect_text2_s">装坏</string>
+    <string name="cx_fa_inputpannel_sound_text">按住说话</string>
+     <string name="cx_fa_inputpannel_sound_release_text">松开结束</string>
+    <string name="cx_fa_role_inputpannel_sound_text1">按住说话 (装幼)</string>
+    <string name="cx_fa_role_inputpannel_sound_text1_s">按住说话(装憨)</string>
+    <string name="cx_fa_role_inputpannel_sound_text2">按住说话(装傻)</string>
+    <string name="cx_fa_role_inputpannel_sound_text2_s">按住说话(装坏)</string>
+
+    <string name="cx_fa_chatview_soundeffect_text_yuansheng">原声</string>
+    <string name="cx_fa_chatview_soundeffect_text_zhuangyou">装幼</string>
+    <string name="cx_fa_chatview_soundeffect_text_zhuanghan">装憨</string>
+    <string name="cx_fa_chatview_soundeffect_text_zhuangsha">装傻</string>
+    <string name="cx_fa_chatview_soundeffect_text_zhuanghuai">装坏</string>
+     <!-- 谁家最聪明  -->
+    <string name="cx_fa_answer_home_title_total_score">我家总得分:</string>
+    <string name="cx_fa_answer_home_title_ratio">答对率:</string>
+    <string name="cx_fa_answer_home_title_smart_ratio">聪明贡献比:</string>
+    <string name="cx_fa_answer_home_today_remain">今日还剩30道题</string>
+    <string name="cx_fa_answer_home_tab_week_rank">周排行</string>
+    <string name="cx_fa_answer_home_tab_total_rank">总排行</string>
+    <string name="cx_fa_answer_home_tab_ratio_rank">答对率</string>
+    <string name="cx_fa_answer_home_item_unfold">查看全部</string>
+    <string name="cx_fa_answer_home_item_fold">收起</string>
+    <string name="cx_fa_answer_home_today_remain_over">今日题目已答完</string>
+    <string name="cx_fa_answer_home_today_remain_over_toast">今日题目已答完,请明日继续！</string>
+    <string name="cx_fa_answer_home_net_fail">网络未连接。。。</string>
+    <string name="cx_fa_answer_home_net_fail_2">网络未连接，请稍后答题！</string>
+    <string name="cx_fa_answer_home_alone_add_neighbour">添加亲友</string>
+    <string name="cx_fa_answer_home_alone_add_neighbour_text">本游戏适于和亲友一起互动，现在就去添加亲友吧！</string>
+
+    <string name="cx_fa_answer_question_topic_default">网络没有连接 ，无法答题，请稍后再试！</string>
+    <!-- <string name="cx_fa_answer_question_half_dialog_content">你已经答完今天的一半题目，给老婆留几道吧？</string> -->
+    <string name="cx_fa_role_answer_question_half_dialog_content">你已经答完今天的一半题目，给老公留几道吧？</string>
+    <string name="cx_fa_role_answer_question_half_dialog_content_s">你已经答完今天的一半题目，给老婆留几道吧？</string>
+    <string name="cx_fa_answer_question_half_dialog_cancel">好的</string>
+    <string name="cx_fa_answer_question_half_dialog_sure">还是我来吧</string>
+    <string name="cx_fa_answer_question_zero_dialog_cancel">我知道了</string>
+
+    <string name="cx_fa_answer_up_share_text">发送成功</string>
+
+
+
+    <!-- 设置sound -->
+    <string name="cx_fa_role_push_first">cx_fa_role_push_first</string>
+    <string name="cx_fa_role_push_first_s">cx_fa_role_push_first_s</string>
+    <string name="cx_fa_role_push">cx_fa_role_push</string>
+    <string name="cx_fa_role_push_s">cx_fa_role_push_s</string>
+
+    <!-- 表情 -->
+    <string name="cx_fa_role_emotion_version_en">husband</string>
+    <string name="cx_fa_role_emotion_version_en_s">wife</string>
+
+    <!-- 大图分享 -->
+    <string name="cx_fa_imagepager_shareto_social">转发到社交网络</string>
+    <string name="cx_fa_imagepager_shareto_album">转发到我家相册</string>
+    <string name="cx_fa_imagepager_shareto_neighbor">转发给亲友</string>
+    <string name="cx_fa_imagepager_save_to_phone">保存到手机</string>
+    <string name="cx_fa_imagepager_cancle">取消</string>
+
+    <string name="cx_fa_chat_synchronize_fail_text">转发失败，请稍后重试</string>
+    <string name="cx_fa_chat_synchronize_success_text">转发成功</string>
+
+  <!-- 邀请亲友界面修改 -->
+
+        <!--  <string name="cx_fa_invite_neighbour_word">Hi， 你们两口子装个“老公”和“老婆”应用吧，这是个家庭微信和夫妻助手，能分享照片、记账、玩家庭游戏。这是下载地址：http://m.family.rekoo.net/dl/husband</string>
+       <string name="cx_fa_invite_neighbour_word_url">http://m.family.rekoo.net/dl/husband</string> -->
+
+
+<!-- 以下为合并需要增加的字符串文本内容 -->
+    <!-- pair 未结对 -->
+    <string name="cx_fa_role_pair_top_word">小家是一个家庭沟通生活工具，和老公开通后才能使用。</string>
+    <string name="cx_fa_role_pair_top_word_s">小家是一个家庭沟通生活工具，和老婆开通后才能使用。</string>
+
+    <string name="cx_fa_role_pair_edit_hint">输入老公的验证码</string>
+    <string name="cx_fa_role_pair_edit_hint_s">输入老婆的验证码</string>
+
+
+    <string name="cx_fa_role_clash_text">两个人的角色都是“老婆”，请角色调整正确后再结对。</string>
+    <string name="cx_fa_role_clash_text_s">两个人的角色都是“老公”，请角色调整正确后再结对。</string>
+
+
+    <!-- 邀请亲友界面修改 -->
+
+    <string name="cx_fa_invite_neighbour_word">Hi，你们小两口装个“小家”应用吧，一家人亲密聊天，共同管理家庭照片和日程，共同理财和育儿，咱们两家还可以一起玩，很酷！我家的ID是"%1$s"，这是下载地址：http://m.family.rekoo.net/dl/invite</string>
+    <string name="cx_fa_invite_neighbour_word_url">http://m.family.rekoo.net/dl/invite</string>
+
+    <!-- 意见反馈 -->
+    <string name="cx_fa_setting_user_suggest">感谢您使用“小家”，请输入您的问题或建议</string>
+
+    <!-- 侧边栏 -->
+    <string name="cx_fa_role_main_menu_chat_with">老公说</string>
+    <string name="cx_fa_role_main_menu_chat_with_s">老婆说</string>
+    <string name="cx_fa_role_main_menu_calendar_toast_text">家庭日历即将开启，规划生活日程和家庭琐事更方便</string>
+
+    <string name="cx_fa_role_main_menu_invite">邀请老公开通>></string>
+    <string name="cx_fa_role_main_menu_invite_s">邀请老婆开通>></string>
+
+
+    <string name="cx_fa_role_main_menu_album">相册</string>
+    <string name="cx_fa_role_main_menu_neighbours">亲友们</string>
+    <string name="cx_fa_role_main_menu_kids">孩子空间</string>
+
+
+    <!-- 密邻管理 -->
+
+    <string name="cx_fa_neighbour_manage_title_save">完成</string>
+    <string name="cx_fa_neighbour_manage_title_text">亲友管理</string>
+
+    <!-- 有老版本提示  -->
+    <string name="cx_fa_main_login_hasold_text">检测到你当前还有旧版本“老公”/“老婆”，可能会影响到新版“小家”的正常使用，请先删除旧版本。</string>
+
+
+
+    <!-- 资料页 -->
+    <string name="cx_fa_mate_family_info_tab_me">我</string>
+    <string name="cx_fa_mate_family_info_tab_kid">孩子</string>
+    <string name="cx_fa_mate_family_info_tab_home">我家主页</string>
+    <string name="cx_fa_mate_family_info_user_icon">头像</string>
+    <string name="cx_fa_mate_family_info_user_name">昵称</string>
+    <string name="cx_fa_mate_family_info_user_birthday">生日</string>
+    <string name="cx_fa_mate_family_info_user_cons">星座</string>
+    <string name="cx_fa_mate_family_info_user_phone">手机</string>
+    <string name="cx_fa_mate_family_info_user_remark">备注</string>
+    <string name="cx_fa_mate_family_info_user_more">添加更多资料</string>
+
+    <string name="cx_fa_mate_family_info_family_icon_fail">修改家庭背景图片失败</string>
+    <string name="cx_fa_mate_family_info_family_icon_success">修改家庭背景图片成功</string>
+
+
+    <!-- 日历 -->
+    <string name="cx_fa_calendar_homepage_title1">我家日历</string>
+    <string name="cx_fa_calendar_homepage_title2">纪念日</string>
+    <string name="cx_fa_calendar_item_title_edit_btn_text">编辑</string>
+    <string name="cx_fa_calendar_item_title_text">记事详情</string>
+    <string name="cx_fa_calendar_memorial_day_title_text">纪念日详情</string>
+    <string name="cx_fa_calendar_edit_common_memotial_day_title_text">使用推荐纪念日</string>
+    <string name="cx_fa_calendar_edit_edit_item_hint">添加一个记事，比如备忘、计划、随想.</string>
+    <string name="cx_fa_calendar_edit_edit_memorial_day_hint">点这里输入纪念日内容.</string>
+
+    <string name="cx_fa_calendar_edit_tab_item">记事</string>
+    <string name="cx_fa_calendar_edit_tab_memorial_day">纪念日</string>
+    <string name="cx_fa_calendar_edit_edit_recommend_text">使用推荐纪念日>></string>
+    <string name="cx_fa_calendar_edit_selecter_text1">一般纪念日</string>
+    <string name="cx_fa_calendar_edit_selecter_text2">生日</string>
+    <string name="cx_fa_calendar_add_item_text">添加新记事</string>
+    <string name="cx_fa_calendar_add_memorial_day_text">添加纪念日</string>
+
+    <string name="cx_fa_calendar_edit_title_text1">添加记事</string>
+    <string name="cx_fa_calendar_edit_title_text2">添加纪念日</string>
+    <string name="cx_fa_calendar_edit_title_text3">编辑记事</string>
+    <string name="cx_fa_calendar_edit_title_text4">编辑纪念日</string>
+
+    <string name="cx_fa_calendar_edit_title_save_text">保存</string>
+    <string name="cx_fa_calendar_check_not_edit_item_msg">不能编辑对方创建的记事</string>
+    <string name="cx_fa_calendar_check_not_edit_memorial_msg">不能编辑对方创建的纪念日</string>
+    <string name="cx_fa_calendar_status_remind_expire">提醒已过期</string>
+    <string name="cx_fa_calendar_content_can_not_empty">您输入的内容为空，请重新输入</string>
+
+    <!-- 日历控件 -->
+      <string name="day_name_format">E</string>
+  <string name="invalid_date">Date must be between %1$s and %2$s.</string>
+  <string name="month_name_format">yyyy.MM</string>
+
+  <string name="cx_fa_calendar_memorial_day_number_down_format">%1$s天后</string>
+  <string name="cx_fa_calendar_memorial_day_number_up_format">已%1$s天</string>
+
+  <!-- 星期 -->
+    <string name="mon">一</string>
+    <string name="tue">二</string>
+    <string name="wed">三</string>
+    <string name="thu">四</string>
+    <string name="fri">五</string>
+    <string name="sat">六</string>
+    <string name="sun">日</string>
+
+    <string name="cx_fa_calendar_edit_dialog_target_me">只给自己看</string>
+    <string name="cx_fa_calendar_edit_dialog_target_oppo">给对方看</string>
+    <string name="cx_fa_calendar_edit_dialog_target_both">给双方看</string>
+    <string name="cx_fa_calendar_edit_dialog_cycle_noce">提醒一次</string>
+    <string name="cx_fa_calendar_edit_dialog_cycle_day">每天一次</string>
+    <string name="cx_fa_calendar_edit_dialog_cycle_week">每周一次</string>
+    <string name="cx_fa_calendar_edit_dialog_cycle_month">每月一次</string>
+    <string name="cx_fa_calendar_edit_dialog_cycle_year">每年一次</string>
+    <string name="cx_fa_calendar_edit_dialog_advance_none">不提前提醒</string>
+    <string name="cx_fa_calendar_edit_dialog_advance_15m">提前15分钟</string>
+    <string name="cx_fa_calendar_edit_dialog_advance_1h">提前1小时</string>
+    <string name="cx_fa_calendar_edit_dialog_advance_1d">提前1天</string>
+    <string name="cx_fa_calendar_edit_dialog_advance_3d">提前3天</string>
+    <string name="cx_fa_calendar_edit_dialog_advance_5d">提前5天</string>
+    <string name="cx_fa_calendar_edit_dialog_memorial_type_bir">生日</string>
+    <string name="cx_fa_calendar_edit_dialog_memorial_type_normal">一般纪念日</string>
+    <string name="cx_fa_calendar_edit_dialog_date_1">星期一</string>
+    <string name="cx_fa_calendar_edit_dialog_date_2">星期二</string>
+    <string name="cx_fa_calendar_edit_dialog_date_3">星期三</string>
+    <string name="cx_fa_calendar_edit_dialog_date_4">星期四</string>
+    <string name="cx_fa_calendar_edit_dialog_date_5">星期五</string>
+    <string name="cx_fa_calendar_edit_dialog_date_6">星期六</string>
+    <string name="cx_fa_calendar_edit_dialog_date_7">星期日</string>
+
+
+    <!-- 单人模式 -->
+    <string name="cx_fa_pair_invite_oppo_btn_text">邀请老公安装“小家”</string>
+    <string name="cx_fa_pair_invite_oppo_btn_text_s">邀请老婆安装“小家”</string>
+
+    <string name="cx_fa_chat_welcome_single_mode_default">老婆，小家看起来很不错，快邀请我进来玩吧！</string>
+    <string name="cx_fa_chat_welcome_single_mode_default_s">老公，小家看起来很不错，快邀请我进来玩吧！</string>
+
+    <!-- 全局网络提示 -->
+    <string name="cx_fa_net_response_code_null">网络未连接</string>
+    <string name="cx_fa_net_response_code_fail">网络有点问题</string>
+    <string name="cx_fa_net_response_code_err">网络异常！</string>
+
+    <!-- 更多 -->
+    <string name="cx_fa_more_text_answer">谁家最聪明</string>
+    <string name="cx_fa_more_text_memorial_day">我家纪念日</string>
+    <string name="cx_fa_more_text_tabloid">我家小报</string>
+    <string name="cx_fa_more_text_help_response">意见反馈</string>
+    <string name="cx_fa_more_text_recommend_friends">推荐给亲友</string>
+    <string name="cx_fa_more_text_setting">设置</string>
+
+    <!-- 孩子资料 -->
+    <string name="cx_fa_kids_info_gender_man">男</string>
+    <string name="cx_fa_kids_info_gender_women">女</string>
+    <string name="cx_fa_kids_info_title_text">孩子资料</string>
+    <string name="cx_fa_kids_info_add_kid">添加孩子</string>
+    <string name="cx_fa_kids_info_birthday">生日/预产期</string>
+    <string name="cx_fa_kid_info_kid_icon_fail">修改孩子头像失败</string>
+    <string name="cx_fa_kid_info_kid_icon_success">修改孩子头像成功</string>
+    <string name="cx_fa_add_kid1_tab_text">孩子1</string>
+    <string name="cx_fa_add_kid2_tab_text">孩子2</string>
+    <string name="cx_fa_add_kid3_tab_text">孩子3</string>
+    <string name="cx_fa_add_kid4_tab_text">孩子4</string>
+    <string name="cx_fa_add_kid5_tab_text">孩子5</string>
+
+    <!-- 孩子空间 -->
+    <string name="cx_fa_kids_home_title_text">孩子空间</string>
+    <string name="cx_fa_kids_share_sync_zone">同步此话题到相册</string>
+    <string name="cx_fa_kids_home_record_sd_fail">SD卡不存在或不可用，无法录音</string>
+    <string name="cx_fa_kids_home_no_feed_text">这是我家孩子的空间，可以和老公记录孩子的成长瞬间，交流成长心得，也可以同步给亲友们一起分享。</string>
+	<string name="cx_fa_kids_home_no_feed_text_s">这是我家孩子的空间，可以和老婆记录孩子的成长瞬间，交流成长心得，也可以同步给亲友们一起分享。</string>
+	<string name="cx_fa_kids_add_hint">关于孩子写点什么&#8230;&#8230;&#8230;</string>
+
+	<string name="cx_fa_kids_home_health_title_text">健康育儿</string>
+	<string name="cx_fa_kids_home_teach_title_text">家庭教育</string>
+
+	<!-- 设置 -->
+	<string name="cx_fa_setting_version_type_nokid">切换到二人版</string>
+	<string name="cx_fa_setting_version_type_kid">切换到亲子版</string>
+	<string name="cx_fa_setting_version_type_kid_text">亲子版适于有小孩的夫妻使用，方便爸爸参与孩子的成长。切换后所有信息都完整保留，尽情体验吧。</string>
+	<string name="cx_fa_setting_version_type_nokid_text">二人版适于没有孩子的小两口使用，享受私密二人世界。切换后所有信息都完整保留，尽情体验吧。</string>
+
+
+    <string name="cx_fa_user_protocol_content">小家用户协议\n
+兴财富汇在此特别提醒用户认真阅读、充分理解本《服务协议》（下称《协议》）。用户应认真阅读、充分理解本《协议》中各条款，包括免除或者限制兴财富汇责任的免责条款及对用户的权利限制条款。请您审慎阅读并选择接受或不接受本《协议》（未成年人应在法定监护人陪同下阅读）。除非您接受本《协议》所有条款，否则您无权注册、登录或使用本协议所涉相关服务。您的注册、登录、使用等行为将视为对本《协议》的接受，并同意接受本《协议》各项条款的约束。\n
+本《协议》描述兴财富汇与用户之间关于“小家”服务相关方面的权利义务。“用户”是指注册、登录、使用、浏览本服务的个人或组织。本《协议》可由兴财富汇随时更新，更新后的协议条款一旦公布即代替原来的协议条款，恕不再另行通知，用户可在本网站查阅最新版协议条款。在兴财富汇修改《协议》条款后，如果用户不接受修改后的条款，请立即停止使用兴财富汇提供的服务，用户继续使用兴财富汇提供的服务将被视为已接受了修改后的协议。\n
+一、使用规则\n
+1、用户充分了解并同意，兴财富汇小家仅为用户提供信息分享、传送及获取的平台，用户必须为自己注册账号下的一切行为负责，包括您所传送的任何内容以及由此产生的任何结果。用户应对兴财富汇小家中的内容自行加以判断，并承担因使用内容而引起的所有风险，包括因对内容的正确性、完整性或实用性的依赖而产生的风险。兴财富汇公司无法且不会对因用户行为而导致的任何损失或损害承担责任。\n
+2、用户在兴财富汇小家服务中或通过兴财富汇小家服务所传送的任何内容并不反映兴财富汇公司的观点或政策，兴财富汇公司对此不承担任何责任。\n
+3、用户充分了解并同意，兴财富汇小家是一个基于用户关系网的点对点即时通讯产品，用户须对在兴财富汇小家上的注册信息的真实性、合法性、有效性承担全部责任，用户不得冒充他人；不得利用他人的名义传播任何信息；不得恶意使用注册账号导致其他用户误认；否则兴财富汇公司有权立即停止提供服务，收回兴财富汇小家账号并由用户独自承担由此而产生的一切法律责任。\n
+4、用户须对在兴财富汇小家上所传送信息的真实性、合法性、无害性、有效性等全权负责，与用户所传播的信息相关的任何法律责任由用户自行承担，与兴财富汇无关。\n
+5、兴财富汇保留因业务发展需要，单方面对本服务的全部或部分服务内容在任何时候不经任何通知的情况下变更、暂停、限制、终止或撤销兴财富汇小家服务的权利，用户需承担此风险。\n
+6、兴财富汇小家提供的服务中可能包括广告，用户同意在使用过程中显示兴财富汇小家和第三方供应商、合作伙伴提供的广告。\n
+7、用户不得利用兴财富汇小家或兴财富汇小家服务制作、上载、复制、发送如下内容：\n
+(1) 反对宪法所确定的基本原则的；\n
+(2) 危害国家安全，泄露国家秘密，颠覆国家政权，破坏国家统一的；\n
+(3) 损害国家荣誉和利益的；\n
+(4) 煽动民族仇恨、民族歧视，破坏民族团结的；\n
+(5) 破坏国家宗教政策，宣扬邪教和封建迷信的；\n
+(6) 散布谣言，扰乱社会秩序，破坏社会稳定的；\n
+(7) 散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；\n
+(8) 侮辱或者诽谤他人，侵害他人合法权益的；\n
+(9) 含有法律、行政法规禁止的其他内容的信息。\n
+8、兴财富汇公司可依其合理判断，对违反有关法律法规或本协议约定；或侵犯、妨害、威胁任何人权利或安全的内容，或者假冒他人的行为，兴财富汇公司有权依法停止传输任何前述内容，并有权依其自行判断对违反本条款的任何人士采取适当的法律行动，包括但不限于，从兴财富汇小家服务中删除具有违法性、侵权性、不当性等内容，终止违反者的成员资格，阻止其使用兴财富汇小家全部或部分服务，并且依据法律法规保存有关信息并向有关部门报告等。\n
+9、用户权利及义务：\n
+(1) 兴财富汇小家账号的所有权归兴财富汇公司所有，用户完成申请注册手续后，获得兴财富汇小家账号的使用权，该使用权仅属于初始申请注册人，禁止赠与、借用、租用、转让或售卖。兴财富汇公司因经营需要，有权回收用户的兴财富汇小家账号。\n
+(2) 用户有权更改、删除在兴财富汇小家上的个人资料、注册信息及传送内容等，但需注意，删除有关信息的同时也会删除任何您储存在系统中的文字和图片。用户需承担该风险。\n
+(3) 用户有责任妥善保管注册账号信息及账号密码的安全，用户需要对注册账号以及密码下的行为承担法律责任。用户同意在任何情况下不使用其他成员的账号或密码。在您怀疑他人在使用您的账号或密码时，您同意立即通知兴财富汇公司。\n
+(4) 用户应遵守本协议的各项条款，正确、适当地使用本服务，如因用户违反本协议中的任何条款，兴财富汇公司有权依据协议终止对违约用户兴财富汇小家账号提供服务。同时，兴财富汇保留在任何时候收回兴财富汇小家账号、用户名的权利。\n
+(5) 用户注册兴财富汇小家账号后如果长期不登录该账号，兴财富汇有权回收该账号，以免造成资源浪费，由此带来问题均由用户自行承担。\n
+二、隐私保护\n
+用户同意个人隐私信息是指那些能够对用户进行个人辨识或涉及个人通信的信息，包括下列信息：用户真实姓名，身份证号，手机号码，IP地址。而非个人隐私信息是指用户对本服务的操作状态以及使用习惯等一些明确且客观反映在兴财富汇小家服务器端的基本记录信息和其他一切个人隐私信息范围外的普通信息；以及用户同意公开的上述隐私信息；\n
+尊重用户个人隐私信息的私有性是兴财富汇的一贯制度，兴财富汇将会采取合理的措施保护用户的个人隐私信息，除法律或有法律赋予权限的政府部门要求或用户同意等原因外，兴财富汇未经用户同意不向除合作单位以外的第三方公开、 透露用户个人隐私信息。 但是，用户在注册时选择同意，或用户与兴财富汇及合作单位之间就用户个人隐私信息公开或使用另有约定的除外，同时用户应自行承担因此可能产生的任何风险，兴财富汇对此不予负责。同时，为了运营和改善兴财富汇的技术和服务，兴财富汇将可能会自行收集使用或向第三方提供用户的非个人隐私信息，这将有助于兴财富汇向用户提供更好的用户体验和提高兴财富汇的服务质量。\n
+用户同意，在使用兴财富汇小家服务时也同样受兴财富汇隐私政策的约束。当您接受本协议条款时，您同样认可并接受兴财富汇公司隐私政策的条款。\n
+三、兴财富汇小家商标信息\n
+兴财富汇小家服务中所涉及的图形、文字或其组成，以及其他兴财富汇标志及产品、服务名称，均为兴财富汇公司之商标（以下简称“兴财富汇标识”）。未经兴财富汇事先书面同意，用户不得将兴财富汇标识以任何方式展示或使用或作其他处理，也不得向他人表明您有权展示、使用、或其他有权处理兴财富汇标识的行为。\n
+四、法律责任及免责\n
+1、用户违反本《协议》或相关的服务条款的规定，导致或产生的任何第三方主张的任何索赔、要求或损失，包括合理的律师费，用户同意赔偿兴财富汇与合作公司、关联公司，并使之免受损害。\n
+2、用户因第三方如电信部门的通讯线路故障、技术问题、网络、电脑故障、系统不稳定性及其他各种不可抗力原因而遭受的一切损失，兴财富汇及合作单位不承担责任。\n
+3、因技术故障等不可抗事件影响到服务的正常运行的，兴财富汇及合作单位承诺在第一时间内与相关单位配合，及时处理进行修复，但用户因此而遭受的一切损失，兴财富汇及合作单位不承担责任。\n
+4、本服务同大多数互联网服务一样，受包括但不限于用户原因、网络服务质量、社会环境等因素的差异影响，可能受到各种安全问题的侵扰，如他人利用用户的资料，造成现实生活中的骚扰；用户下载安装的其它软件或访问的其他网站中含有“特洛伊木马”等病毒，威胁到用户的计算机信息和数据的安全，继而影响本服务的正常使用等等。用户应加强信息安全及使用者资料的保护意识，要注意加强密码保护，以免遭致损失和骚扰。\n
+5、用户须明白，使用本服务因涉及Internet服务，可能会受到各个环节不稳定因素的影响。因此，本服务存在因不可抗力、计算机病毒或黑客攻击、系统不稳定、用户所在位置、用户关机以及其他任何技术、互联网络、通信线路原因等造成的服务中断或不能满足用户要求的风险。用户须承担以上风险，兴财富汇公司不作担保。对因此导致用户不能发送和接受阅读信息、或接发错信息，兴财富汇公司不承担任何责任。\n
+6、用户须明白，在使用本服务过程中存在有来自任何他人的包括威胁性的、诽谤性的、令人反感的或非法的内容或行为或对他人权利的侵犯（包括知识产权）的匿名或冒名的信息的风险，用户须承担以上风险，兴财富汇公司和合作公司对本服务不作任何类型的担保，不论是明确的或隐含的，包括所有有关信息真实性、适商性、适于某一特定用途、所有权和非侵权性的默示担保和条件，对因此导致任何因用户不正当或非法使用服务产生的直接、间接、偶然、特殊及后续的损害，不承担任何责任。\n
+7、兴财富汇公司定义的信息内容包括：文字、软件、声音、相片、录像、图表；在广告中全部内容；兴财富汇公司为用户提供的商业信息，所有这些内容受版权、商标权、和其它知识产权和所有权法律的保护。所以，用户只能在兴财富汇公司和广告商授权下才能使用这些内容，而不能擅自复制、修改、编纂这些内容、或创造与内容有关的衍生产品。\n
+8、在任何情况下，兴财富汇公司均不对任何间接性、后果性、惩罚性、偶然性、特殊性或刑罚性的损害，包括因用户使用兴财富汇小家服务而遭受的利润损失，承担责任（即使兴财富汇小家已被告知该等损失的可能性亦然）。尽管本协议中可能含有相悖的规定，兴财富汇公司对您承担的全部责任，无论因何原因或何种行为方式，始终不超过您在成员期内因使用兴财富汇小家服务而支付给兴财富汇公司的费用(如有) 。\n
+五、小家社区管理规则\n
+小家是和现实相关的社交产品，希望用户相互尊重，遵循和现实社会一样的社交礼仪。\n
+为避免遭到用户举报而被封禁设备，请您遵守以下原则：\n
+1、请勿发送涉嫌性骚扰的文字、图片及语音信息；\n
+2、请勿使用含色情、淫秽意味或其他令人不适的头像或资料；\n
+3、请勿在交谈中使用辱骂、恐吓、威胁等言论；\n
+4、请勿发布各类垃圾广告、恶意信息、诱骗信息；\n
+5、请勿盗用他人头像或资料，请勿伪装他人身份；\n
+6、请勿发布不当政治言论或者任何违反国家法规政策的言论。\n
+如用户违反社区管理规则，兴财富汇公司有权依据协议终止对违约用户兴财富汇小家账号提供服务。同时，兴财富汇保留在任何时候收回小家账号的权力。\n
+六、其他条款\n
+1、兴财富汇公司郑重提醒用户注意本《协议》中免除兴财富汇公司责任和加重用户义务的条款，请用户仔细阅读，自主考虑风险。未成年人应在法定监护人的陪同下阅读本《协议》。以上各项条款内容的最终解释权及修改权归兴财富汇公司所有。\n
+2、本《协议》所定的任何条款的部分或全部无效者，不影响其它条款的效力。\n
+3、本《协议》的版权由兴财富汇所有，兴财富汇保留一切解释和修改权利。\n</string>
+    
+</resources>

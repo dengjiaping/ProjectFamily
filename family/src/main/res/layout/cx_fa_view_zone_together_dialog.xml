@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" android:background="@drawable/cx_fa_custom_date_picker_layout_bg"
+    >
+	<RelativeLayout android:layout_height="wrap_content" android:layout_width="match_parent"
+	    android:gravity="center_vertical" android:paddingTop="5dp" android:paddingBottom="12dp">
+	    <TextView android:layout_centerInParent="true" android:text="@string/cx_fa_what_date_together"
+	        android:layout_height="wrap_content" android:layout_width="wrap_content"
+	        android:gravity="center" android:id="@+id/zone_edit_together_date"
+	        android:textSize="20sp"
+	        />
+	    <Button android:text="@string/cx_fa_save_text" android:id="@+id/cx_fa_save_edit_date"
+	        android:layout_toRightOf="@+id/zone_edit_together_date"
+	        android:layout_width="wrap_content" android:layout_height="wrap_content" 
+	        android:layout_marginLeft="6dp" android:background="@drawable/btn_orange"
+	        android:textSize="16sp"
+	        />
+	</RelativeLayout>
+	<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+	    android:gravity="center" android:paddingBottom="8dp"
+	    >
+	    <include layout="@layout/cx_fa_view_datepicker" android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+	</LinearLayout>
+    
+</LinearLayout>

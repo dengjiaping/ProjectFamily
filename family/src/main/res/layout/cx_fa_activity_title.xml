@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cx_fa_activity_title_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/navi_topbar"
+    android:gravity="center_vertical"
+    android:layout_gravity="center"
+    >
+
+    <Button 
+        android:id="@+id/cx_fa_activity_title_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:background="@drawable/cx_fa_back_btn"
+        android:textColor="@color/cx_fa_co_navi_button_text"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:paddingLeft="11dp" android:paddingRight="3dp"
+        android:visibility="visible" />
+
+    <TextView 
+        android:id="@+id/cx_fa_activity_title_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:focusable="true"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_weight="1"
+	android:focusableInTouchMode="true"
+        />
+
+    
+    <Button 
+        android:visibility="invisible"
+        android:id="@+id/cx_fa_activity_title_more"
+        android:layout_width="wrap_content" 
+        android:background="@drawable/cx_fa_title_right_btn_bg"
+        android:layout_height="36dp"
+        android:textColor="@color/cx_fa_co_navi_button_text"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="16sp"     
+        android:layout_marginRight="5dip" />
+
+</LinearLayout>

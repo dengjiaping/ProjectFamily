@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="apache-http-fat">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/photoInterface/libs/apache-http-fat.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

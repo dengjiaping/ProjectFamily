@@ -1,0 +1,529 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 设置界面 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@drawable/navi_topbar"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/cx_fa_setting_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/cx_fa_back_btn"
+            android:paddingLeft="11dp"
+            android:textColor="@color/cx_fa_co_navi_button_text"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/cx_fa_setting_title_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:text="@string/cx_fa_nls_settings"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/cx_fa_setting_title_more"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/cx_fa_title_right_btn_bg"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/cx_fa_co_navi_button_text"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#e4e4ea" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/modify_chat_icon_and_chatbg_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cx_fa_setting_bg_white_with_stroke"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                >
+
+                <!-- android:background="@drawable/cx_fa_round_corner_white_bg" -->
+
+                <LinearLayout
+                    android:id="@+id/modify_my_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cx_fa_top_ellipse_white_bg"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:visibility="gone" >
+
+                    <TextView
+                        style="@style/cx_fa_style_settings_item_text"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip"
+                        android:text="@string/cx_fa_head_img_text" />
+
+                    <com.chuxin.family.widgets.CxImageView
+                        android:id="@+id/cx_fa_head_img"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_weight="0"
+                        android:clickable="false"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cx_fa_wf_icon_small" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/modify_my_head_bottom_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e4e4ea"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/modify_chat_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:background="@drawable/cx_fa_setting_bg_blue_focused_top"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip" >
+
+                    <TextView
+                        style="@style/cx_fa_style_settings_item_text"
+                        android:text="@string/cx_fa_chat_bg_text"
+                        android:textColor="#37322f"
+                        android:textSize="16sp" />
+
+                    <com.chuxin.family.widgets.CxImageView
+                        android:id="@+id/cx_fa_chat_bg_img"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:clickable="false"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/cx_fa_role_chatbg_thumbnail_default" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e4e4ea" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:background="@drawable/cx_fa_setting_bg_blue_focused_bottom"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip" >
+
+                    <TextView
+                        style="@style/cx_fa_style_settings_item_text"
+                        android:text="@string/cx_fa_lock_pswd_text"
+                        android:textColor="#37322f"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/cx_fa_lockscreen"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_weight="0"
+                        android:button="@drawable/cx_fa_checkbox_bg"
+                        android:gravity="center" />
+                </LinearLayout>
+                <!-- 解锁密码 -->
+            </LinearLayout>
+            <!-- 修改头像和聊天背景 -->
+
+            <LinearLayout
+                android:id="@+id/edit_push_sound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/cx_fa_setting_bg_white_with_stroke"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                 >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:background="@drawable/cx_fa_setting_bg_blue_focused_all"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip" >
+
+                    <TextView
+                        style="@style/cx_fa_style_settings_item_text"
+                        android:text="@string/cx_fa_notify_sound_text"
+                        android:textColor="#37322f"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_front_accessory_arrow"
+                            android:clickable="false"
+                            android:maxHeight="44dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- push音效 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/cx_fa_setting_bg_white_with_stroke"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:gravity="center_vertical"
+                        android:text="@string/cx_fa_when_receive_chatmsg"
+                        android:textColor="#37322f"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e4e4ea" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:background="@drawable/cx_fa_setting_bg_blue_focused_middle"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip" >
+
+                    <TextView
+                        style="@style/cx_fa_style_settings_item_text"
+                        android:text="@string/cx_fa_soud_text"
+                        android:textColor="#37322f"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/chat_sound_btn"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_weight="0"
+                        android:button="@drawable/cx_fa_checkbox_bg"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e4e4ea" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:layout_weight="0"
+                    android:background="@drawable/cx_fa_setting_bg_blue_focused_middle"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip" >
+
+                    <TextView
+                        style="@style/cx_fa_style_settings_item_text"
+                        android:text="@string/cx_fa_shock_text"
+                        android:textColor="#37322f"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/chat_shock_btn"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_weight="0"
+                        android:button="@drawable/cx_fa_checkbox_bg"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e4e4ea" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:background="@drawable/cx_fa_setting_bg_blue_focused_bottom"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip" >
+
+                    <TextView
+                        style="@style/cx_fa_style_settings_item_text"
+                        android:text="@string/cx_fa_earphone_text"
+                        android:textColor="#37322f"
+                        android:textSize="16sp" />
+
+                    <CheckBox
+                        android:id="@+id/chat_earphone_btn"
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_weight="0"
+                        android:button="@drawable/cx_fa_checkbox_bg"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 收到聊天消息时  声音、震动、听筒 -->
+
+            <LinearLayout
+                android:id="@+id/user_clear_cache_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/cx_fa_setting_bg_white_with_stroke"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                 >
+
+                <LinearLayout
+                    android:id="@+id/clear_image_cache"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:background="@drawable/cx_fa_setting_bg_blue_focused_top"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip" >
+
+                    <TextView
+                        style="@style/cx_fa_style_settings_item_text"
+                        android:text="@string/cx_fa_clear_imgcache"
+                        android:textColor="#37322f"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_front_accessory_arrow"
+                            android:clickable="false"
+                            android:maxHeight="44dip" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e4e4ea" />
+
+                <LinearLayout
+                    android:id="@+id/clear_chat_cache"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:background="@drawable/cx_fa_setting_bg_blue_focused_bottom"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip" >
+
+                    <TextView
+                        style="@style/cx_fa_style_settings_item_text"
+                        android:text="@string/cx_fa_clear_chatrecord"
+                        android:textColor="#37322f"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_front_accessory_arrow"
+                            android:clickable="false"
+                            android:maxHeight="44dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 清除图片缓存和聊天记录 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/cx_fa_setting_bg_white_with_stroke"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/about_version"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:background="@drawable/cx_fa_setting_bg_blue_focused_top"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip" >
+
+                    <TextView
+                        android:id="@+id/about_version_name"
+                        style="@style/cx_fa_style_settings_item_text"
+                        android:text="@string/cx_fa_about_version"
+                        android:textColor="#37322f"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_front_accessory_arrow"
+                            android:clickable="false"
+                            android:maxHeight="44dip" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/about_version_bottom_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e4e4ea" />
+
+                <LinearLayout
+                    android:id="@+id/unbindPair"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:background="@drawable/cx_fa_setting_bg_blue_focused_bottom"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip" >
+
+                    <TextView
+                        style="@style/cx_fa_style_settings_item_text"
+                        android:text="@string/cx_fa_unbind_relationship_text"
+                        android:textColor="#37322f"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/table_front_accessory_arrow"
+                            android:clickable="false"
+                            android:maxHeight="44dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <!-- 关于、解绑 -->
+
+            <Button
+                android:id="@+id/cx_fa_change_version_img_btn"
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:layout_marginTop="15dip"
+                android:background="@drawable/cx_fa_setting_version_bg"
+                android:gravity="center"
+                android:shadowColor="#50000000"
+                android:shadowDx="0"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:text="切换到二人版"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+            <!-- 版本切换 -->
+
+            <Button
+                android:id="@+id/cx_fa_exit_img_btn"
+                android:layout_width="match_parent"
+                android:layout_height="55dip"
+                android:layout_marginBottom="30dip"
+                android:background="@drawable/cx_fa_setting_exit_bg"
+                android:gravity="center"
+                android:shadowColor="#50000000"
+                android:shadowDx="0"
+                android:shadowDy="2"
+                android:shadowRadius="2"
+                android:text="@string/cx_fa_logout_current_account"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+            <!-- 退出账号 -->
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

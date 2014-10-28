@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<string name="cx_fa_role_app_name">小家</string>-->
+	<!--<string name="cx_fa_role_congratulation_s">我的验证码是%1$s</string>-->
+    <!--<string name="cx_fa_role_congratulation">我的验证码是%1$s</string>-->
+    <!--<string name="cx_fa_input_phone">请输入手机号，马上发出邀请</string>-->
+    <!--<string name="cx_fa_role_phnoe_num">老婆的手机号</string>&lt;!&ndash; 老公版"cx_fa_role_xx" &ndash;&gt;-->
+    <!--<string name="cx_fa_role_phnoe_num_s">老公的手机号</string>&lt;!&ndash; 老婆版 "cx_fa_role_xx_s"&ndash;&gt;-->
+    <!--<string name="cx_fa_role_invite_text">邀请老公</string>-->
+    <!--<string name="cx_fa_role_invite_text_s">邀请老婆</string>-->
+    <!--<string name="cx_fa_invite_to_own">开通</string>-->
+    <!--<string name="cx_fa_pair_directly">马上开通</string>-->
+    <!--<string name="cx_fa_invite_number_text">我的邀请码</string>-->
+    <!--<string name="cx_fa_version_invite_note_work">老公老婆是一个家庭微信，两人互装后才能互通。</string>-->
+    <!--<string name="cx_fa_role_dimesionbar_show_text">让老公扫描二维码安装“老婆”应用</string>-->
+    <!--<string name="cx_fa_role_dimesionbar_show_text_s">让老婆扫描二维码安装“老公”应用</string>-->
+    <!--<string name="cx_fa_invited_words">您已邀请</string>-->
+    <!--<string name="cx_fa_role_pair">老公</string>-->
+    <!--<string name="cx_fa_role_pair_s">老婆</string>-->
+    <!--<string name="cx_fa_role_neighbour_pair">老婆</string>-->
+    <!--<string name="cx_fa_role_neighbour_pair_s">老公</string>-->
+    <!--<string name="cx_fa_setup_text">安装</string>-->
+    <!--<string name="cx_fa_role_pairsetup_versionname">“老婆”</string>-->
+    <!--<string name="cx_fa_role_pairsetup_versionname_s">“老公”</string>-->
+    <!--<string name="cx_fa_invited_word1">"应用，等</string>-->
+    <!--<string name="cx_fa_role_pair_gender">他</string>-->
+    <!--<string name="cx_fa_role_pair_gender_s">她</string>-->
+    <!--<string name="cx_fa_invited_word2">接受邀请后你俩就可以开始聊天啦。</string>-->
+    <!--<string name="cx_fa_invited_word3">请耐心等待，</string>-->
+    <!--<string name="cx_fa_invited_word4">正在安装</string>-->
+    <!--<string name="cx_fa_invited_word5">你也可以直接打电话告诉</string>-->
+    <!--<string name="cx_fa_invited_word6">去应用商店下载安装</string>-->
+    <!--<string name="cx_fa_invited_word7">应用，记得不要安装错哦！</string>-->
+    <!--<string name="cx_fa_invited_usednumber">此号码已经结对</string>-->
+    <!--<string name="cx_fa_net_not_active">没有可用的网络</string>-->
+    <!--<string name="cx_fa_net_err">网络异常</string>-->
+    <!--<string name="cx_fa_cancel_text">关闭</string>-->
+    <!--<string name="cx_fa_invite_word">开通</string>-->
+    <!--<string name="cx_fa_role_comingtext">老公即将驾到...</string>-->
+    <!--<string name="cx_fa_role_comingtext_s">老婆即将驾到...</string>-->
+    <!--<string name="cx_fa_waiting_text">等待...</string>-->
+    <!--<string name="cx_fa_invite_faild">邀请结对失败</string>-->
+    <!--<string name="cx_fa_invite_nopairnumber">请填入邀请号码</string>-->
+    <!--<string name="cx_fa_invitenumber_paired">你邀请的号码已经结对，请填入其他号码</string>-->
+    <!--<string name="cx_fa_head_img_text">我的头像</string>-->
+    <!--<string name="cx_fa_chat_bg_text">聊天背景</string>-->
+    <!--<string name="cx_fa_lock_pswd_text">锁屏密码</string>-->
+    <!--<string name="cx_fa_when_receive_chatmsg">收到聊天消息时</string>-->
+    <!--<string name="cx_fa_soud_text">发出声音</string>-->
+    <!--<string name="cx_fa_shock_text">发出震动</string>-->
+    <!--<string name="cx_fa_earphone_text">强制使用听筒播放语音消息</string>-->
+    <!--<string name="cx_fa_clear_imgcache">清除图片声音缓存</string>-->
+    <!--<string name="cx_fa_clear_chatrecord">清空聊天记录</string>-->
+    <!--<string name="cx_fa_helpresponce_text">帮助和反馈</string>-->
+    <!--<string name="cx_fa_to_help">功能介绍</string>-->
+    <!-- <string name="cx_fa_role_about_version">关于小家</string>
+    <string name="cx_fa_role_about_version_s">关于小家</string> -->
+    <!--<string name="cx_fa_about_version">关于小家</string>-->
+    <!--<string name="cx_fa_unbind_relationship_text">解除绑定关系</string>-->
+    <!--<string name="cx_fa_suggestion_send_success">建议已经发送成功，谢谢您的支持！</string>-->
+    <!--<string name="cx_fa_input_invite_number">请输入你伴侣的验证码</string>-->
+    <!--<string name="cx_fa_getting_my_invitenumber">正在获取我的邀请码</string>-->
+    <!--<string name="cx_fa_mate_invite_number">请输入你伴侣的验证码</string>-->
+    <!--<string name="cx_fa_comfirm_pair">确认开通</string>-->
+    <!--<string name="cx_fa_cancel_button_text">取消</string>-->
+    <!--<string name="cx_fa_mate_unbind">对方与你解除了绑定关系</string>-->
+    <!--<string name="cx_fa_role_mate_with_me">老公和我</string>-->
+    <!--<string name="cx_fa_role_mate_with_me_s">老婆和我</string>-->
+    <!--<string name="cx_fa_tip_text">提示</string>-->
+    <!--<string name="cx_fa_delete_comfirm_text">确定要删除吗？</string>-->
+    <!--<string name="cx_fa_reply_text">回复</string>-->
+    <!--<string name="cx_fa_role_zone_mate">老公</string>-->
+    <!--<string name="cx_fa_role_zone_mate_s">老婆</string>-->
+    <string name="cx_fa_zone_no_content">请输入内容</string>
+    <!--<string name="cx_fa_zone_sendtext">分享文字</string>-->
+    <!--<string name="cx_fa_zone_sendimage">分享照片</string>-->
+    <string name="cx_fa_zone_no_feed">你还没有分享的内容</string>
+    <!--<string name="cx_fa_delete_text">删除</string>-->
+    <!--<string name="cx_fa_save_text">保存</string>-->
+    <!--<string name="cx_fa_save_fail_text">保存图片失败</string>-->
+    <!--<string name="cx_fa_image_down_fail_text">图片还没下载成功，请稍后保存</string>-->
+    <!--<string name="cx_fa_save_success_text">成功保存图片</string>-->
+    <!--<string name="cx_fa_unuseable_extralstorage">SD卡不可用</string>-->
+    <!--<string name="cx_fa_download_uncompleted">图片未下载完成</string>-->
+    <!--<string name="cx_fa_input_lockscreen_password">请输入锁屏密码</string>-->
+    <!--<string name="cx_fa_reinput_lockscreen_password">请再次输入锁屏密码</string>-->
+    
+    <!--<string name="cx_fa_navi_suggest">意见反馈</string>-->
+    <!--<string name="cx_fa_send_location_info">发送位置</string>-->
+    <!--<string name="cx_fa_qq_authen_fail">QQ授权失败</string>-->
+    <!--<string name="cx_fa_sina_authen_fail">新浪微博授权失败</string>-->
+    <!--<string name="cx_fa_obtain_profile_fail">个人资料获取失败</string>-->
+    <!--<string name="cx_fa_logout_current_account">退出当前账号</string>-->
+    <!--<string name="cx_fa_modify_headimg_fail">修改头像失败</string>-->
+    <!--<string name="cx_fa_modify_headimg_success">修改头像成功</string>-->
+    <!--<string name="cx_fa_processing">正在处理中...</string>-->
+    <!--<string name="cx_fa_modify_chatbg_fail">修改聊天背景失败</string>-->
+    <!--<string name="cx_fa_modify_chatbg_success">更新聊天背景成功</string>-->
+    <!--<string name="cx_fa_dispose_feed">放弃本次编辑？</string>-->
+    
+    <!--<string name="cx_fa_chat_dump_success_text">转存成功！</string>-->
+    <!--<string name="cx_fa_alert_dialog_tip">提示</string>-->
+    <!--<string name="cx_fa_chat_not_call_msg">尚未设置对方的手机号码</string>-->
+    <!--<string name="cx_fa_modify_bg_of_zone">修改空间背景失败</string>-->
+    <!--<string name="cx_fa_modify_bg_of_neighbour_ourhome">背景图更换失败</string>-->
+    <!--<string name="cx_fa_modify_bg_of_neighbour_ourhome_success">背景图更换成功</string>-->
+    <!--<string name="cx_fa_modify_bg_of_neighbour_homepage_fail">设置失败</string>-->
+    <!--<string name="cx_fa_modify_bg_of_neighbour_homepage_success">设置成功</string>-->
+    <!--<string name="cx_fa_set_lockscreen_pswd">设置密码</string>-->
+    <!--<string name="cx_fa_cancel_lockscreen_pswd">取消锁屏密码</string>-->
+    <!--<string name="cx_fa_exit_account_tip">确定要退出？</string>-->
+    <!--<string name="cx_fa_role_mate_name">老公%1$s</string>-->
+    <!--<string name="cx_fa_role_mate_name_s">老婆%1$s</string>-->
+    <!--<string name="cx_fa_chat_button_resend_text">重发</string>-->
+    <!--<string name="cx_fa_share_feed_text">发布</string>-->
+    <!--<string name="cx_fa_upgrade_text">升级</string>-->
+    <!--<string name="cx_fa_must_upgrade_text">当前版本太低无法正常使用，请升级到最新版</string>-->
+    <!--<string name="cx_fa_upgrade_tip_text">升级提示</string>-->
+    <!--<string name="cx_fa_upgrade_version_text">发现新版本V%1$s，功能更完善，使用起来更畅快，赶快升级吧！</string>-->
+    <!--<string name="cx_fa_role_send_img_hint">关于照片想跟老公说些什么呢？</string>-->
+    <!--<string name="cx_fa_role_send_img_hint_s">关于照片想跟老婆说些什么呢？</string>-->
+    <!--<string name="cx_fa_role_send_text_hint">想写些什么跟老公分享？</string>-->
+    <!--<string name="cx_fa_role_send_text_hint_s">想写些什么跟老婆分享？</string>-->
+    <!--<string name="cx_fa_pair_tip_prefixtext">是否确定与%1$s结对吗？</string>-->
+    <!--<string name="cx_fa_partner_text">对方</string>-->
+    <!--<string name="cx_fa_share_fail">分享失败</string>-->
+    <!--<string name="cx_fa_communication_text">QQ交流群：168645131</string>-->
+    <!--<string name="cx_fa_pair_success_text">结对成功</string>-->
+    <!--<string name="cx_fa_different_password">两次输入的密码不一致</string>-->
+    <!--<string name="cx_fa_wrong_unlock_password">错误的解锁密码</string>-->
+    <!--<string name="cx_fa_wrong_lock_password">错误的锁屏密码</string>-->
+    <!--<string name="cx_fa_success_setpswd">设置锁屏密码成功</string>-->
+    <!--<string name="cx_fa_user_protocol_text">用户协议</string>-->
+    <!--<string name="cx_fa_current_version_number">当前版本</string>-->
+    <!--<string name="cx_fa_community">QQ交流群：168645131</string>-->
+    <!--<string name="cx_fa_no_need_update_version">当前版本已经是最新版</string>-->
+    <!--<string name="cx_fa_copyright">Copyright@2014 初心科技.All Rights Reserved.</string>-->
+    <!--<string name="cx_fa_confirm_text">确定</string>-->
+    <!--<string name="md__drawerOpenIndicatorDesc">Close drawer</string>-->
+    <!--<string name="md__drawerClosedIndicatorDesc">Open drawer</string>-->
+    
+    <!--<string name="cx_fa_zone_no_feed_tip">二人空间是记录和分享你俩私密生活时光的地方。 目前还没有任何图文，现在就发一条吧！</string>-->
+    
+    <!--<string name="cx_fa_role_version_name">family_husband/</string>-->
+    <!--<string name="cx_fa_role_version_name_s">family_wife/</string>-->
+    <!--<string name="cx_fa_channel">chuxin</string>-->
+    
+    <!--<string name="cx_fa_exit_fail">退出失败</string>-->
+    
+    <!--<string name="cx_fa_role_mateprofile_title_s">老婆的资料</string>-->
+    <!--<string name="cx_fa_role_mateprofile_title">老公的资料</string>-->
+    
+    <!--<string name="cx_fa_same_invitenum_with_me">请输入你伴侣的验证码而不是自己的</string>-->
+    <!--<string name="cx_fa_role_invite_by_qq">通过QQ邀请老公</string>-->
+    <!--<string name="cx_fa_role_invite_by_qq_s">通过QQ邀请老婆</string>-->
+    <!--<string name="cx_fa_role_invite_by_dx_s">通过短信邀请老婆</string>-->
+    <!--<string name="cx_fa_role_invite_by_dx">通过短信邀请老公</string>-->
+    <!--<string name="cx_fa_role_invite_by_wx_s">通过微信邀请老婆</string>-->
+    <!--<string name="cx_fa_role_invite_by_wx">通过微信邀请老公</string>-->
+    <!--<string name="cx_fa_role_invite_by_qr">让老公扫描二维码安装“老婆”</string>-->
+    <!--<string name="cx_fa_role_invite_by_qr_s">让老婆扫描二维码安装“老公”</string>-->
+    
+    <!--<string name="cx_fa_neighbour_send_img_hint">关于照片想跟亲友们说些什么呢？</string>-->
+    <!--<string name="cx_fa_neighbour_send_text_hint">想写些什么跟亲友们分享？</string>-->
+    <!--<string name="cx_fa_message_send_text_hint">想跟他们一家说些什么？</string>-->
+    
+    <!--<string name="cx_fa_role_invite_word">老公，快安装一个叫“小家”的应用，这是个家庭助手，能共同管理家庭照片和日程，能一起记账、社交和育儿，也有专属表情逗你开心，很酷！我的验证码是"%1$s"，这是下载地址：xxxxxx</string>-->
+    <!--<string name="cx_fa_role_invite_word_s">老婆，快安装一个叫“小家”的应用，这是个家庭助手，能共同管理家庭照片和日程，能一起记账、社交和育儿，也有专属表情逗你开心，很酷！我的验证码是"%1$s"，这是下载地址：xxxxxx</string>-->
+    
+    <!--<string name="cx_fa_has_no_wx">请先安装微信</string>-->
+    <!--<string name="cx_fa_together_tip">牵手%1$s天</string>-->
+    <!--<string name="cx_fa_what_date_together">哪一天在一起的？</string>-->
+    
+    
+ <!--    <string name="cx_fa_neighbour_home_change_name_success">修改备注名成功</string>
+    <string name="cx_fa_neighbour_home_change_name_fail">修改备注名失败</string> -->
+    
+    <!--<string name="cx_fa_neighbour_fragment_add_neighbour">马上添加亲友</string>-->
+    <!--<string name="cx_fa_neighbour_home_change_griltext">修改女生的备注名称</string>-->
+    <!--<string name="cx_fa_neighbour_home_change_boytext">修改男生的备注名称</string>-->
+
+    
+    
+    <!--<string name="cx_fa_notify_sound_text">通知提示音</string>-->
+    <!--<string name="cx_fa_role_push_first_sound">调皮</string>-->
+    <!--<string name="cx_fa_role_push_first_sound_s">三弦音</string>-->
+    <!--<string name="cx_fa_role_push_second_sound">老婆</string>-->
+    <!--<string name="cx_fa_role_push_second_sound_s">老公</string>-->
+    <!--<string name="cx_fa_push_third_sound">系统通知</string>-->
+    <!--<string name="cx_fa_save_and_back_text">保存返回</string>-->
+
+    <!-- 记账 -->
+    
+    <!--<string name="cx_fa_accounting_change_account_money_dialog_tv">请输入金额</string>-->
+    <!--<string name="cx_fa_accounting_change_account_date_dialog_tv">请选择日期</string>-->
+    
+    <!--<string name="cx_fa_accounting_category_out_athome">居家物业\n(房租房贷、物业/水电等)</string>-->
+    <!--<string name="cx_fa_accounting_category_out_athome_short">居家物业</string>-->
+    <!--<string name="cx_fa_accounting_category_out_traffic">交通通讯\n(打车、手机费、加油费等)</string>-->
+    <!--<string name="cx_fa_accounting_category_out_traffic_short">交通通讯</string>-->
+    <!--<string name="cx_fa_accounting_category_out_catering">餐饮零食\n(餐费、零食水果、油盐酱醋等)</string>-->
+    <!--<string name="cx_fa_accounting_category_out_catering_short">餐饮零食</string>-->
+    <!--<string name="cx_fa_accounting_category_out_entertainment">休闲娱乐\n(电影、K歌、旅游等)</string>-->
+    <!--<string name="cx_fa_accounting_category_out_entertainment_short">休闲娱乐</string>-->
+    <!--<string name="cx_fa_accounting_category_out_shopping">商品购物\n(服装化妆品、数码、家居等)</string>-->
+    <!--<string name="cx_fa_accounting_category_out_shopping_short">商品购物</string>-->
+    <!--<string name="cx_fa_accounting_category_out_education">医疗教育\n（求医、买药、读书、培训等）</string>-->
+    <!--<string name="cx_fa_accounting_category_out_education_short">医疗教育</string>-->
+    <!--<string name="cx_fa_accounting_category_out_financial">金融保险\n(证券基金、保险投资等)</string>-->
+    <!--<string name="cx_fa_accounting_category_out_financial_short">金融保险</string>-->
+    <!--<string name="cx_fa_accounting_category_out_gratitude">人情往来\n(请客、红白礼金、慈善捐款等)</string>-->
+    <!--<string name="cx_fa_accounting_category_out_gratitude_short">人情往来</string>-->
+    
+
+    <!--<string name="cx_fa_accounting_category_in_wages_short">工资薪酬</string>-->
+    <!--<string name="cx_fa_accounting_category_in_award_short">奖金补贴</string>-->
+    <!--<string name="cx_fa_accounting_category_in_investment_short">投资理财</string>-->
+    <!--<string name="cx_fa_accounting_category_in_other_short">其它收入</string>-->
+    
+    
+    <!--<string name="cx_fa_accounting_homepage_month_in">本月收入:</string>-->
+    <!--<string name="cx_fa_accounting_homepage_month_out">本月支出:</string>-->
+    <!--<string name="cx_fa_accounting_homepage_month_surplus">本月结余:</string>-->
+    <!--<string name="cx_fa_accounting_homepage_year_surplus">本年总结余:</string>-->
+    
+    <!--<string name="cx_fa_accounting_homepage_add_account">记一笔</string>-->
+    <!--<string name="cx_fa_accounting_homepage_detail">明细</string>-->
+    <!--<string name="cx_fa_accounting_homepage_pie">饼图</string>-->
+    <!--<string name="cx_fa_accounting_homepage_detail_more">查看全部明细>></string>-->
+    
+    <!--<string name="cx_fa_accounting_homepage_title">我家记账</string>-->
+    <!--<string name="cx_fa_accounting_in">收入</string>-->
+    <!--<string name="cx_fa_accounting_out">支出</string>-->
+    <!--<string name="cx_fa_accounting_surplus">结余</string>-->
+    <!--<string name="cx_fa_role_send_chart_to_partner">把图转发给老公</string>-->
+    <!--<string name="cx_fa_role_send_chart_to_partner_s">把图转发给老婆</string>-->
+    
+    <!--<string name="cx_fa_accounting_account_money">金额</string>-->
+    <!--<string name="cx_fa_accounting_account_category">类别</string>-->
+    <!--<string name="cx_fa_accounting_account_from">来自</string>-->
+    <!--<string name="cx_fa_accounting_account_date">日期</string>-->
+    <!--<string name="cx_fa_accounting_account_remark">备注</string>-->
+    <!--<string name="cx_fa_accounting_account_delete">删除</string>-->
+    
+    <!--<string name="cx_fa_accounting_account_me">自己</string>-->
+    <!--<string name="cx_fa_accounting_account_both">双方</string> -->
+    
+    <!--<string name="cx_fa_accounting_account_sure_delete">你确定要删除吗？</string> -->
+    <!--<string name="cx_fa_accounting_account_net_save_fail">网络未连接，请稍后保存</string> -->
+    <!--<string name="cx_fa_accounting_account_net_delete_fail">删除失败！</string> -->
+    <!--<string name="cx_fa_accounting_account_sure_leave">确定要退出吗？</string> -->
+        
+    <!--<string name="cx_fa_accounting_account_save_nomoney">你还没有输入金额！</string> -->
+    <!--<string name="cx_fa_accounting_account_save_fuzhi">请不要输入负值。</string> -->
+    <!--<string name="cx_fa_accounting_account_save_zhengfuhao">请不要在中间输入负号或正号。</string> -->
+    <!--<string name="cx_fa_accounting_account_save_point">最小单位为元,请不要输入小数点。</string> -->
+    <!--<string name="cx_fa_accounting_account_save_big">输入金额过大,最大单位为亿。</string> -->
+    
+    <!--<string name="cx_fa_accounting_account_title_edit_account">编辑记账</string> -->
+    <!--<string name="cx_fa_role_accounting_account_title_opposite_account">老公的记账</string> -->
+    <!--<string name="cx_fa_role_accounting_account_title_opposite_account_s">老婆的记账</string> -->
+    <!--<string name="cx_fa_accounting_account_save_opposite_fail">不能编辑对方的记账</string> -->
+  
+    <!--<string name="cx_fa_accounting_detail_net_fail">网络未连接。。。</string> -->
+    <!--<string name="cx_fa_accounting_detail_day_no_feed">你本月还没有记账哦！</string> -->
+    <!--<string name="cx_fa_accounting_detail_year_in">年收入:</string> -->
+    <!--<string name="cx_fa_accounting_detail_year_out">年支出:</string> -->
+    <!--<string name="cx_fa_accounting_detail_year_surplus">年总结余:</string> -->
+    
+    <!-- 私聊 -->
+    <!--<string name="cx_fa_neighbour_message_title">发起私聊</string>-->
+    <!--<string name="cx_fa_neighbour_message_no_feed">你还没有输入内容</string>-->
+    <!--<string name="cx_fa_neighbour_message_share_fail">私聊发送失败</string>-->
+    <!--<string name="cx_fa_neighbour_neighbours_title_message">私聊</string>-->
+    
+    <!--<string name="cx_fa_role_invite_partner_text">赶快邀请老公安装</string>-->
+    
+    <!--<string name="cx_fa_destroy_audio_file">录音文件已经被破坏</string>-->
+    <!--<string name="cx_fa_account_chart_date_formatted" formatted="false">%s年%s月</string>-->
+    
+   <!-- 谁家最聪明  -->
+    <!--<string name="cx_fa_answer_home_title_total_score">我家总得分:</string>-->
+    <!--<string name="cx_fa_answer_home_title_ratio">答对率:</string>-->
+    <!--<string name="cx_fa_answer_home_title_smart_ratio">聪明贡献比:</string>-->
+    <!--<string name="cx_fa_answer_home_today_remain">今日还剩30道题</string>-->
+    <!--<string name="cx_fa_answer_home_tab_week_rank">周排行</string>-->
+    <!--<string name="cx_fa_answer_home_tab_total_rank">总排行</string>-->
+    <!--<string name="cx_fa_answer_home_tab_ratio_rank">答对率</string>-->
+    <!--<string name="cx_fa_answer_home_item_unfold">查看全部</string>-->
+    <!--<string name="cx_fa_answer_home_item_fold">收起</string>-->
+    <!--<string name="cx_fa_answer_home_today_remain_over">今日题目已答完</string>-->
+    <!--<string name="cx_fa_answer_home_today_remain_over_toast">今日题目已答完,请明日继续！</string>-->
+    <!--<string name="cx_fa_answer_home_net_fail">网络未连接。。。</string>-->
+    <!--<string name="cx_fa_answer_home_net_fail_2">网络未连接，请稍后答题！</string>-->
+    <!--<string name="cx_fa_answer_home_alone_add_neighbour">添加亲友</string>-->
+    <!--<string name="cx_fa_answer_home_alone_add_neighbour_text">本游戏适于和亲友一起互动，现在就去添加亲友吧！</string>-->
+    
+    <!--<string name="cx_fa_answer_question_topic_default">网络没有连接 ，无法答题，请稍后再试！</string>-->
+    <!--<string name="cx_fa_role_answer_question_half_dialog_content">你已经答完今天的一半题目，给老公留几道吧？</string>-->
+    <!--<string name="cx_fa_role_answer_question_half_dialog_content_s">你已经答完今天的一半题目，给老婆留几道吧？</string>-->
+    <!--<string name="cx_fa_answer_question_half_dialog_cancel">好的</string>-->
+    <!--<string name="cx_fa_answer_question_half_dialog_sure">还是我来吧</string>-->
+    <!--<string name="cx_fa_answer_question_zero_dialog_cancel">我知道了</string>-->
+    
+    <!--<string name="cx_fa_answer_up_share_text">发送成功</string>-->
+    
+    <string name="cx_fa_third_share_success">分享成功</string>
+    <string name="cx_fa_third_share_fail">分享失败</string>
+    <string name="cx_fa_third_share_cancel">取消分享</string>
+    <string name="cx_fa_wx_older">微信版本过低而不可用</string>
+    <string name="cx_fa_authen_fail">授权失败</string>
+    
+    <string name="cx_fa_our_family">我们一家</string>
+    <string name="cx_fa_game_text">游戏</string>
+    
+    
+    <!-- 以下为合并需要增加的字符串文本内容 -->
+	<!-- pair 未结对 -->
+	<!--<string name="cx_fa_role_pair_top_word">小家是一个家庭沟通生活工具，和老公开通后才能使用。</string>-->
+	<!--<string name="cx_fa_role_pair_top_word_s">小家是一个家庭沟通生活工具，和老婆开通后才能使用。</string>-->
+
+    <string name="cx_fa_calendar_text">日历</string>
+    
+    <!--<string name="cx_fa_role_pair_edit_hint">输入老公的验证码</string>-->
+	<!--<string name="cx_fa_role_pair_edit_hint_s">输入老婆的验证码</string>-->
+    
+    <string name="cx_fa_back_text">返回</string>
+    <string name="cx_fa_finish_text">完成(%1s/9)</string>
+    <string name="cx_fa_select_gallery_text">选择一个相册</string>
+    <string name="cx_fa_select_photo_text">选择照片</string>
+    <string name="cx_fa_no_select_img">还没有选择任何照片</string>
+    <string name="cx_fa_no_image">你还没有选择任何相片</string>
+    
+    <string name="cx_fa_unpair_chat_text">情趣聊天</string>
+    <string name="cx_fa_unpair_gallery_text">我家相册</string>
+    <string name="cx_fa_unpair_jz_text">夫妻记账</string>
+    <string name="cx_fa_unpair_ml_text">蜜邻社交</string>
+    <string name="cx_fa_unpair_game_text">家庭游戏</string>
+    <string name="cx_fa_unpair_calendar_text">日历小报</string>
+    <string name="cx_fa_unpair_funcs_tip">开通后一起玩：</string>
+    
+
+	
+	<!-- 邀请亲友界面修改 -->
+    
+    <!--<string name="cx_fa_invite_neighbour_word">Hi，你们小两口装个“小家”应用吧，一家人亲密聊天，共同管理家庭照片和日程，共同理财和育儿，咱们两家还可以一起玩，很酷！我家的ID是"%1$s"，这是下载地址：http://m.family.rekoo.net/dl/invite</string>-->
+    <!--<string name="cx_fa_invite_neighbour_word_url">http://m.family.rekoo.net/dl/invite</string>-->
+	
+	<!-- 意见反馈 -->
+	<!--<string name="cx_fa_setting_user_suggest">感谢您使用“小家”，请输入您的问题或建议</string>-->
+	
+	<!-- 侧边栏 -->
+	<!--<string name="cx_fa_role_main_menu_chat_with">老公说</string>-->
+	<!--<string name="cx_fa_role_main_menu_chat_with_s">老婆说</string>-->
+	
+	<!--<string name="cx_fa_role_main_menu_invite">邀请老公开通>></string>-->
+	<!--<string name="cx_fa_role_main_menu_invite_s">邀请老婆开通>></string>-->
+	
+	<!--<string name="cx_fa_role_main_menu_album">相册</string>-->
+	<!--<string name="cx_fa_role_main_menu_neighbours">亲友们</string>-->
+	<!--<string name="cx_fa_role_main_menu_kids">孩子空间</string>-->
+	
+	
+	<!-- 资料页 -->
+	<!--<string name="cx_fa_mate_family_info_tab_me">我</string>-->
+	<!--<string name="cx_fa_mate_family_info_tab_kid">孩子</string>-->
+	<!--<string name="cx_fa_mate_family_info_tab_home">我家主页</string>-->
+	<!--<string name="cx_fa_mate_family_info_user_icon">头像</string>-->
+	<!--<string name="cx_fa_mate_family_info_user_name">昵称</string>-->
+	<!--<string name="cx_fa_mate_family_info_user_birthday">生日</string>-->
+	<!--<string name="cx_fa_mate_family_info_user_cons">星座</string>-->
+	<!--<string name="cx_fa_mate_family_info_user_phone">手机</string>-->
+	<!--<string name="cx_fa_mate_family_info_user_remark">备注</string>-->
+	<!--<string name="cx_fa_mate_family_info_user_more">添加更多资料</string>-->
+	<string name="cx_fa_mate_family_info_whole_name">全名</string>
+	<string name="cx_fa_mate_family_info_gender">性别</string>
+	<string name="cx_fa_mate_family_info_custom">自定义</string>
+	<string name="cx_fa_mate_family_info_title_text">我家资料</string>
+	<string name="cx_fa_mate_family_info_user_default_text">""</string>
+	<string name="cx_fa_mate_family_info_custom_default_text">"如血型等"</string>
+	
+	
+	<!-- 日历 -->
+	<!--<string name="cx_fa_calendar_homepage_title1">我家日历</string>-->
+	<!--<string name="cx_fa_calendar_homepage_title2">纪念日</string>-->
+	<!--<string name="cx_fa_calendar_item_title_edit_btn_text">编辑</string>-->
+	<!--<string name="cx_fa_calendar_item_title_text">记事详情</string>-->
+	<!--<string name="cx_fa_calendar_memorial_day_title_text">纪念日详情</string>-->
+	<!--<string name="cx_fa_calendar_edit_common_memotial_day_title_text">使用推荐纪念日</string>-->
+	<!--<string name="cx_fa_calendar_edit_edit_item_hint">添加一个记事，比如备忘、计划、随想&#8230;</string>-->
+	<!--<string name="cx_fa_calendar_edit_edit_memorial_day_hint">点这里输入纪念日内容&#8230;</string>-->
+	<!---->
+	<!--<string name="cx_fa_calendar_edit_tab_item">记事</string>-->
+	<!--<string name="cx_fa_calendar_edit_tab_memorial_day">纪念日</string>-->
+	<!--<string name="cx_fa_calendar_edit_edit_recommend_text">使用推荐纪念日>></string>-->
+	<!--<string name="cx_fa_calendar_edit_selecter_text1">一般纪念日</string>-->
+	<!--<string name="cx_fa_calendar_edit_selecter_text2">生日</string>-->
+	<!--<string name="cx_fa_calendar_add_item_text">添加新记事</string>-->
+	<!--<string name="cx_fa_calendar_add_memorial_day_text">添加纪念日</string>-->
+	
+	<!--<string name="cx_fa_calendar_edit_title_text1">添加记事</string>-->
+	<!--<string name="cx_fa_calendar_edit_title_text2">添加纪念日</string>-->
+	<!--<string name="cx_fa_calendar_edit_title_text3">编辑记项</string>-->
+	<!--<string name="cx_fa_calendar_edit_title_text4">编辑纪念日</string>-->
+	
+	<!--<string name="cx_fa_calendar_edit_title_save_text">保存</string>-->
+	
+	
+	<!-- 更多 -->
+	<!--<string name="cx_fa_more_text_answer">谁家最聪明</string>-->
+	<!--<string name="cx_fa_more_text_memorial_day">我家纪念日</string>-->
+	<!--<string name="cx_fa_more_text_tabloid">我家小报</string>-->
+	<!--<string name="cx_fa_more_text_help_response">意见反馈</string>-->
+	<!--<string name="cx_fa_more_text_recommend_friends">推荐给亲友</string>-->
+	<!--<string name="cx_fa_more_text_setting">设置</string>-->
+	
+	
+	<!-- 孩子空间 -->
+	<!--<string name="cx_fa_zone_share_sync_neighbour">同步此话题到亲友</string>-->
+	<!--<string name="cx_fa_kids_share_sync_zone">同步此话题到相册</string>-->
+	<!--<string name="cx_fa_sync_opening">已开启</string>-->
+    <!--<string name="cx_fa_sync_closing">已关闭</string>-->
+    <!---->
+    <!--<string name="cx_fa_kids_info_birthday">生日/预产期</string>-->
+	
+	
+
+</resources>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="libgpuimage">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/family/libs/libgpuimage.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

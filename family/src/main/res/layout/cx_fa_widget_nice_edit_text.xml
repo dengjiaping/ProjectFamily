@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/navi_inputbox"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/cx_fa_widget_nice_edit_text__erase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:onClick="clearAllInput"
+        android:visibility="visible"
+        android:src="@drawable/remind_input_x" />
+ 
+    <EditText
+        android:id="@+id/cx_fa_widget_nice_edit_text__edit"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/cx_fa_widget_nice_edit_text__erase"
+        android:background="@android:color/transparent"
+        android:singleLine="true"
+        android:textSize="16sp" />
+
+</RelativeLayout>

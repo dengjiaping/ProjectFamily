@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/cx_fa_widget_input_panel__layout5"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:alpha="1"
+    android:background="@color/cx_fa_co_widget_background"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        
+        <RelativeLayout 
+             android:layout_weight="1"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content">
+        
+             <ImageButton
+                 android:id="@+id/cx_fa_widget_input_panel_popmenu__button0"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:background="@color/cx_fa_co_transparent"
+                 android:src="@drawable/cx_fa_inputpanel_album_btn" />
+        
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:textColor="@color/cx_fa_co_deep_gray"
+                 android:layout_below="@+id/cx_fa_widget_input_panel_popmenu__button0"
+                 android:text="@string/cx_fa_chat_popupmenu_photo_btn" />
+         </RelativeLayout>
+        
+		 <RelativeLayout 
+		     android:layout_weight="1"
+		     android:layout_width="0dp"
+		     android:layout_height="wrap_content">
+		
+		     <ImageButton
+		         android:id="@+id/cx_fa_widget_input_panel_popmenu__button1"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:layout_centerHorizontal="true"
+		         android:background="@color/cx_fa_co_transparent"
+		         android:src="@drawable/cx_fa_inputpanel_camera_btn" />
+		
+		     <TextView
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:layout_centerHorizontal="true"
+		         android:textColor="@color/cx_fa_co_deep_gray"
+		         android:layout_below="@+id/cx_fa_widget_input_panel_popmenu__button1"
+		         android:text="@string/cx_fa_chat_popupmenu_camera_btn" />
+		 </RelativeLayout>
+		
+		 <RelativeLayout
+		     android:layout_weight="1"
+		     android:layout_width="0dp"
+		     android:layout_height="wrap_content"
+		     
+		      >
+		
+		     <ImageButton
+		         android:id="@+id/cx_fa_widget_input_panel_popmenu__button2"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:layout_centerHorizontal="true"
+		         android:background="@color/cx_fa_co_transparent"
+		         android:src="@drawable/cx_fa_inputpanel_location_btn" />
+		
+		     <TextView
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:layout_centerHorizontal="true"
+		         android:textColor="@color/cx_fa_co_deep_gray"
+		         android:layout_below="@+id/cx_fa_widget_input_panel_popmenu__button2"
+		         android:text="@string/cx_fa_chat_popupmenu_location_btn" />
+		 </RelativeLayout>
+		
+		 <RelativeLayout
+		     android:layout_weight="1"
+		     android:layout_width="0dp"
+		     android:layout_height="wrap_content" 
+		     >
+		
+		     <ImageButton
+		         android:id="@+id/cx_fa_widget_input_panel_popmenu__button3"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:layout_centerHorizontal="true"
+		         android:background="@color/cx_fa_co_transparent"
+		         android:src="@drawable/cx_fa_inputpanel_reply_btn" />
+		
+		     <TextView
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:layout_centerHorizontal="true"
+		         android:textColor="@color/cx_fa_co_deep_gray"
+		         android:layout_below="@+id/cx_fa_widget_input_panel_popmenu__button3"
+		         android:text="@string/cx_fa_chat_popupmenu_reply_btn" />
+   		 </RelativeLayout>
+   		 
+		 
+	</LinearLayout>
+<LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="90dp"
+	        android:layout_marginTop="2dp"
+	        android:orientation="horizontal">
+		 <RelativeLayout
+		     android:layout_weight="1"
+		     android:layout_width="0dp"
+		     android:layout_height="wrap_content" 
+		     >
+		
+		     <ImageButton
+		         android:id="@+id/cx_fa_widget_input_panel_popmenu__guess"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:layout_centerHorizontal="true"
+		         android:background="@color/cx_fa_co_transparent"
+		         android:src="@drawable/cx_fa_inputpanel_guess_btn" />
+		
+		     <TextView
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:layout_centerHorizontal="true"
+		         android:textColor="@color/cx_fa_co_deep_gray"
+		         android:layout_below="@+id/cx_fa_widget_input_panel_popmenu__guess"
+		         android:text="@string/cx_fa_chat_popupmenu_guess_btn" />
+   		</RelativeLayout>	<!-- 猜拳 -->
+   		
+   		<RelativeLayout
+             android:layout_weight="1"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content" 
+             >
+        
+             <ImageButton
+                 android:id="@+id/cx_fa_widget_input_panel_popmenu__wipe"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:background="@color/cx_fa_co_transparent"
+                 android:src="@drawable/cx_fa_role_inputpanel_whip_btn" />
+        
+             <TextView
+                 android:id="@+id/cx_fa_widget_input_panel_popmenu__wipe_text"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerHorizontal="true"
+                 android:textColor="@color/cx_fa_co_deep_gray"
+                 android:layout_below="@+id/cx_fa_widget_input_panel_popmenu__wipe"
+                 android:text="@string/cx_fa_role_chat_popupmenu_whip_btn" />
+         </RelativeLayout>  <!-- 抽鞭子 或 弹脑壳 -->
+   		<!--
+		<RelativeLayout
+		     android:layout_weight="1"
+		     android:layout_width="0dp"
+		     android:layout_height="wrap_content">
+		     <ImageButton
+		         android:id="@+id/cx_fa_widget_input_panel_popmenu__button4"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:background="@color/cx_fa_co_transparent"
+		         android:src="@drawable/chat_buttonnew" 
+		         android:layout_centerHorizontal="true"/>
+		
+		     <TextView
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:layout_centerHorizontal="true"
+		         android:textColor="@color/cx_fa_co_deep_gray"
+		         android:layout_below="@+id/cx_fa_widget_input_panel_popmenu__button4"
+		         android:text="@string/cx_fa_chat_popupmenu_new_btn" />
+		 </RelativeLayout>-->	<!-- 更多期待 -->
+		  <RelativeLayout
+		     android:layout_weight="1"
+		     android:layout_width="0dp"
+		     android:layout_height="wrap_content" 
+		     >
+		  </RelativeLayout>
+		 <RelativeLayout
+		     android:layout_weight="1"
+		     android:layout_width="0dp"
+		     android:layout_height="wrap_content" 
+		     >
+		  </RelativeLayout>
+
+		 
+	</LinearLayout>
+		
+    <!-- <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+		 
+   		 <RelativeLayout
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content" 
+		      android:layout_marginLeft="20dp">
+		
+		     <ImageButton
+		         android:id="@+id/cx_fa_widget_input_panel_popmenu__button4"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:background="@color/cx_fa_co_transparent"
+		         android:src="@drawable/chat_buttonnew" />
+		
+		     <TextView
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:layout_centerHorizontal="true"
+		         android:layout_below="@+id/cx_fa_widget_input_panel_popmenu__button4"
+		         android:text="@string/cx_fa_chat_popupmenu_new_btn" />
+		 </RelativeLayout>
+	 
+	 </LinearLayout> -->
+	 
+</LinearLayout>

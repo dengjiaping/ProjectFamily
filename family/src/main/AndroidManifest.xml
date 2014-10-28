@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chuxin.family"
+    android:installLocation="auto">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />-->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+    <!-- 以下是百度地图的权限 -->
+    <!-- 使用定位功能所需权限,demo已集成百度定位SDK,不使用定位功能可去掉以下6项 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- SDK1.5需要android.permission.GET_TASKS权限判断本程序是否为当前运行的应用? -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 来电消音 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application
+        android:allowBackup="true"
+        android:name="com.chuxin.family.app.CxApplication"
+        android:icon="@drawable/cx_fa_app_icon"
+        android:label="@string/cx_fa_role_app_name"
+        android:screenOrientation="portrait"
+        android:theme="@android:style/Theme.NoTitleBar">
+        <activity
+            android:name="com.chuxin.family.main.CxAuthenNew"
+            android:label="@string/cx_fa_role_app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"><!-- android:launchMode="singleTask" -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.chuxin.family.settings.CxHelpSuggest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100360393" />
+            </intent-filter>
+        </activity>
+        <!--该文件已经被注释-->
+        <!--<activity-->
+        <!--android:name="com.chuxin.family.views.reminder.ReminderPopDialog"-->
+        <!--android:screenOrientation="portrait"-->
+        <!--android:theme="@style/Theme.ReminderPopDialog" >-->
+        <!--<intent-filter>-->
+        <!--<action android:name="android.intent.action.MAIN" />-->
+        <!--</intent-filter>-->
+        <!--</activity>-->
+        <activity
+            android:name=".photo.BindDeviceAcitivty"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".photo.ChooeseDeviceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.views.reminder.ReminderCreateActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- <activity
+            android:name="com.chuxin.family.main.RkMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" /> -->
+
+        <activity
+            android:name="com.chuxin.family.views.reminder.CxReminderList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.views.reminder.ReminderEditTitleActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.views.reminder.ReminderEditTargetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.views.reminder.ReminderEditPeriodActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.views.reminder.ReminderEditAdvanceActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.views.reminder.ReminderEditDateForWeeklyActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.views.reminder.ReminderEditDateForCustomActivtiy"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!--该文件已经被注释-->
+        <!--<activity-->
+        <!--android:name="com.chuxin.family.views.chat.SavePictureActiviy"-->
+        <!--android:launchMode="singleTask"-->
+        <!--android:screenOrientation="portrait" />-->
+
+        <receiver
+            android:name="com.chuxin.family.service.CxStartUpReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="WAKE_UP" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.chuxin.family.service.CxBackgroundService" />
+
+        <receiver
+            android:name="com.chuxin.family.app.events.ReminderReceiver"
+            android:process=":remote" />
+
+        <activity
+            android:name="com.chuxin.family.settings.CxUserProtocol"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.settings.CxUserSuggest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.libs.gpuimage.activity.ActivitySelectPhoto"
+            android:theme="@style/popupDialog" />
+        <activity
+            android:name="com.chuxin.family.settings.CxChatBackgroundSelecter"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.chuxin.family.libs.gpuimage.activity.ActivityPhotoZoom" />
+        <activity android:name="com.chuxin.family.libs.gpuimage.activity.ActivityGallery" />
+        <!--<activity android:name="com.chuxin.family.libs.gpuimage.activity.ActivitySysCamera" />-->
+        <!--<activity android:name="com.chuxin.family.libs.gpuimage.activity.ActivitySelectMutiplesPhotos" />-->
+        <activity android:name="com.chuxin.family.libs.gpuimage.activity.ActivitySysGallery" />
+        <activity
+            android:name="com.chuxin.family.libs.gpuimage.activity.ActivityCamera"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.chuxin.family.settings.CxAboutVersion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.app.CxDialogActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.chuxin.family.pair.CxApproveInvitation"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.chuxin.family.zone.CxZoneAddFeed"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.settings.CxLockScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.mate.CxMateEdit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.mate.CxMateAddCustom"
+            android:screenOrientation="portrait" />
+
+        <!-- 这段是腾讯的云统计 -->
+        <!-- 请将value改为MTA分配的appkey < -->
+        <meta-data
+            android:name="TA_APPKEY"
+            android:value="AR943WZZMD9N" />
+        <!-- 请将value改为app发布对应的渠道，不同的发布渠道使用不同的名字 < -->
+        <meta-data
+            android:name="InstallChannel"
+            android:value="chuxin" />
+
+        <meta-data
+            android:name="__RK_PUSH_KEY__"
+            android:value="1" />
+
+        <receiver android:name="com.chuxin.androidpush.sdk.push.SystemEventsHandler">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:permission="android.permission.INTERNET"
+            android:name="com.chuxin.androidpush.sdk.push.NotificationService"
+            android:exported="true" />
+        <service
+            android:permission="android.permission.INTERNET"
+            android:name="com.chuxin.androidpush.sdk.push.PushService"
+            android:exported="true"
+            android:process=".rkpush">
+            <intent-filter>
+                <action android:name="com.chuxin.androidpush.sdk.push.PushService.ACTION" />
+            </intent-filter>
+        </service>
+
+        <!--
+             <activity android:name="com.chuxin.family.views.chat.RkLocateMap" 
+            android:screenOrientation="portrait" />
+
+        -->
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity
+            android:name="com.chuxin.family.views.chat.MyLocation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.main.CxMain"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.neighbour.CxNeighbourList"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.chuxin.family.neighbour.CxNbNeighboursHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.neighbour.CxNbOurHome"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.chuxin.family.neighbour.CxNeighbourAddInvitation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.neighbour.CxNeighbourAddMessage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.neighbour.CxNeighbourAddMessageImagePager"
+            android:screenOrientation="portrait" />
+        <!-- 密邻管理  -->
+        <activity
+            android:name="com.chuxin.family.neighbour.CxNeighbourManageActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!--记账  -->
+        <activity
+            android:name="com.chuxin.family.accounting.CxAccountDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.accounting.CxChangeAccountActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 谁家最聪明  -->
+        <activity
+            android:name="com.chuxin.family.neighbour.answer.CxAnswerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.neighbour.answer.CxAnswerQuestionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/bg_transparent" />
+        <activity
+            android:name="com.chuxin.family.neighbour.answer.CxAnswerUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/bg_transparent" />
+
+
+        <!-- 小报相关 -->
+        <activity
+            android:name="com.chuxin.family.tabloid.CxTabloidActivity"
+            android:label="@string/cx_fa_tabloid_activity_title" />
+
+        <receiver
+            android:name="com.chuxin.family.tabloid.TabloidReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.chuxin.family.tabloid.SEND_TABLOID" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.chuxin.family.tabloid.DateChangeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="com.hmammon.family.tabloid.reciver" />
+            </intent-filter>
+        </receiver>
+        <!-- wechat -->
+
+        <!-- 无须管理的腾讯第三方要求声明 -->
+        <!--suppress AndroidDomInspection -->
+        <receiver
+            android:name=".AppRegister"
+            android:permission="com.tencent.mm.plugin.permission.SEND">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".tabloid.StartSelfReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+
+        <!-- 抽鞭子 -->
+        <activity
+            android:name="com.chuxin.family.whip.WhipActivity"
+            android:theme="@style/bg_transparent_dialog" />
+
+        <activity
+            android:name="com.chuxin.family.settings.CxSetPushSound"
+            android:screenOrientation="portrait" />
+        <!-- push音效 -->
+
+        <activity
+            android:name="com.chuxin.family.widgets.CxImagePager"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.zone.CxAddFeedImagePager"
+            android:screenOrientation="portrait" />
+        <!--<activity-->
+        <!--android:name="com.chuxin.family.neighbour.RkNeighbourImagePager"-->
+        <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.chuxin.family.neighbour.CxNeighbourAddInvitationImagePager"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.accounting.CxAccountChatPie"
+            android:screenOrientation="portrait" />
+
+        <!-- 登录选择性别 和是否亲子版-->
+        <activity
+            android:name="com.chuxin.family.main.CxAuthenGenderSelectorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.main.CxAuthenChildrenSelectorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.main.CxLoginByFamily"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.main.CxRegisterByFamily"
+            android:screenOrientation="portrait" />
+
+        <!-- 邀请结对界面添加一个activity -->
+        <activity
+            android:name="com.chuxin.family.pair.CxPairActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 设置改为activity  -->
+        <activity
+            android:name="com.chuxin.family.settings.CxSettingActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 资料页 -->
+        <activity
+            android:name="com.chuxin.family.mate.CxFamilyInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- 日历 -->
+        <activity
+            android:name="com.chuxin.family.calendar.CxCalendarCommonMemorialDay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.calendar.CxCalendarItemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.calendar.CxCalendarMemorialDayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.calendar.CxCalendarEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.calendar.CxCalendarDetailActivity"
+            android:screenOrientation="landscape" />
+
+        <!-- 孩子空间 -->
+        <activity
+            android:name="com.chuxin.family.kids.CxKidImagePager"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.kids.CxKidAddFeed"
+            android:screenOrientation="portrait" />
+
+
+        <!-- shareSDK -->
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <!--
+            	Dropbox的SSO功能需要在此处添加一个对ACTION_VIEW事件的过滤器，其中的scheme是
+            	“db-”前缀再开发者应用的加上appKey。如果此过滤器不设置，则不能完成SSO功能授权
+            -->
+            <intent-filter>
+                <data android:scheme="db-10dde055c6ba" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.chuxin.family.wxapi.WXEntryActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <!-- 系统相册 -->
+        <activity
+            android:name="com.chuxin.family.gallery.CxGalleryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.gallery.CxGalleryGridActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.chuxin.family.calendar.CalendarReminderPopDialog"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.ReminderPopDialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- 孩子资料 -->
+        <activity
+            android:name="com.chuxin.family.kids.CxKidsInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chuxin.family.kids.CxKidsInfoWebViewActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

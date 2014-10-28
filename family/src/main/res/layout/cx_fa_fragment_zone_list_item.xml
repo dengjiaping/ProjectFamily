@@ -1,0 +1,195 @@
+<!-- 二人空间的空间的单条记录-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content" 
+    android:orientation="vertical" 
+    android:layout_marginLeft="16dip" android:layout_marginRight="16dip"
+    android:id="@+id/cx_fa_zone_item_layout"
+    ><!-- android:background="@null" -->
+    <LinearLayout
+	    android:layout_width="match_parent" android:layout_height="wrap_content" 
+	    android:orientation="vertical" android:background="@null"
+	    android:layout_marginLeft="16dip" android:layout_marginRight="16dip"
+	    android:layout_marginBottom="3dip"
+	    >
+	    <View android:background="@null" android:layout_width="match_parent"
+	        android:layout_height="1dp" android:layout_marginTop="15dp"/>
+	    <!-- 日期 -->
+	    <TextView android:id="@+id/speakDate" android:gravity="right"
+	        android:layout_width="match_parent" android:layout_height="wrap_content"
+	        android:text="13 5月" android:layout_weight="0"/>
+	    
+	    <!-- 头像、称呼和时间 -->
+	    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+	        android:layout_height="wrap_content" android:layout_weight="0"
+	        android:layout_marginBottom="4dip" >
+	        <com.chuxin.family.widgets.CxImageView android:layout_width="42dip" 
+	            android:layout_height="42dip" android:id="@+id/speakerHead" 
+	            android:scaleType="centerCrop"
+	            android:layout_weight="0"/>
+	        <LinearLayout android:orientation="vertical" android:layout_weight="1"
+	            android:layout_width="match_parent" android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dip"
+	            android:layout_gravity="bottom|left"
+	            >
+	            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+	                android:textSize="16sp" android:textColor="#aa000000"
+	                android:id="@+id/speakerName" android:text="老公"/>
+	            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+	                android:textSize="12sp"
+	                android:id="@+id/speakTime" android:text="16：00" android:textColor="#70000000"/>
+	        </LinearLayout>
+	    </LinearLayout>
+	    
+	    <!-- 文字内容(需要这行) -->
+	    <com.chuxin.family.widgets.CustomTextView 
+	        android:id="@+id/speakWord" android:ellipsize="end" 
+	        android:layout_width="match_parent" android:layout_height="wrap_content"
+	        android:text="学而不思则罔，思而不学则殆"
+	        android:layout_weight="0"
+	        android:gravity="center_vertical" 
+	        android:layout_marginBottom="4dip" 
+	        android:padding="7dip"
+	        android:textSize="15sp"
+	        android:textColor="#80000000"
+	        />
+	    
+	     <TextView 
+	        android:id="@+id/space_feed_text_more"
+	        android:gravity="right"
+	        android:textColor="#d78355"
+	        android:textSize="14sp"
+	        android:layout_marginRight="15dip"
+	        android:layout_marginBottom="10dip"
+	        android:layout_width="match_parent" 
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0"
+	        android:visibility="gone"/>
+
+	    <!-- 分享的图片（9张：3 x 3） -->
+	        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" android:id="@+id/cx_fa_shared_photos" android:padding="7dip">
+	            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" android:gravity="center">
+		          <com.chuxin.family.widgets.CxImageView android:layout_width="100dip" 
+		                android:layout_height="100dip"
+			        android:src="@drawable/chatview_imageloading"
+			        android:background="@drawable/cx_fa_bg_white_corner_rect_with_grey_border"
+			        android:padding="5dip" android:layout_weight="1"
+			        android:id="@+id/cx_fa_first_9image" android:layout_gravity="center"
+			        android:maxWidth="100dp" android:maxHeight="100dp"
+			        android:layout_margin="2dip"
+			        android:scaleType="fitCenter" />
+		          <com.chuxin.family.widgets.CxImageView android:layout_width="100dip" 
+		                android:layout_height="100dip"
+	                    	android:src="@drawable/chatview_imageloading"
+		                android:background="@drawable/cx_fa_bg_white_corner_rect_with_grey_border"
+		                android:padding="5dip" android:layout_weight="1"
+		                android:id="@+id/cx_fa_second_9image" android:layout_gravity="center"
+		                android:adjustViewBounds="true" 
+		                android:maxWidth="100dp" android:maxHeight="100dp"
+		                android:layout_margin="2dip"
+		                android:scaleType="fitCenter" />
+		          <com.chuxin.family.widgets.CxImageView android:layout_width="100dip" 
+		                android:layout_height="100dip"
+	                    	android:src="@drawable/chatview_imageloading"
+	                    	android:background="@drawable/cx_fa_bg_white_corner_rect_with_grey_border"
+	                    	android:padding="5dip" android:layout_weight="1"
+	                    	android:id="@+id/cx_fa_third_9image" android:layout_gravity="center"
+	                    	android:adjustViewBounds="true" 
+	                    	android:maxWidth="100dp" android:maxHeight="100dp"
+	                    	android:layout_margin="2dip"
+	                    	android:scaleType="fitCenter" />
+	            </LinearLayout>
+	            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content"
+	                android:layout_height="wrap_content" android:gravity="center">
+		          <com.chuxin.family.widgets.CxImageView android:layout_width="100dp" 
+		                android:layout_height="100dp"
+                        	android:src="@drawable/chatview_imageloading"
+                        	android:background="@drawable/cx_fa_bg_white_corner_rect_with_grey_border"
+                        	android:padding="5dip" android:layout_weight="1"
+                        	android:id="@+id/cx_fa_forth_9image" android:layout_gravity="center"
+                        	android:adjustViewBounds="true" 
+                        	android:maxWidth="100dp" android:maxHeight="100dp"
+                        	android:layout_margin="2dip"
+                        	android:scaleType="fitCenter" />
+                    	  <com.chuxin.family.widgets.CxImageView android:layout_width="100dp" 
+                        	android:layout_height="100dp"
+                        	android:src="@drawable/chatview_imageloading"
+                        	android:background="@drawable/cx_fa_bg_white_corner_rect_with_grey_border"
+                        	android:padding="5dip" android:layout_weight="1"
+                        	android:id="@+id/cx_fa_fifth_9image" android:layout_gravity="center"
+                        	android:adjustViewBounds="true" 
+                        	android:maxWidth="100dp" android:maxHeight="100dp"
+                        	android:layout_margin="2dip"
+                        	android:scaleType="fitCenter" />
+                    	  <com.chuxin.family.widgets.CxImageView android:layout_width="100dp" 
+                        	android:layout_height="100dp"
+                        	android:src="@drawable/chatview_imageloading"
+                        	android:background="@drawable/cx_fa_bg_white_corner_rect_with_grey_border"
+                        	android:padding="5dip" android:layout_weight="1"
+                        	android:id="@+id/cx_fa_sixth_9image" android:layout_gravity="center"
+                        	android:adjustViewBounds="true" 
+                        	android:maxWidth="100dp" android:maxHeight="100dp"
+                        	android:layout_margin="2dip"
+                        	android:scaleType="fitCenter" />
+	            </LinearLayout>
+	            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content"
+                    	android:layout_height="wrap_content" android:gravity="center">
+                    	  <com.chuxin.family.widgets.CxImageView android:layout_width="100dp" 
+                        	android:layout_height="100dp"
+                        	android:src="@drawable/chatview_imageloading"
+	                        android:background="@drawable/cx_fa_bg_white_corner_rect_with_grey_border"
+	                        android:padding="5dip" android:layout_weight="1"
+	                        android:id="@+id/cx_fa_seventh_9image" android:layout_gravity="center"
+	                        android:adjustViewBounds="true" 
+	                        android:maxWidth="100dp" android:maxHeight="100dp"
+	                        android:layout_margin="2dip"
+	                        android:scaleType="fitCenter" />
+	                  <com.chuxin.family.widgets.CxImageView android:layout_width="100dp" 
+	                        android:layout_height="100dp"
+	                        android:src="@drawable/chatview_imageloading"
+	                        android:background="@drawable/cx_fa_bg_white_corner_rect_with_grey_border"
+	                        android:padding="5dip" android:layout_weight="1"
+	                        android:id="@+id/cx_fa_eighth_9image" android:layout_gravity="center"
+	                        android:adjustViewBounds="true" 
+	                        android:maxWidth="100dp" android:maxHeight="100dp"
+	                        android:layout_margin="2dip"
+	                        android:scaleType="fitCenter" />
+	                  <com.chuxin.family.widgets.CxImageView android:layout_width="100dp" 
+	                        android:layout_height="100dp"
+	                        android:src="@drawable/chatview_imageloading"
+	                        android:background="@drawable/cx_fa_bg_white_corner_rect_with_grey_border"
+	                        android:padding="5dip" android:layout_weight="1"
+	                        android:id="@+id/cx_fa_nineth_9image" android:layout_gravity="center"
+	                        android:adjustViewBounds="true" 
+	                        android:maxWidth="100dp" android:maxHeight="100dp"
+	                        android:layout_margin="2dip"
+	                        android:scaleType="fitCenter" />
+	            </LinearLayout>
+	        </LinearLayout>
+	    
+	    <!-- 评论和删除按钮 -->
+	    <LinearLayout android:orientation="horizontal" android:gravity="right"
+	        android:layout_width="match_parent" android:layout_height="wrap_content"
+	        android:layout_weight="0">
+	        <ImageButton android:id="@+id/commentOrReplayBtn" 
+	            android:background="@drawable/wezone_reply"
+	            android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:layout_weight="0"/>
+	        <ImageButton android:id="@+id/deleteRecord" android:background="@drawable/wezone_more"
+	            android:layout_width="wrap_content" android:layout_height="wrap_content"
+	            android:layout_weight="0" android:layout_marginLeft="8dip"/>
+	    </LinearLayout>
+	    
+	    <!-- 评论或回复 -->
+	    <LinearLayout android:background="@drawable/wezone_reply_bg" 
+	        android:orientation="vertical" android:gravity="left|center_vertical"
+	        android:layout_width="match_parent" android:layout_height="wrap_content"
+	        android:id="@+id/commentAndReplayOfRecord" android:layout_weight="1"
+	        android:paddingRight="10dip"
+	        android:paddingLeft="12dip"
+	        android:layout_marginBottom="3dip"/>
+	</LinearLayout>
+	<View android:background="#d6d6dc" android:layout_width="match_parent"
+	        android:layout_height="1dp" android:layout_marginTop="10dp"/>
+</LinearLayout>

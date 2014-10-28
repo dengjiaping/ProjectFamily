@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_height="match_parent"
+    android:layout_width="match_parent" android:background="#e4e4ea">
+ 
+    <include layout="@layout/cx_fa_activity_title" android:layout_width="match_parent"
+	     android:layout_height="wrap_content" android:layout_weight="0" 
+	     /><!-- 我家小报界面标题 -->
+	
+	   <!-- 
+	  <LinearLayout 
+	    android:layout_width="match_parent" 
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >   
+	    
+		<Button android:id="@+id/tabloid_btn1"
+		    android:text="add"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		    /> 
+	    </LinearLayout>
+	     -->
+	    
+    <LinearLayout android:id="@+id/tabloid_cate_list_wrap"
+	    android:layout_width="match_parent" 
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >    
+		    
+	        
+	<!--    	
+	    <LinearLayout
+	             	android:id="@+id/tabloid_top_bg_imageView_layout"
+			android:layout_width="match_parent" android:layout_gravity="center_horizontal|top"
+			android:layout_height="match_parent"   
+			android:orientation="vertical" android:gravity="center_horizontal|top"
+			android:layout_marginTop="-85dp">
+			
+	            	<com.chuxin.family.widgets.RkImageView 
+	                    	android:id="@+id/tabloid_top_bg_imageView" 
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+		                android:src="@drawable/daily_image"
+		                android:layout_weight="1"
+		                android:layout_gravity="center"
+		                android:scaleType="centerCrop" />
+	            	    
+		  
+	  </LinearLayout> --> 
+	  <ListView android:id="@+id/tabloid_cate_listView"
+		    android:layout_width="match_parent" android:layout_gravity="center_horizontal|top"
+		    android:layout_height="match_parent" android:gravity="center_horizontal|top"
+		    android:footerDividersEnabled="false"
+		    android:divider="@null"
+		    android:cacheColorHint="#00000000"
+		    />
+			
+	   
+		    
+    </LinearLayout>
+     
+ 
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?><!-- push声音设置界面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:orientation="vertical"
+    android:layout_height="match_parent" android:background="#e4e4ea">
+    <LinearLayout
+	    android:id="@+id/cx_fa_activity_title_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/navi_topbar"
+	    android:gravity="center_vertical"
+	    android:layout_gravity="center"
+	    >
+	    <Button 
+	        android:id="@+id/cx_fa_activity_title_back"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dip"
+	        android:background="@drawable/cx_fa_back_btn"
+	        android:textColor="@color/cx_fa_co_navi_button_text"
+	        android:textAlignment="center"
+	        android:textSize="16sp" android:text="@string/cx_fa_save_and_back_text"
+	        android:paddingLeft="20dp" android:paddingRight="8dp"
+	        android:visibility="visible" />
+	
+	    <TextView 
+	        android:id="@+id/cx_fa_activity_title_info"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textColor="@android:color/white"
+	        android:textSize="22sp"
+	        android:layout_marginLeft="5dip"
+	        android:layout_marginRight="5dip"
+	        android:layout_marginTop="0dp"
+	        android:gravity="center"
+	        android:focusable="true"
+	        android:singleLine="true"
+	        android:ellipsize="end"
+	        android:layout_weight="1"
+			android:focusableInTouchMode="true"
+	        />
+	    
+	    <Button 
+	        android:visibility="invisible"
+	        android:id="@+id/cx_fa_activity_title_more"
+	        android:layout_width="wrap_content" 
+	        android:background="@drawable/cx_fa_title_right_btn_bg"
+	        android:layout_height="36dp"
+	        android:textColor="@color/cx_fa_co_navi_button_text"
+	        android:textAlignment="center"
+	        android:gravity="center"
+	        android:textSize="16sp"     
+	        android:layout_marginRight="5dip" />
+	
+	</LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_marginTop="30dp"
+        android:background="@drawable/cx_fa_ellipse_white_bg_border" 
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+        >
+        <LinearLayout android:orientation="horizontal" android:gravity="center_vertical"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" android:layout_marginRight="10dp"
+            android:paddingTop="10dp" android:paddingBottom="10dp"
+            android:id="@+id/cx_fa_push_sound_first_set_btn"
+            >
+            <TextView 
+                android:id="@+id/cx_fa_setting_sound_first_tv"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="@string/cx_fa_role_push_first_sound"
+                android:textColor="@android:color/black" android:textSize="16sp"/>
+            <ImageView android:src="@drawable/remind_select" android:layout_weight="0"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:visibility="invisible" android:id="@+id/cx_fa_first_sound_selected"/>
+        </LinearLayout>
+        <View android:background="#e4e4ea" android:layout_height="1dp" android:layout_width="match_parent"/>
+        <LinearLayout android:orientation="horizontal" android:gravity="center_vertical"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" android:layout_marginRight="10dp"
+            android:paddingTop="10dp" android:paddingBottom="10dp"
+            android:id="@+id/cx_fa_push_sound_second_set_btn"
+            >
+            <TextView 
+                android:id="@+id/cx_fa_setting_sound_second_tv"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="@string/cx_fa_role_push_second_sound"
+                android:textColor="@android:color/black" android:textSize="16sp"/>
+            <ImageView android:src="@drawable/remind_select" android:layout_weight="0"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:visibility="invisible" android:id="@+id/cx_fa_second_sound_selected"/>
+        </LinearLayout>
+        <View android:background="#e4e4ea" android:layout_height="1dp" android:layout_width="match_parent"/>
+        <LinearLayout android:orientation="horizontal" android:gravity="center_vertical"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp" android:layout_marginRight="10dp"
+            android:paddingTop="10dp" android:paddingBottom="10dp"
+            android:id="@+id/cx_fa_push_sound_third_set_btn"
+            >
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="@string/cx_fa_push_third_sound"
+                android:textColor="@android:color/black" android:textSize="16sp"/>
+            <ImageView android:src="@drawable/remind_select" android:layout_weight="0"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:visibility="invisible" android:id="@+id/cx_fa_third_sound_selected"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 日历首页  wentong.men -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:calendar="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cx_fa_co_background_grey"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/cx_fa_mate_edit_navi_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/navi_topbar" >
+
+        <ImageButton
+            android:id="@+id/cx_fa_calendar_title_menu_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/cx_fa_menu_btn"
+            android:paddingLeft="11dp"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/cx_fa_calendar_title_text_layout"
+            android:layout_width="120dip"
+            android:layout_height="28dip"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/cx_fa_calendar_title_text_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我家日历"
+                android:textColor="#f3ffffff"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/cx_fa_calendar_title_text_iv"
+                android:layout_width="20dip"
+                android:layout_height="20dip"
+                android:layout_marginLeft="2dip"
+                android:src="@drawable/calendar_btn_down" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/cx_fa_calendar_title_add_ib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/cx_fa_selector_top_buttonplus"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/cx_fa_co_navi_button_text"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <!-- 编辑界面的标题 -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ScrollView
+            android:id="@+id/cx_fa_calendar_homepage_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dip"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="7dip" >
+
+                    <TextView
+                        android:id="@+id/cx_fa_calendar_date_day_tv"
+                        android:layout_width="56dip"
+                        android:layout_height="56dip"
+                        android:layout_marginLeft="2dip"
+                        android:gravity="center"
+                        android:text="29"
+                        android:textColor="#eba179"
+                        android:textSize="42sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/cx_fa_calendar_date_year_and_month_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="2014.01"
+                                android:textColor="#37322f"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/cx_fa_calendar_date_week_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dip"
+                                android:gravity="center"
+                                android:text="周三"
+                                android:textColor="#37322f"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/cx_fa_calendar_date_lunar_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="腊月二十三"
+                                android:textColor="#696969"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/cx_fa_calendar_date_solar_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="7dip"
+                                android:gravity="center"
+                                android:text="小年"
+                                android:textColor="#696969"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/cx_fa_calendar_date_festival_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="7dip"
+                                android:gravity="center"
+                                android:text="初心节"
+                                android:textColor="#696969"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="#20000000" />
+
+                <LinearLayout
+                    android:id="@+id/cx_fa_calendar_add_item_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dip"
+                    android:layout_marginBottom="@dimen/calendar_homepage_items_space"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="20dip"
+                    android:background="@drawable/cx_fa_calendar_item_date_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dip"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:layout_width="16dip"
+                            android:layout_height="16dip"
+                            android:src="@drawable/calendar_plus" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/cx_fa_calendar_add_item_text"
+                        android:textColor="#b6b8bf"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cx_fa_calendar_items_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/cx_fa_calendar_fill_space_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <!-- 此处添加日历控件 -->
+
+                <com.squareup.timessquare.CalendarView
+                    android:id="@+id/cx_fa_calendar_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    calendar:is_landspace="false" />
+            </LinearLayout>
+        </ScrollView>
+        <!-- 日历部分 -->
+
+        <LinearLayout
+            android:id="@+id/cx_fa_calendar_memorial_day_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="20dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="24dip"
+                android:background="@drawable/cx_fa_calendar_memorial_day_item_orange_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="10dip"
+                    android:layout_height="10dip"
+                    android:layout_marginLeft="10dip"
+                    android:src="@drawable/calendar_heart" />
+
+                <TextView
+                    android:id="@+id/cx_fa_calendar_memorial_day_date_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="1987.02.05"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#20000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/cx_fa_calendar_memorial_day_content_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="老婆的生日"
+                    android:textColor="#90000000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/cx_fa_calendar_memorial_day_number_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:gravity="center_vertical"
+                    android:text="128天后"
+                    android:textColor="#90000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+            -->
+
+            <ListView
+                android:id="@+id/cx_fa_calendar_memorial_day_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:cacheColorHint="#00000000"
+                android:divider="@null" />
+
+            <!--
+        <LinearLayout
+            android:id="@+id/cx_fa_calendar_add_memorial_day_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:layout_margin="20dip"
+            android:background="@drawable/cx_fa_calendar_item_date_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                android:gravity="center" >
+
+                <ImageView
+                    android:layout_width="16dip"
+                    android:layout_height="16dip"
+                    android:src="@drawable/calendar_plus" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dip"
+                android:gravity="center_vertical"
+                android:text="@string/cx_fa_calendar_add_memorial_day_text"
+                android:textColor="#b6b8bf"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+            -->
+        </LinearLayout>
+
+        <!-- 纪念日部分 -->
+    </FrameLayout>
+
+</LinearLayout>

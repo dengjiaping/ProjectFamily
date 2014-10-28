@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    >    
+    
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/remind_infobox"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent" >
+
+    <!-- ImageView外面套一个LinearLayout,主要是为了让头像居中             modify by dujianyin 2013.8.30 -->
+    <LinearLayout 
+        android:id="@+id/cx_fa_view_reminder_list_all_reminders_row__owner_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+	   <com.chuxin.family.widgets.CxImageView
+	       android:id="@+id/cx_fa_view_reminder_list_all_reminders_row__owner"
+	       android:layout_alignParentLeft="true"
+	       android:layout_alignParentTop="true"
+	       android:layout_width="40dp"
+	       android:layout_height="40dp"	       
+	       android:scaleType="centerCrop"
+	       android:src="@drawable/cx_fa_wf_icon_small" />
+	</LinearLayout>
+	
+    <LinearLayout
+        android:id="@+id/cx_fa_view_reminder_list_all_reminders_row__right"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/cx_fa_style_reminder_black_text"
+            android:id="@+id/cx_fa_view_reminder_list_all_reminders_row__reminder_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/cx_fa_view_reminder_list_all_reminders_row__owner_clock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/remind_clockblue" />
+
+    </LinearLayout>
+   
+    <LinearLayout
+        android:layout_toRightOf="@id/cx_fa_view_reminder_list_all_reminders_row__owner_parent"
+        android:layout_toLeftOf="@id/cx_fa_view_reminder_list_all_reminders_row__right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/cx_fa_style_reminder_black_text"
+            android:id="@+id/cx_fa_view_reminder_list_all_reminders_row__title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/remind_icontime" />
+
+            <TextView
+               style="@style/cx_fa_style_reminder_small_text"
+               android:id="@+id/cx_fa_view_reminder_list_all_reminders_row__period"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="" />
+            
+
+        </LinearLayout>
+        
+	  <LinearLayout
+	      android:layout_width="match_parent"
+	      android:layout_height="wrap_content"
+	      android:orientation="horizontal" >
+	            
+           <ImageView
+               android:id="@+id/cx_fa_view_reminder_list_all_reminders_row__target_icon"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/remind_iconsingle" />
+
+           <TextView
+               style="@style/cx_fa_style_reminder_small_text"
+               android:id="@+id/cx_fa_view_reminder_list_all_reminders_row__creator_text"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+	           android:text="" />
+
+	  </LinearLayout>
+    </LinearLayout>
+
+  </RelativeLayout>
+</LinearLayout>

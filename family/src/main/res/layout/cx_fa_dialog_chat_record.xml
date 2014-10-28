@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cx_fa_dialog_chat_record_linearlayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pub_audio_state_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/cx_fa_dialog_chat_record_relativelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pub_recorder" >
+
+        <ImageView
+            android:id="@+id/cx_fa_dialog_chat_record_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/pub_microphone_volume_14" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/cx_fa_dialog_chat_record_recordtime_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cx_fa_chat_record_time_remianing" />
+
+    <TextView
+        android:id="@+id/cx_fa_dialog_chat_record_textview_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cx_fa_chat_record_tip"
+        android:textSize="12sp" />
+
+</LinearLayout>

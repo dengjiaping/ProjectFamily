@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cx_fa_dialog_chat_record_linearlayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/cx_fa_co_transparent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/cx_fa_dialog_chat_record_relativelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/cx_fa_co_transparent" >
+        <com.ant.liao.chuxin.EnhancedGifView
+            android:id="@+id/cx_fa_chat_sound_effect_gift_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/cx_fa_co_transparent"
+            android:scaleType="centerInside" />
+    </RelativeLayout>
+
+</LinearLayout>

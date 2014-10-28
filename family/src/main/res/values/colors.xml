@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="cx_fa_co_transparent">#00000000</color>
+    <color name="cx_fa_co_red">#ffff0000</color>
+    <color name="cx_fa_co_green">#ff00ff00</color>
+    <color name="cx_fa_co_white">#ffffffff</color>
+    <color name="cx_fa_co_blue">#ff0000ff</color>
+    <color name="cx_fa_co_black">#000000</color>
+    <color name="cx_fa_co_grey">#b4b4b4</color>
+    <color name="cx_fa_co_near_black">#4b4b4b</color>
+    <color name="cx_fa_co_border_grey">#c3c4c8</color>
+    <color name="cx_fa_co_background_grey">#e4e4ea</color>
+    <color name="cx_fa_co_widget_background">#ededed</color>
+    <color name="cx_fa_co_btn_brown_text">#99674d</color>
+    <color name="cx_fa_co_navi_button_text">#f0ecea</color>
+    <color name="cx_fa_co_datepicker_dialog_background">#b4b4b4</color>
+    <color name="cx_fa_co_datepicker_region_background">#b4b4b4</color>
+    <color name="md__transparent">#00000000</color>
+    <color name="md__defaultBackground">#FF555555</color>
+    <color name="cx_fa_co_dark_brown">#403532</color>
+    <color name="cx_fa_co_qq_text">#635753</color>
+    <color name="cx_fa_co_deep_gray">#5a5a58</color>
+    <color name="cx_fa_co_reminder_tip_deep_gray">#7e7e7e</color>
+    <color name="cx_fa_co_more_gray">#adadad</color>
+    <color name="cx_fa_role_co_authen_new">#f0e7e0</color>
+    <color name="cx_fa_role_co_authen_new_s">#ecdfd7</color>
+
+    <!-- 更多 -->
+    <color name="cx_fa_co_more_bg">#f5f5f5</color>
+    <color name="cx_fa_co_more_bg_focused">#20000000</color>
+    
+    <!-- 记账 -->
+    <color name="cx_fa_co_accounting_red">#d41515</color>
+    <color name="cx_fa_co_accounting_orange">#ff9900</color>
+    <color name="cx_fa_co_accounting_yellow">#ecd21c</color>
+    <color name="cx_fa_co_accounting_green">#74cd18</color>
+    <color name="cx_fa_co_accounting_cyan">#19b4e7</color>
+    <color name="cx_fa_co_accounting_blue">#1551d7</color>
+    <color name="cx_fa_co_accounting_purple">#7e4ce0</color>
+    <color name="cx_fa_co_accounting_pink">#de4185</color>
+    <color name="cx_fa_role_co_accounting_account_item_pink">#edb2b2</color>
+    <color name="cx_fa_role_co_accounting_account_item_pink_s">#b2c8ed</color>
+    <color name="cx_fa_role_co_accounting_account_item_blue">#b2c8ed</color>
+    <color name="cx_fa_role_co_accounting_account_item_blue_s">#edb2b2</color>
+
+    <!-- 记账lable字体颜色 -->
+    <color name="cx_fa_co_accounting_chartpie_lable_text_color">#37322f</color>
+
+    <!-- 谁家最聪明 -->
+    <color name="cx_fa_co_neighbour_answer_home_tab_normal">#a9dcdd</color>
+    <color name="cx_fa_co_neighbour_answer_home_tab_seleted">#cee9ea</color>
+    <color name="cx_fa_co_neighbour_answer_home_item_ourhome_bg">#f5d6c2</color>
+    <color name="cx_fa_co_neighbour_answer_question_bg">#cc000000</color>
+ <!-- 答题界面半透明背景 -->
+
+
+    <!-- 相册的style -->
+    <color name="grid_state_pressed">#BB7dbcd3</color>
+    <color name="grid_state_focused">#777dbcd3</color>
+
+    <!-- 发帖加表情 -->
+    <color name="cx_fa_co_add_emotion_bg">#ffffff</color>
+
+    <!-- 主菜单 -->
+    <color name="cx_fa_main_menu_text_color">#bfb8b6</color>
+
+    <!-- 日历 -->
+    <color name="white">#ffffffff</color>
+    <color name="calendar_background">#cb9e41</color>
+    <color name="selection">#b1dce2ff</color>
+    <color name="calendar_zhe_day">#faedda</color>
+    <color name="event_center">#ff6bd697</color>
+    <color name="noMonth">#c0c0c0</color>
+    <color name="title_text_6">#FF529bd0</color>
+    <color name="title_text_7">#FFbc4445</color>
+    <color name="text_6">#FFf3feff</color>
+    <color name="text_7">#FFfff1f2</color>
+    <color name="tempColor">#e3e3e3</color>
+    <color name="frame">#ffcc3266</color>
+    <color name="forecast_point">#fff66898</color>
+    <color name="br0">#ffffc5dd</color>
+    <color name="Text">#603b07</color>
+    <color name="ToDayText">#ffc2a53d</color>
+    <color name="Noteback">#FFCC99</color>
+
+    <!-- 日历控件 -->
+    <color name="calendar_inactive_month_bg">#bebebe</color>
+    <color name="calendar_bg">#f8f8f8</color>
+    <color name="calendar_divider">#ffbababa</color>
+    <color name="calendar_active_month_bg">#37322f</color>
+    <color name="calendar_active_month_lunar_bg">#99000000</color>
+    <color name="calendar_selected_day_bg">#ff379bff</color>
+    <color name="calendar_selected_day_bg2">#ff77be3c</color>
+    <color name="calendar_selected_range_bg">#ff96caff</color>
+    <color name="calendar_text_inactive">#40778088</color>
+    <color name="calendar_text_active">#37322f</color>
+    <color name="calendar_text_selected">#ffffffff</color>
+    <color name="calendar_text_unselectable">#7f778088</color>
+    <color name="calendar_text_mark">#ff77be3c</color>
+    
+    
+    <!-- 孩子空间 -->
+    
+    <color name="kids_home_header_tab_fouced">#ffffff</color>
+    <color name="kids_home_header_tab_normal">#f0f1f3</color>
+    
+    
+    
+    <!-- 侧边栏 -->
+    <color name="menu_bg">#403532</color>
+    <color name="menu_item_fouced">#4e423e</color>
+    <color name="menu_item_normal">#00000000</color>
+    <color name="menu_item_text">#bfb8b6</color>
+    
+    
+    
+    
+    
+
+</resources>

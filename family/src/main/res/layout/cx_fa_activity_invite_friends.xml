@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cx_fa_co_background_grey"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        layout="@layout/cx_fa_activity_title" />
+    
+    <ScrollView 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" >
+       
+       <LinearLayout 
+           	android:layout_width="match_parent"
+       		android:layout_height="wrap_content"
+       		android:orientation="vertical">
+
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:paddingLeft="16dp"
+		        android:paddingRight="16dp"
+		        android:orientation="vertical" >
+		
+		        <ImageButton
+		            android:id="@+id/cx_fa_neighbour_invite_hb_icon"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center"
+		            android:background="@drawable/neighbor_icon_husband" />
+		
+		        <TextView
+		            android:id="@+id/cx_fa_neighbour_invite_hb_text"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center"
+		            android:textSize="14sp"
+		            android:textColor="#aa000000"
+		            android:text="@string/cx_fa_invite_neighbour_install_husband_tip" />
+		
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="10dp"
+		            android:gravity="center"
+		            android:orientation="horizontal" >
+		            
+		            <Button
+		                android:id="@+id/cx_fa_send_message_invite_hb_btn"
+		                style="@style/cx_fa_style_white_button_text"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="1"
+		                android:background="@drawable/neighbor_btn_gray"
+		                android:textSize="16sp"
+		                android:textColor="@color/cx_fa_co_reminder_tip_deep_gray"
+		                android:text="@string/cx_fa_dx_invite_button_text" />
+		            
+		            <Button
+		                android:id="@+id/cx_fa_send_weixin_invite_hb_btn"
+		                style="@style/cx_fa_style_white_button_text"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="1"
+		                android:background="@drawable/neighbor_btn_gray"
+		                android:textSize="16sp"
+		                android:textColor="@color/cx_fa_co_reminder_tip_deep_gray"
+		                android:text="@string/cx_fa_wechat_invite_button_text" />
+		
+		
+		        </LinearLayout>
+		
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="0dp"
+		            android:layout_marginRight="0dp"
+		            android:layout_marginTop="10dp"
+		            android:orientation="horizontal" >
+		            
+		            <Button
+		                android:id="@+id/cx_fa_send_qq_invite_hb_btn"
+		                style="@style/cx_fa_style_white_button_text"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="1"
+		                android:background="@drawable/neighbor_btn_gray"
+		                android:textSize="16sp"
+		                android:textColor="@color/cx_fa_co_reminder_tip_deep_gray"
+		                android:text="@string/cx_fa_qq_invite_button_text" 
+				android:visibility="gone"/>		<!-- QQ先隐藏 -->
+				
+		            <Button
+		                android:id="@+id/cx_fa_qr_code_hb"
+		                style="@style/cx_fa_style_white_button_text"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="bottom"
+		                android:layout_weight="1"
+		                android:background="@drawable/neighbor_btn_gray"
+		                android:text="@string/cx_fa_dimesionbar_text_husband"
+		                android:textColor="@color/cx_fa_co_reminder_tip_deep_gray"
+		                android:textSize="16sp" />
+		        </LinearLayout>
+		    </LinearLayout>
+			<ImageView
+		        android:layout_width="fill_parent"
+		        android:layout_height="1dp"
+		        android:layout_marginTop="6dp"
+		        android:background="@drawable/neighbor_pointline" />
+		    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_marginTop="20dp"
+		        android:paddingLeft="16dp"
+		        android:paddingRight="16dp"
+		        android:orientation="vertical" >
+		
+		        <ImageButton
+		            android:id="@+id/cx_fa_neighbour_invite_wf_icon"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center"
+		            android:background="@drawable/neighbor_icon_wife" />
+		
+		        <TextView
+		            android:id="@+id/cx_fa_neighbour_invite_wf_text"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center"
+		            android:textSize="14sp"
+		            android:textColor="#aa000000"
+		            android:text="@string/cx_fa_invite_neighbour_install_wife_tip" />
+		
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="10dp"
+		            android:gravity="center"
+		            android:orientation="horizontal" >
+		
+		            
+		            <Button
+		                android:id="@+id/cx_fa_send_message_invite_wf_btn"
+		                style="@style/cx_fa_style_white_button_text"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="1"
+		                android:background="@drawable/neighbor_btn_gray"
+		                android:textSize="16sp"
+		                android:textColor="@color/cx_fa_co_reminder_tip_deep_gray"
+		                android:text="@string/cx_fa_dx_invite_button_text" />
+		            
+		            
+			  <Button
+		                android:id="@+id/cx_fa_send_weixin_invite_wf_btn"
+		                style="@style/cx_fa_style_white_button_text"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="1"
+		                android:background="@drawable/neighbor_btn_gray"
+		                android:textSize="16sp"
+		                android:textColor="@color/cx_fa_co_reminder_tip_deep_gray"
+		                android:text="@string/cx_fa_wechat_invite_button_text" />
+		
+		        </LinearLayout>
+		
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="0dp"
+		            android:layout_marginRight="0dp"
+		            android:layout_marginTop="10dp"
+		            android:orientation="horizontal" >
+		            
+		            <Button
+		                android:id="@+id/cx_fa_send_qq_invite_wf_btn"
+		                style="@style/cx_fa_style_white_button_text"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_weight="1"
+		                android:background="@drawable/neighbor_btn_gray"
+		                android:textSize="16sp"
+		                android:textColor="@color/cx_fa_co_reminder_tip_deep_gray"
+		                android:text="@string/cx_fa_qq_invite_button_text" 
+		                android:visibility="gone"/>		<!-- QQ先隐藏 -->
+		 
+		            <Button
+		                android:id="@+id/cx_fa_qr_code_wf"
+		                style="@style/cx_fa_style_white_button_text"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_gravity="bottom"
+		                android:layout_weight="1"
+		                android:background="@drawable/neighbor_btn_gray"
+		                android:text="@string/cx_fa_dimesionbar_text_wife"
+		                android:textColor="@color/cx_fa_co_reminder_tip_deep_gray"
+		                android:textSize="16sp" />
+		        </LinearLayout>
+		    </LinearLayout>
+    </LinearLayout>
+	</ScrollView>
+</LinearLayout>

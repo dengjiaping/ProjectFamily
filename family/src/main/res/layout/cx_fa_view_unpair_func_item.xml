@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?> <!-- 关于界面 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:gravity="center_horizontal" android:orientation="vertical" 
+    android:background="@drawable/menu_btn_h"
+    >
+
+    <ImageView android:id="@+id/item_funcs_item_icon"
+        android:layout_width="@dimen/cx_fa_unpaire_func_item_size"
+        android:layout_height="@dimen/cx_fa_unpaire_func_item_size"
+        android:background="@drawable/menu_icon_invite"
+        />
+    <TextView android:id="@+id/item_funcs_item_name"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:textSize="16sp" android:textColor="@color/cx_fa_co_more_gray"
+        />
+
+</LinearLayout>

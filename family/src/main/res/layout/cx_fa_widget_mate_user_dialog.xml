@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@null"
+	>
+
+    <LinearLayout 
+        android:layout_width="280dp"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+    	android:padding="15dip"
+    	android:layout_gravity="center_horizontal"
+    	android:background="@drawable/neighbor_backwhite">
+	    
+	    <TextView
+	        android:id="@+id/cx_fa_mate_family_info_user_title_tv"
+	        android:layout_marginLeft="10dip"
+	        android:background="@null" 
+	        android:gravity="center_vertical"
+	        android:textSize="15sp"
+	        android:textColor="#99000000"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"	
+	    	android:text="@string/cx_fa_neighbour_home_change_griltext"/>
+	    
+	    <EditText
+	        android:layout_margin="5dip"
+	        android:id="@+id/cx_fa_mate_family_info_user_content_et" 
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:textColor="#90000000"
+	    	android:padding="9dip"
+	    	android:textSize="15sp"
+	    	android:maxHeight="100dp"
+	    	android:gravity="center_vertical"
+	    	android:background="@drawable/edittext_bg"
+	    	/>
+	   <!--  <TextView
+	        android:id="@+id/nb_neighbours_home_change_boytext"
+	        android:layout_marginTop="10dp"
+	        android:layout_marginLeft="10dip"
+	        android:background="@null" 
+	        android:gravity="center_vertical"
+	        android:textSize="15sp"
+	        android:textColor="#99000000"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"	
+	    	android:text="@string/cx_fa_neighbour_home_change_boytext"/>
+	    <EditText
+	        android:layout_margin="5dip"
+	        android:padding="7dip"
+	        android:gravity="center_vertical"
+	        android:background="@drawable/edittext_bg"
+	        android:id="@+id/nb_change_boyname"
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:textColor="#000000"
+	    	/> -->
+	    
+	    
+	    <LinearLayout 
+	        android:layout_marginTop="10dip"
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content">
+	    	
+	        <Button
+	            android:id="@+id/cx_fa_mate_family_info_user_cancel_btn" 
+	            android:layout_weight="1"
+	            android:layout_width="0dip"
+	    		android:layout_height="wrap_content"
+	    		style="@style/cx_fa_style_white_button_text"
+	    		android:textSize="16sp"
+	    		android:textColor="@color/cx_fa_co_reminder_tip_deep_gray"
+	    		android:background="@drawable/neighbour_btnwhite"
+	    		android:text="取消"/>
+	        <Button 
+	            android:id="@+id/cx_fa_mate_family_info_user_ok_btn"
+	            android:layout_weight="1"
+	            android:layout_width="0dip"
+	    		android:layout_height="wrap_content"
+	    		style="@style/cx_fa_style_orange_button_text"
+	    		android:textSize="16sp"
+	    		android:textColor="@color/cx_fa_co_btn_brown_text"
+	    		android:background="@drawable/neighbour_btnorange"
+	    		android:text="确认"/>
+	        
+	        
+	    </LinearLayout>
+    
+    </LinearLayout>
+
+</LinearLayout>

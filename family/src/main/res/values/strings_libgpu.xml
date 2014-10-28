@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="filter_name_original">原图</string>
+    <string name="filter_name_amaro">怀旧</string>
+    <string name="filter_name_nashville">乡村</string>
+    <string name="filter_name_sierra">梦想</string>
+    <string name="filter_name_walden">日光</string>
+    <string name="filter_name_xproii">清明</string>
+    <string name="filter_name_sepia">金黄</string>
+    <string name="filter_name_grayscale">灰度</string>
+    <string name="filter_name_vignette">黑光</string>
+    <string name="filter_name_sharpness">杂志</string>
+    <string name="cx_fa_libgpu_take_photo">拍照</string>
+    <string name="cx_fa_libgpu_pick_photo">从相册选择</string>
+    <string name="cx_fa_libgpu_cancel">取消</string>
+</resources>

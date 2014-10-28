@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cx_fa_co_background_grey"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/cx_fa_activity_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="20dip" >
+
+                <LinearLayout
+                    android:id="@+id/cx_fa_calendar_edit_tab_item_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="1dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/cx_fa_accounting_homepage_detail_bg_white"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/cx_fa_calendar_edit_tab_item_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:gravity="center"
+                        android:text="@string/cx_fa_calendar_edit_tab_item"
+                        android:textColor="#eba179"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cx_fa_calendar_edit_tab_memorial_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:layout_marginLeft="1dip"
+                    android:layout_marginRight="1dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/cx_fa_accounting_homepage_detail_bg_gray"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/cx_fa_calendar_edit_tab_memorial_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dip"
+                        android:gravity="center"
+                        android:text="@string/cx_fa_calendar_edit_tab_memorial_day"
+                        android:textColor="#37322f"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dip" />
+                </LinearLayout>
+            </LinearLayout>
+            <!-- tab标签 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="-10dip"
+                android:background="@drawable/cx_fa_accounting_homepage_bg_white_no_stroke"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dip"
+                    android:background="@drawable/cx_fa_calendar_edit_edit_bg"
+                    android:orientation="vertical"
+                    android:padding="8dip" >
+
+                    <EditText
+                        android:id="@+id/cx_fa_calendar_edit_content_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="top|left"
+                        android:hint="@string/cx_fa_calendar_edit_edit_item_hint"
+                        android:minHeight="80dip"
+                        android:textColor="#696969"
+                        android:textColorHint="#30000000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/cx_fa_calendar_edit_content_recommend_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginLeft="10dip"
+                    android:text="@string/cx_fa_calendar_edit_edit_recommend_text"
+                    android:textColor="#eba179"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/cx_fa_calendar_edit_memorial_day_selecter_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-5dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/cx_fa_accounting_homepage_bg_white_no_stroke"
+                android:orientation="horizontal"
+                android:paddingLeft="8dip" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginLeft="8dip"
+                    android:layout_marginRight="8dip"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/cx_fa_calendar_edit_memorial_day_selecter_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:text="@string/cx_fa_calendar_edit_selecter_text1"
+                        android:textColor="#37322f"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="38dip"
+                    android:layout_height="42dip"
+                    android:layout_gravity="right"
+                    android:gravity="left|center_vertical"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:layout_width="18dip"
+                        android:layout_height="18dip"
+                        android:padding="1dip"
+                        android:src="@drawable/table_front_accessory_arrow" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--
+                 <LinearLayout
+                    android:id="@+id/cx_fa_calendar_common_anniversary_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="20dip"
+                    
+                    android:background="@drawable/cx_fa_calendar_edit_reminder_bg"
+                    android:paddingLeft="8dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dip"
+                        android:layout_marginLeft="5dip"
+                        android:gravity="center_vertical"
+                        android:textColor="#a0000000"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/cx_fa_calendar_common_anniversary_tv_linearlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/cx_fa_calendar_common_anniversary_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="一般纪念日"
+                            android:textColor="#37322f"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="38dip"
+                        android:layout_height="42dip"
+                        android:layout_gravity="right"
+                        android:gravity="left|center_vertical"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="18dip"
+                            android:layout_height="18dip"
+                            android:padding="1dip"
+                            android:src="@drawable/table_front_accessory_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+            -->
+            <!-- 一般纪念日 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/cx_fa_calendar_edit_reminder_bg"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/cx_fa_calendar_edit_reminder_date_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="8dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="42dip"
+                            android:layout_marginLeft="5dip"
+                            android:gravity="center_vertical"
+                            android:textColor="#a0000000"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:id="@+id/cx_fa_calendar_edit_reminder_date_tv_linearlayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginLeft="8dip"
+                            android:layout_marginRight="8dip"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/cx_fa_calendar_edit_reminder_date_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:text="2014-02-05"
+                                android:textColor="#37322f"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="38dip"
+                            android:layout_height="42dip"
+                            android:layout_gravity="right"
+                            android:gravity="left|center_vertical"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="18dip"
+                                android:layout_height="18dip"
+                                android:padding="1dip"
+                                android:src="@drawable/table_front_accessory_arrow" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- 日期 -->
+
+                    <View
+                        android:id="@+id/cx_fa_calendar_edit_reminder_date_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#e4e4ea" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cx_fa_calendar_edit_reminder_time_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="8dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="42dip"
+                            android:layout_marginLeft="5dip"
+                            android:gravity="center_vertical"
+                            android:textColor="#a0000000"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginLeft="8dip"
+                            android:layout_marginRight="8dip"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/cx_fa_calendar_edit_reminder_time_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:text="10:00"
+                                android:textColor="#37322f"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="38dip"
+                            android:layout_height="42dip"
+                            android:layout_gravity="right"
+                            android:gravity="left|center_vertical"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="18dip"
+                                android:layout_height="18dip"
+                                android:padding="1dip"
+                                android:src="@drawable/table_front_accessory_arrow" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- 时间 -->
+
+                    <View
+                        android:id="@+id/cx_fa_calendar_edit_reminder_time_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#e4e4ea" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cx_fa_calendar_edit_reminder_target_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dip"
+                        android:layout_marginLeft="5dip"
+                        android:gravity="center_vertical"
+                        android:textColor="#a0000000"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/cx_fa_calendar_edit_reminder_target_tv_linearlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/cx_fa_calendar_edit_reminder_target_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="提醒双方"
+                            android:textColor="#37322f"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="38dip"
+                        android:layout_height="42dip"
+                        android:layout_gravity="right"
+                        android:gravity="left|center_vertical"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="18dip"
+                            android:layout_height="18dip"
+                            android:padding="1dip"
+                            android:src="@drawable/table_front_accessory_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 提醒对象 -->
+                <!--
+                     <View
+                    android:id="@+id/cx_fa_calendar_edit_reminder_date_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e4e4ea" />
+                -->
+
+                <LinearLayout
+                    android:id="@+id/cx_fa_calendar_edit_reminder_anniversary_target_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dip"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="42dip"
+                        android:layout_marginLeft="5dip"
+                        android:gravity="center_vertical"
+                        android:textColor="#a0000000"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:id="@+id/cx_fa_calendar_edit_reminder_anniversary_target_tv_linearlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="8dip"
+                        android:layout_marginRight="8dip"
+                        android:layout_weight="1"
+                        android:gravity="right|center_vertical"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/cx_fa_calendar_edit_reminder_anniversary_target_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="给双方看"
+                            android:textColor="#37322f"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="38dip"
+                        android:layout_height="42dip"
+                        android:layout_gravity="right"
+                        android:gravity="left|center_vertical"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="18dip"
+                            android:layout_height="18dip"
+                            android:padding="1dip"
+                            android:src="@drawable/table_front_accessory_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 纪念日对象 -->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#e4e4ea" />
+
+                <LinearLayout
+                    android:id="@+id/cx_fa_calendar_edit_reminder_is_show_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/cx_fa_calendar_edit_reminder_cycle_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="8dip" >
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="42dip"
+                                android:layout_marginLeft="5dip"
+                                android:gravity="center_vertical"
+                                android:textColor="#a0000000"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right|center_vertical"
+                                android:layout_marginLeft="8dip"
+                                android:layout_marginRight="8dip"
+                                android:layout_weight="1"
+                                android:gravity="right|center_vertical"
+                                android:orientation="vertical" >
+
+                                <TextView
+                                    android:id="@+id/cx_fa_calendar_edit_reminder_cycle_tv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:singleLine="true"
+                                    android:text="提醒一次"
+                                    android:textColor="#37322f"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="38dip"
+                                android:layout_height="42dip"
+                                android:layout_gravity="right"
+                                android:gravity="left|center_vertical"
+                                android:orientation="vertical" >
+
+                                <ImageView
+                                    android:layout_width="18dip"
+                                    android:layout_height="18dip"
+                                    android:padding="1dip"
+                                    android:src="@drawable/table_front_accessory_arrow" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <!-- 周期 -->
+
+                        <View
+                            android:id="@+id/cx_fa_calendar_edit_reminder_cycle_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#e4e4ea" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/cx_fa_calendar_edit_reminder_advance_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="8dip" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="42dip"
+                            android:layout_marginLeft="5dip"
+                            android:gravity="center_vertical"
+                            android:textColor="#a0000000"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginLeft="8dip"
+                            android:layout_marginRight="8dip"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/cx_fa_calendar_edit_reminder_advance_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:singleLine="true"
+                                android:text="不提前"
+                                android:textColor="#37322f"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="38dip"
+                            android:layout_height="42dip"
+                            android:layout_gravity="right"
+                            android:gravity="left|center_vertical"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="18dip"
+                                android:layout_height="18dip"
+                                android:padding="1dip"
+                                android:src="@drawable/table_front_accessory_arrow" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <!-- 是否提前 -->
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#e4e4ea" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cx_fa_calendar_edit_reminder_setting_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dip"
+                    android:background="@drawable/cx_fa_calendar_edit_reminder_setting_bg"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/cx_fa_calendar_edit_reminder_setting_iv"
+                        android:layout_width="16dip"
+                        android:layout_height="16dip"
+                        android:layout_marginLeft="10dip"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/calendar_set_off" />
+
+                    <TextView
+                        android:id="@+id/cx_fa_calendar_edit_reminder_setting_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:gravity="right"
+                        android:text="设置提醒"
+                        android:textColor="#696969"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <!-- 设置 -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="30dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip" >
+
+                <Button
+                    android:id="@+id/cx_fa_calendar_edit_delete_btn"
+                    style="@style/cx_fa_style_orange_button_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/neighbour_btnorange"
+                    android:text="@string/cx_fa_accounting_account_delete"
+                    android:textColor="@color/cx_fa_co_btn_brown_text"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 删除按钮 -->
+    </ScrollView>
+
+</LinearLayout>

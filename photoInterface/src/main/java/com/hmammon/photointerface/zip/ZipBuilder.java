@@ -69,7 +69,7 @@ public class ZipBuilder {
 
     public ZipBuilder add(File file) {
         if (file.exists() && !file.isDirectory()) {
-            ZedLog.i(this, "Add file Success!File size is " + file.getName());
+            ZedLog.i(this, "Add file Success!File size is " + file.length());
             filesList.add(file);
         } else {
             ZedLog.e(this, "Add file Failed!");

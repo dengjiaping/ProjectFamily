@@ -34,7 +34,6 @@ import org.json.JSONObject;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.zip.ZipFile;
 
 
 /**
@@ -116,7 +115,7 @@ public class ChooeseDeviceActivity extends CxRootActivity implements Handler.Cal
             @Override
             public void onFailed(ErrorInfo errorInfo) {
                 handler.sendEmptyMessage(MSG_UPLOAD_FAILED);
-
+                ZedLog.SysoutAnyTime("upload error = " + errorInfo.getMsg());
             }
         });
     }
@@ -128,7 +127,7 @@ public class ChooeseDeviceActivity extends CxRootActivity implements Handler.Cal
                 DeviceAdapter deviceAdapter = new DeviceAdapter(new DeviceParseUtils((JSONObject) msg.obj).getAllBindInfoes(), this);
                 listView.setAdapter(deviceAdapter);
                 listView.setOnItemClickListener(deviceAdapter);
-                break;
+                break;  
             case MSG_UPLOAD_SUCCESS:
                 ToastUtil.getSimpleToast(this, -1, "上传成功", Toast.LENGTH_LONG).show();
                 break;

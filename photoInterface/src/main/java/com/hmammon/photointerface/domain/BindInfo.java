@@ -11,11 +11,11 @@ import java.lang.reflect.Field;
  */
 public class BindInfo extends Entity<BindInfo> {
 
-    private String familyId;
-    private String deviceId;
-    private String nickname;
-    private String bindingTime;
-    private String bindingUid;
+    private String familyId;// 家庭ID
+    private String deviceId;// 设备ID
+    private String nickname;// 设备名称
+    private String bindingTime;// 绑定时间
+    private String bindingUid;// 绑定UID
 
     @Override
     public JSONObject beJson() throws JSONException {

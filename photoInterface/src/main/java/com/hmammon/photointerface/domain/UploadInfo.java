@@ -15,7 +15,6 @@ public class UploadInfo extends Entity<UploadInfo> {
     private String familyId;
     private String sharedId;
     private String deviceId;
-    private String remark;
     private File uploadFile;
 
     @Override
@@ -65,10 +64,6 @@ public class UploadInfo extends Entity<UploadInfo> {
         this.deviceId = deviceId;
     }
 
-    public void setRemark(String remark) {
-        this.remark = remark;
-    }
-
     public void setUploadFile(File uploadFile) {
         this.uploadFile = uploadFile;
     }
@@ -85,11 +80,7 @@ public class UploadInfo extends Entity<UploadInfo> {
         return deviceId;
     }
 
-    public String getRemark() {
-        return remark;
-    }
-
-    public File getUploadFile() {
+     public File getUploadFile() {
         return uploadFile;
     }
 }

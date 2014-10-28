@@ -11,8 +11,8 @@ import java.lang.reflect.Field;
  */
 public class ErrorInfo extends Entity<ErrorInfo> {
 
-    private String state;
-    private String msg;
+    private String state; // 错误类型
+    private String msg;   // 错误信息
 
     @Override
     public JSONObject beJson() throws JSONException {

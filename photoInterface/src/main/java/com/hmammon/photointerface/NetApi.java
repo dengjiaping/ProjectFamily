@@ -17,8 +17,9 @@ import org.apache.http.protocol.HTTP;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.BufferedInputStream;
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.URI;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;
@@ -38,17 +39,33 @@ public class NetApi {
         threadPool = Executors.newCachedThreadPool();
     }
 
+    /**
+     * 获取一个NET交互类实例
+     *
+     * @param context 上下文对象
+     * @return NET交互类
+     */
     public static NetApi getInstace(Context context) {
         if (instace == null) instace = new NetApi(context);
         return instace;
     }
 
+    /**
+     * 发送请求接口，会自动根据状态码和返回JSON来判断是否成功
+     */
     public interface SendListener {
         public void onSuccess(JSONObject jsonObject);
 
         public void onFailed(ErrorInfo errorInfo);
     }
 
+    /**
+     * 发送文字信息
+     *
+     * @param jsonEntity 发送参数
+     * @param uri        接口URL
+     * @param listener   监听接口
+     */
     public void send(Entity jsonEntity, URI uri, SendListener listener) {
         NetStateApi.NetStateInfo stateInfo = netStateApi.getNetStateInfo();
         if (!stateInfo.isNetAvailable()) {
@@ -75,8 +92,7 @@ public class NetApi {
 
         @Override
         public Boolean call() throws Exception {
-            DefaultHttpClient httpClient = new DefaultHttpClient();
-//            httpClient.getParams().setLongParameter(CoreConnectionPNames.CONNECTION_TIMEOUT, 10000);
+            DefaultHttpClient httpClient = new DefaultHttpClient();//使用手动合体的Apache的Httpmime 4.3.5的jar包
             HttpPost post = new HttpPost();
             post.setURI(uri);
             post.addHeader(HTTP.CHARSET_PARAM, HTTP.UTF_8);
@@ -87,16 +103,12 @@ public class NetApi {
                 post.setEntity(entity);
                 HttpResponse response = httpClient.execute(post);
                 if (response.getStatusLine().getStatusCode() == 200) {
-                    BufferedInputStream bis = new BufferedInputStream(response.getEntity().getContent());
-                    byte[] buf = new byte[64];
-                    StringBuilder sb = new StringBuilder();
-                    while (bis.read(buf) != -1) {
-                        sb.append(new String(buf, HTTP.UTF_8));
-                    }
-                    JSONObject responseJson = new JSONObject(sb.toString());
+                    InputStreamReader inputStreamReader = new InputStreamReader(response.getEntity().getContent(), HTTP.UTF_8);
+                    BufferedReader reader = new BufferedReader(inputStreamReader);
+                    JSONObject responseJson = new JSONObject(reader.readLine());
                     ZedLog.i(this, "JSON ; " + responseJson.toString());
                     if (listener != null) {
-                        if (responseJson.has("state") && responseJson.getString("state").contains("error")) {
+                        if (responseJson.has("state") && responseJson.getString("state").contains("error")) {//判定失败的条件是json里有个"state":"error"
                             listener.onFailed(new ErrorInfo().beObject(responseJson));
                         } else {
                             listener.onSuccess(responseJson);
@@ -123,12 +135,12 @@ public class NetApi {
         }
     }
 
-//    public interface SendListener {
-//        public void onSuccess(JSONObject jsonObject);
-//
-//        public void onFailed(ErrorInfo errorInfo);
-//    }
-
+    /**
+     * 上传文件和发送参数信息
+     *
+     * @param entity   发送参数
+     * @param listener 监听接口
+     */
     public void upload(Entity entity, SendListener listener) {
         NetStateApi.NetStateInfo stateInfo = netStateApi.getNetStateInfo();
         if (!stateInfo.isNetAvailable()) {
@@ -164,17 +176,13 @@ public class NetApi {
                 HttpEntity entity = MultipartEntityBuilder.create()
                         .addTextBody("data", uploadInfoEntity.beJson().toString())
                         .addPart("photo", new FileBody(((UploadInfo) uploadInfoEntity).getUploadFile()))
-                        .build();
+                        .build();// Httpmime下的多数据类型传输封装
                 post.setEntity(entity);
                 HttpResponse response = client.execute(post);
                 if (response.getStatusLine().getStatusCode() == 200) {
-                    BufferedInputStream bis = new BufferedInputStream(response.getEntity().getContent());
-                    byte[] buf = new byte[64];
-                    StringBuilder sb = new StringBuilder();
-                    while (bis.read(buf) != -1) {
-                        sb.append(new String(buf, HTTP.UTF_8));
-                    }
-                    JSONObject responseJson = new JSONObject(sb.toString());
+                    InputStreamReader inputStreamReader = new InputStreamReader(response.getEntity().getContent(), HTTP.UTF_8);
+                    BufferedReader reader = new BufferedReader(inputStreamReader);
+                    JSONObject responseJson = new JSONObject(reader.readLine());
                     if (listener != null) {
                         if (responseJson.has("state") && responseJson.getString("state").contains("error")) {
                             listener.onFailed(new ErrorInfo().beObject(responseJson));

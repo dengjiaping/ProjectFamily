@@ -11,8 +11,8 @@ import java.lang.reflect.Field;
  */
 public class UnbindInfo extends Entity<UnbindInfo> {
 
-    private String familyId;
-    private String deviceId;
+    private String familyId; // 家庭ID
+    private String deviceId; // 设备ID
 
     @Override
     public JSONObject beJson() throws JSONException {

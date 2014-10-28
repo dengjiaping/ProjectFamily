@@ -5,16 +5,18 @@ package com.hmammon.photointerface;
  * Created by Xcfh on 2014/10/17.
  */
 public final class Constants {
-    public static String URI_BIND;
+    public static boolean DEBUG = BuildConfig.DEBUG;
 
-    public static String URI_UNBIND;
+    public static String URI_BIND;// 绑定
 
-    public static String URI_GETDEV;
+    public static String URI_UNBIND;// 解绑
 
-    public static String URI_UPLOAD;
+    public static String URI_GETDEV;// 获得设备列表
+
+    public static String URI_UPLOAD;// 上传图片
 
     static {
-        if (BuildConfig.DEBUG) {
+        if (DEBUG) {
             URI_BIND = "http://192.168.3.133:8080/familyphoto/device/FamilyDevice_binding";
 
             URI_UNBIND = "http://192.168.3.133:8080/familyphoto/device/FamilyDevice_unbind";

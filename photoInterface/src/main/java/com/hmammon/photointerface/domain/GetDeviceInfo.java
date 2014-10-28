@@ -11,7 +11,7 @@ import java.lang.reflect.Field;
  */
 public class GetDeviceInfo extends Entity<GetDeviceInfo> {
 
-    private String familyId;
+    private String familyId; // 家庭ID
 
     @Override
     public JSONObject beJson() throws JSONException {

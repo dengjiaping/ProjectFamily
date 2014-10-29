@@ -1,6 +1,5 @@
 package com.chuxin.family.app;
 
-import com.chuxin.family.global.CxGlobalConst;
 import com.chuxin.family.global.CxGlobalParams;
 import com.chuxin.family.resource.CxResourceString;
 import com.chuxin.family.tabloid.StartSelfReceiver;
@@ -18,18 +17,14 @@ import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Configuration;
 import android.content.res.Resources;
-import android.content.res.Resources.NotFoundException;
-import android.os.Build;
-import android.os.StrictMode;
-import android.text.TextUtils;
 import android.util.DisplayMetrics;
 
-import java.io.IOException;
 
 /**
  * @author shichao.wang
  */
 public class CxApplication extends Application {
+    // haha
     private static CxApplication app;
 
     public static CxApplication getInstance() {
@@ -122,7 +117,7 @@ public class CxApplication extends Application {
 
 
     public String findStringById(int stringId) {
-        String str = "";
+        String str;
         str = appResources.getString(stringId);
         return str;
 
